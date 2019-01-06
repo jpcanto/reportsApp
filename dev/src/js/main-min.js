@@ -1,0 +1,1 @@
+var app=angular.module("reportsApp",[]);app.controller("reportsObjCtrl",function(a,t){t.get("data/daily.json").then(function(t){a.daily=t.data}),a.cadastraRelatorio=function(t){a.daily.push(angular.copy(t))}});
