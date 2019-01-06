@@ -28,26 +28,37 @@
         }
     }
     .cadastro {
+        font-family: sans-serif;
+        
+        background: linear-gradient(#fff, #444);
+        border: 0;
+        border-radius: 5px;
         display: flex;
         flex-direction: column;
         margin: 30px auto;
+        padding: 50px;
+        p {
+            font-size: 1.3em;
+            text-decoration: underline;
+
+            margin-bottom: 20px;
+        }
         input {
             border: 1px solid #555;
-            box-shadow: 3px 3px #111;
             display: block;
             margin: 5px 0;
             padding: 4px;
         }
         button {
             font-family: sans-serif;
-            text-shadow: 0 1px 0 #444;
 
             cursor: pointer;
-            background: linear-gradient(#fff, #444);
-            border: 2px solid #555;
-            border-radius: 10px;
+            border: 0;
+            border-radius: 5px;
             height: 30px;
-            margin-top: 5px;
+            margin: 10px auto;
+            width: 5vw;
+
         }
     }
 }
