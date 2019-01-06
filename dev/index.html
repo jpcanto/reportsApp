@@ -1,17 +1,59 @@
 <!DOCTYPE html>
-<html ng-app="reportsApp" lang="pt-br">
+<html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Reports MED-APP</title>
+    <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/main.css">
     <script src="src/utils/angular/angular.min.js"></script>
-    <script src="src/js/main.js"></script>
+    <script src="src/js/controllers/reportsObjCtrl.js"></script>
+    <!-- <script src="src/js/main.js"></script> -->
 </head>
-<body>
 
+<body ng-app="reportsApp">
 
-    
+    <header>
+        <p class="title">App Relatórios</p>
+    </header>
+
+    <section class="main-content">
+
+        <nav>
+            <p>Tipo de relatório</p>
+            <p>Sprint</p>
+            <p>Filtros</p>
+        </nav>
+
+        <div ng-controller="reportsObjCtrl" class="reports-obj-block">
+            <table id="reports-object">
+                <thead>
+                    <tr>
+                        <th>Sprint</th>
+                        <th>Apostila</th>
+                        <th>Feito</th>
+                        <th>Falta</th>
+                        <th>Impedimentos</th>
+                        <th>Situação</th>
+                    </tr>
+                </thead>
+                <tbody id="reports-object__value">
+                    <tr ng-repeat="value in daily | filter:sprint | filter:apostila | filter:feito | filter:falta | filter:impedimentos | filter:situacao">
+                        <td>{{value.sprint}}</td>
+                        <td>{{value.apostila}}</td>
+                        <td>{{value.feito}}</td>
+                        <td>{{value.falta}}</td>
+                        <td>{{value.impedimentos}}</td>
+                        <td>{{value.situacao}}</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+    </section>
+
 </body>
+
 </html>
