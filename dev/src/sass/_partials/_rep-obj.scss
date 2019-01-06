@@ -1,0 +1,19 @@
+.reports-obj-block {
+    display: inline-block;
+    #reports-object {
+        color: #fff;
+        font-family: sans-serif;
+        text-align: center;
+
+        margin: auto;
+        thead {
+            font-size: 1.4em;
+        }
+        th {
+            padding: 10px 20px;
+        }
+        td {
+            padding: 10px 20px;
+        }
+    }
+}
