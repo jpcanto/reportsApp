@@ -13,8 +13,9 @@ var configPath = {
     dist: './dist/'
 };
 
-gulp.task('build', ['sassTransformToCss', 'imgMinify'], function(){
+gulp.task('build', ['sassTransformToCss', 'minifyJs', 'imgMinify'], function(){
     return gulp.src([
+        './dev/index.html',
         './dev/data/**/*',
         './dev/src/css/reset.css',
         './dev/src/css/main.css',
