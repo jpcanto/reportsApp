@@ -16,6 +16,7 @@ var configPath = {
 gulp.task('build', ['sassTransformToCss', 'imgMinify'], function(){
     return gulp.src([
         './dev/data/**/*',
+        './dev/src/css/reset.css',
         './dev/src/css/main.css',
         './dev/src/fonts/**/*',
         './dev/src/img/**/*',
