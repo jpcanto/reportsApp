@@ -7,6 +7,6 @@
 caso seja utilizado localmente.
 
 ### Pré-requisitos:
-- O único pré requisito para rodar localmente em caso de falta de internet, é o angularJs, na versão especificada no arquivo "package.json".
-Versão "angular": "^1.7.5".
+- O único pré requisito para rodar localmente em caso de falta de internet, é a simulação de um servidor. Para isso foi criada a task "serverSimulate".
+- Para rodar a task, utilize o comando "npm run gulp serverSimulate".
 
