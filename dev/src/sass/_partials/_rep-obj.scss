@@ -44,10 +44,18 @@
             margin-bottom: 20px;
         }
         input {
-            border: 1px solid #555;
+            background: transparent;
+            border: 0;
+            border-bottom: 1px solid #fff;
             display: block;
             margin: 5px 0;
             padding: 4px;
+            &:focus {
+                outline: black auto 5px;
+            }
+        }
+        ::-webkit-input-placeholder {
+            color: #fff;
         }
         button {
             border: 0;
@@ -56,7 +64,9 @@
             height: 30px;
             margin: 10px auto;
             width: 5vw;
-
+            &:focus {
+                outline: black auto 5px;
+            }
         }
     }
 }

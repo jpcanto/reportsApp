@@ -10,8 +10,7 @@ nav {
     height: 86.5vh;
     padding: 10px;
     width: max-content;
-    select,
-    button {
+    select {
         font-family: sans-serif;
         text-shadow: 0 1px 0 #444;
 
@@ -19,6 +18,9 @@ nav {
         border: 2px solid #555;
         border-radius: 10px;
         height: 30px;
+        &:focus {
+            outline: 0;
+        }
     }
     button {
         color: #fff;
