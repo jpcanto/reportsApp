@@ -58,7 +58,7 @@
                     </tr>
                 </thead>
                 <tbody id="reports-object__value">
-                    <tr ng-repeat="value in daily | filter:sprint | filter:apostila | filter:feito | filter:falta | filter:impedimentos | filter:situacao">
+                    <tr ng-repeat="value in dailyArray | filter:sprint | filter:apostila | filter:feito | filter:falta | filter:impedimentos | filter:situacao">
                         <td>{{value.sprint}}</td>
                         <td>{{value.apostila}}</td>
                         <td>{{value.feito}}</td>
