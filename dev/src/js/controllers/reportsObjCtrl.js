@@ -7,7 +7,6 @@ app.controller("reportsObjCtrl", function($scope, $http){
     });
 
     $scope.cadastraRelatorio = function(daily) {
-        debugger;
         $scope.dailyArray.push(angular.copy(daily));
     };
 
