@@ -46,7 +46,7 @@
         </nav>
 
         <div class="reports-obj-block">
-            <table id="reports-object">
+            <!-- <table id="reports-object">
                 <thead>
                     <tr>
                         <th>Sprint</th>
@@ -67,7 +67,18 @@
                         <td>{{value.situacao}}</td>
                     </tr>
                 </tbody>
-            </table>
+            </table> -->
+            <div id="reports-object">
+                <div class="reports-box" ng-repeat="value in dailyArray | filter:sprint | filter:apostila | filter:feito | filter:falta | filter:impedimentos | filter:situacao">
+                    <div class="nome-apostila">{{value.apostila}}</div>
+                    <div class="sprint-apostila">{{value.sprint}}</div>
+                    <div class="feito-apostila">{{value.feito}}</div>
+                    <div class="falta-apostila">{{value.falta}}</div>
+                    <div class="impedimentos-apostila">{{value.impedimentos}}</div>
+                    <div class="situacao-apostila">{{value.situacao}}</div>
+                    <button class="change-reports">Modificar</button>
+                </div>
+            </div>
             <div class="cadastro">
                 <p>Cadastre um novo relatório</p>
                 <input ng-model="daily.sprint" class="formCadastro" type="text" placeholder="Sprint">
