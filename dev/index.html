@@ -10,9 +10,21 @@
     <link rel="stylesheet" href="src/css/main.css">
     <script src="src/utils/angular/angular.min.js"></script>
     <script src="src/js/main.js"></script>
+    <script src="src/js/mostra-cadastro.js"></script>
 </head>
 
 <body ng-app="reportsApp">
+
+    <section class="cadastro">
+        <p>Cadastre um novo relatório</p>
+        <input ng-model="daily.sprint" class="form-cadastro" type="text" placeholder="Sprint">
+        <input ng-model="daily.apostila" class="form-cadastro" type="text" placeholder="Apostila">
+        <input ng-model="daily.feito" class="form-cadastro" type="text" placeholder="Feito">
+        <input ng-model="daily.falta" class="form-cadastro" type="text" placeholder="Falta">
+        <input ng-model="daily.impedimentos" class="form-cadastro" type="text" placeholder="Impedimentos">
+        <input ng-model="daily.situacao" class="form-cadastro" type="text" placeholder="Situação">
+        <button ng-click="cadastraRelatorio(daily)">Cadastrar</button>
+    </section>
 
     <header>
         <p class="title">Relatórios</p>
@@ -44,9 +56,8 @@
                     <option value="Na rua">Na rua</option>
                 </select>
             </div>
-            <!-- <button ng-click="mostraRelatorio()">Carregar relatório</button> -->
         </nav>
-        <button ng-click="mostraCadastro()" class="mostra-cadastro">Cadastrar novo relatório</button>
+        <button onclick="mostraCadastro()" class="mostra-cadastro">Cadastrar novo relatório</button>
     </header>
 
     <section ng-controller="reportsObjCtrl" class="main-content">
@@ -64,16 +75,6 @@
                     <div class="situacao-apostila">{{value.situacao}}</div>
                     <button class="change-reports">Modificar</button>
                 </div>
-            </div>
-            <div class="cadastro">
-                <p>Cadastre um novo relatório</p>
-                <input ng-model="daily.sprint" class="form-cadastro" type="text" placeholder="Sprint">
-                <input ng-model="daily.apostila" class="form-cadastro" type="text" placeholder="Apostila">
-                <input ng-model="daily.feito" class="form-cadastro" type="text" placeholder="Feito">
-                <input ng-model="daily.falta" class="form-cadastro" type="text" placeholder="Falta">
-                <input ng-model="daily.impedimentos" class="form-cadastro" type="text" placeholder="Impedimentos">
-                <input ng-model="daily.situacao" class="form-cadastro" type="text" placeholder="Situação">
-                <button ng-click="cadastraRelatorio(daily)">Cadastrar</button>
             </div>
         </div>
 

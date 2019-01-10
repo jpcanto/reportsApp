@@ -38,3 +38,10 @@
         width: 10vw;
     }
 }
+header.desativa,
+.main-content.desativa {
+    opacity: .5;
+}
+.cadastro.ativa {
+    display: block;
+}
