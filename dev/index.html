@@ -15,63 +15,49 @@
 <body ng-app="reportsApp">
 
     <header>
-        <p class="title">App Relatórios</p>
+        <p class="title">Relatórios</p>
+        <nav>
+            <div class="nav-box">
+                <p>Sprint</p>
+                <select ng-model="sprint" name="sprint" class="selectFilter">
+                    <option value="">Selecione uma sprint</option>
+                    <option value="Semana 01">Semana 01</option>
+                    <option value="Semana 02">Semana 02</option>
+                    <option value="Semana 03">Semana 03</option>
+                </select>
+            </div>
+            <div class="nav-box">
+                <p>Apostila</p>
+                <select ng-model="apostila" name="apostila" class="selectFilter">
+                    <option value="">Selecione uma apostila</option>
+                    <option value="Cir 01">Cir 01</option>
+                    <option value="Nef 01">Nef 01</option>
+                    <option value="Med-Cir 01">Med-Cir 01</option>
+                    <option value="Gin 01">Gin 01</option>
+                </select>
+            </div>
+            <div class="nav-box">
+                <p>Situação</p>
+                <select ng-model="situacao" name="situacao" class="selectFilter">
+                    <option value="">Selecione uma situação</option>
+                    <option value="T2, fluxo diagramação">T2, fluxo diagramação</option>
+                    <option value="Na rua">Na rua</option>
+                </select>
+            </div>
+            <!-- <button ng-click="mostraRelatorio()">Carregar relatório</button> -->
+        </nav>
+        <button ng-click="mostraCadastro()" class="mostra-cadastro">Cadastrar novo relatório</button>
     </header>
 
     <section ng-controller="reportsObjCtrl" class="main-content">
 
-        <nav>
-            <p>Sprint</p>
-            <select ng-model="sprint" name="sprint" class="selectFilter">
-                <option value="">Selecione uma sprint</option>
-                <option value="Semana 01">Semana 01</option>
-                <option value="Semana 02">Semana 02</option>
-                <option value="Semana 03">Semana 03</option>
-            </select>
-            <p>Apostila</p>
-            <select ng-model="apostila" name="apostila" class="selectFilter">
-                <option value="">Selecione uma apostila</option>
-                <option value="Cir 01">Cir 01</option>
-                <option value="Nef 01">Nef 01</option>
-                <option value="Med-Cir 01">Med-Cir 01</option>
-                <option value="Gin 01">Gin 01</option>
-            </select>
-            <p>Situação</p>
-            <select ng-model="situacao" name="situacao" class="selectFilter">
-                <option value="">Selecione uma situação</option>
-                <option value="T2, fluxo diagramação">T2, fluxo diagramação</option>
-                <option value="Na rua">Na rua</option>
-            </select>
-            <!-- <button ng-click="mostraRelatorio()">Carregar relatório</button> -->
-        </nav>
-
         <div class="reports-obj-block">
-            <!-- <table id="reports-object">
-                <thead>
-                    <tr>
-                        <th>Sprint</th>
-                        <th>Apostila</th>
-                        <th>Feito</th>
-                        <th>Falta</th>
-                        <th>Impedimentos</th>
-                        <th>Situação</th>
-                    </tr>
-                </thead>
-                <tbody id="reports-object__value">
-                    <tr ng-repeat="value in dailyArray | filter:sprint | filter:apostila | filter:feito | filter:falta | filter:impedimentos | filter:situacao">
-                        <td>{{value.sprint}}</td>
-                        <td>{{value.apostila}}</td>
-                        <td>{{value.feito}}</td>
-                        <td>{{value.falta}}</td>
-                        <td>{{value.impedimentos}}</td>
-                        <td>{{value.situacao}}</td>
-                    </tr>
-                </tbody>
-            </table> -->
             <div id="reports-object">
                 <div class="reports-box" ng-repeat="value in dailyArray | filter:sprint | filter:apostila | filter:feito | filter:falta | filter:impedimentos | filter:situacao">
                     <div class="nome-apostila">{{value.apostila}}</div>
-                    <div class="sprint-apostila">{{value.sprint}}</div>
+                    <div class="sprint-apostila">
+                        <div class="sprint-apostila__text">{{value.sprint}}</div>
+                    </div>
                     <div class="feito-apostila">{{value.feito}}</div>
                     <div class="falta-apostila">{{value.falta}}</div>
                     <div class="impedimentos-apostila">{{value.impedimentos}}</div>
@@ -81,12 +67,12 @@
             </div>
             <div class="cadastro">
                 <p>Cadastre um novo relatório</p>
-                <input ng-model="daily.sprint" class="formCadastro" type="text" placeholder="Sprint">
-                <input ng-model="daily.apostila" class="formCadastro" type="text" placeholder="Apostila">
-                <input ng-model="daily.feito" class="formCadastro" type="text" placeholder="Feito">
-                <input ng-model="daily.falta" class="formCadastro" type="text" placeholder="Falta">
-                <input ng-model="daily.impedimentos" class="formCadastro" type="text" placeholder="Impedimentos">
-                <input ng-model="daily.situacao" class="formCadastro" type="text" placeholder="Situação">
+                <input ng-model="daily.sprint" class="form-cadastro" type="text" placeholder="Sprint">
+                <input ng-model="daily.apostila" class="form-cadastro" type="text" placeholder="Apostila">
+                <input ng-model="daily.feito" class="form-cadastro" type="text" placeholder="Feito">
+                <input ng-model="daily.falta" class="form-cadastro" type="text" placeholder="Falta">
+                <input ng-model="daily.impedimentos" class="form-cadastro" type="text" placeholder="Impedimentos">
+                <input ng-model="daily.situacao" class="form-cadastro" type="text" placeholder="Situação">
                 <button ng-click="cadastraRelatorio(daily)">Cadastrar</button>
             </div>
         </div>

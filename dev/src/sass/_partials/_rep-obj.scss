@@ -1,75 +1,6 @@
-// .reports-obj-block {
-//     display: flex;
-//     flex-direction: column;
-//     width: 100%;
-//     #reports-object {
-//         font-family: sans-serif;
-//         text-align: center;
-
-//         border-collapse: separate;
-//         width: 100%;
-//         thead {
-//             font-size: 1.4em;
-//         }
-//         th {
-//             text-shadow: 0 1px 0 #444;
-
-//             background: linear-gradient(#777, #444);
-//             border-left: 1px solid #555;
-//             border-right: 1px solid #777;
-//             border-top: 1px solid #555;
-//             border-bottom: 1px solid #333;
-//             padding: 10px 20px;
-//         }
-//         td {
-//             border: 3px double;
-//             padding: 10px 20px;
-//             vertical-align: middle;
-//         }
-//     }
-//     .cadastro {
-//         font-family: sans-serif;
-        
-//         background: linear-gradient(#fff, #444);
-//         border: 0;
-//         border-radius: 5px;
-//         display: flex;
-//         flex-direction: column;
-//         margin: 30px auto;
-//         padding: 50px;
-//         p {
-//             font-size: 1.3em;
-//             text-decoration: underline;
-
-//             margin-bottom: 20px;
-//         }
-//         input {
-//             background: transparent;
-//             border: 0;
-//             border-bottom: 1px solid #fff;
-//             display: block;
-//             margin: 5px 0;
-//             padding: 4px;
-//             &:focus {
-//                 outline: black auto 5px;
-//             }
-//         }
-//         ::-webkit-input-placeholder {
-//             color: #fff;
-//         }
-//         button {
-//             border: 0;
-//             border-radius: 5px;
-//             cursor: pointer;
-//             height: 30px;
-//             margin: 10px auto;
-//             width: 5vw;
-//             &:focus {
-//                 outline: black auto 5px;
-//             }
-//         }
-//     }
-// }
+.reports-obj-block {
+    width: 100%;
+}
 
 #reports-object {
     font-family: sans-serif;
@@ -81,10 +12,15 @@
         font-family: sans-serif;
         text-align: center;
 
-        background: #000;
+        background: #111;
         display: inline-block;
-        margin: 0 1.5vw;
-        padding: 0 5px;
+        margin: 50px auto;
+        padding: 0 15px;
+        width: 100%;
+        &:hover {
+            margin: 0 auto !important;
+            transition: 1s;
+        }
         .nome-apostila {
             color: #fff;
             font-size: 2em;
@@ -99,11 +35,13 @@
 
             border-radius: 50%;
             background: #292b2e;
-            display: block;
-            height: 55px;
-            margin: 0 auto;
-            padding: 35px 5px 0 5px;
-            width: max-content;
+            display: flex;
+            height: 100px;
+            margin: 0 auto 20px;
+            width: 100px;
+            &__text {
+                margin: auto;
+            }
         }
         .feito-apostila,
         .falta-apostila,
@@ -112,8 +50,7 @@
             color: #999999;
 
             display: block;
-            margin: 20px 0 10px 0;
-            padding: 0 15px;
+            min-height: 50px;
         }
         .change-reports {
             color: #fff;
@@ -121,9 +58,9 @@
 
             background: #292b2e;
             border: 0;
-            border-radius: 20px;
             margin-bottom: 10px;
             padding: 10px;
+            width: 10vw;
         }
     }
 }
