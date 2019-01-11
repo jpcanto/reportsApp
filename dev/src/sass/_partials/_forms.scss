@@ -5,6 +5,16 @@
     top: 25%;
     position: absolute;
     width: 50vw;
+    .caixa-cadastro {
+        display: flex;
+        width: 100%;
+    }
+    .fecha-cadastro {
+        margin: 0;
+        position: absolute;
+        right: 0;
+        width: 5vw;
+    }
     p {
         color: #fff;
         text-align: center;
@@ -14,7 +24,8 @@
         
         background: #333;
         margin-bottom: 5vh;
-        padding: 3vh 0;
+        padding: 5vh 0;
+        width: 100%;
     }
     .form-cadastro {
         display: block;
@@ -22,7 +33,7 @@
         margin: 1vh auto;
         width: 30vw;
         &::placeholder {
-            color: #999;
+            color: #506380;
             text-align: center;
         }
     }
@@ -44,4 +55,5 @@ header.desativa,
 }
 .cadastro.ativa {
     display: block;
+    z-index: 2;
 }

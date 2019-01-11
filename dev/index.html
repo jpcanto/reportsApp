@@ -13,10 +13,13 @@
     <script src="src/js/mostra-cadastro.js"></script>
 </head>
 
-<body ng-app="reportsApp">
+<body ng-app="reportsApp" ng-controller="reportsObjCtrl">
 
     <section class="cadastro">
-        <p>Cadastre um novo relatório</p>
+        <div class="caixa-cadastro">
+            <button onclick="fechaCadastro()" class="fecha-cadastro">X</button>
+            <p>Cadastre um novo relatório</p>
+        </div>
         <input ng-model="daily.sprint" class="form-cadastro" type="text" placeholder="Sprint">
         <input ng-model="daily.apostila" class="form-cadastro" type="text" placeholder="Apostila">
         <input ng-model="daily.feito" class="form-cadastro" type="text" placeholder="Feito">
@@ -60,7 +63,7 @@
         <button onclick="mostraCadastro()" class="mostra-cadastro">Cadastrar novo relatório</button>
     </header>
 
-    <section ng-controller="reportsObjCtrl" class="main-content">
+    <section class="main-content">
 
         <div class="reports-obj-block">
             <div id="reports-object">
