@@ -53,6 +53,7 @@ gulp.task('minifyJs', function (){
 
 gulp.task('watch', function() {
     gulp.watch(configPath.src, ['sassTransformToCss']).on('change', browserSync.reload);
+    gulp.watch('./dev/src/js/**/*.js').on('change', browserSync.reload);
     gulp.watch('./dev/index.html').on('change', browserSync.reload);
 });
 
