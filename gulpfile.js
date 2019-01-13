@@ -22,7 +22,7 @@ gulp.task('build', ['sassTransformToCss', 'minifyJs', 'imgMinify'], function(){
         './dev/src/fonts/**/*',
         './dev/src/img/**/*',
         './dev/src/js/main-min.js',
-        './dev/src/utils/angular/**/*'
+        './dev/src/utils/angular/angular.min.js'
     ])
     .pipe(gulp.dest(configPath.dist));
 });

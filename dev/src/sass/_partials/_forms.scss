@@ -16,11 +16,11 @@
         }
     }
     .fecha-cadastro {
-        color: #fff;
+        color: #222;
         font-family: cursive;
         font-size: 2em;
 
-        background: #222;
+        background: #fff;
         border-radius: 50%;
         margin: 0;
         position: fixed;
@@ -48,14 +48,15 @@
         display: block;
         height: 3vh;
         margin: 1vh auto;
-        width: 10vw;
+        width: 100px;
         &:focus {
             color: darkcyan;
+            text-align: center;
 
             border-color: darkcyan;
             transition: 1s;
             outline: 0;
-            width: 30vw;
+            width: 80%;
         }
         &::placeholder {
             color: #506380;
