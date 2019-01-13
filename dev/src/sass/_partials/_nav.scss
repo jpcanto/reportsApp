@@ -5,8 +5,9 @@ nav {
     text-align: center;
     
     display: flex;
+    flex-wrap: wrap;
     .nav-box {
-        margin: auto;
+        margin: 20px auto;
     }
     select {
         color: #506380;
