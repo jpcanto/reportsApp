@@ -7,6 +7,6 @@
 caso seja utilizado localmente.
 
 ### Pré-requisitos:
-- O único pré requisito para rodar localmente em caso de falta de internet, é a simulação de um servidor. Para isso foi criada a task "serverSimulate".
+- O único pré requisito para rodar localmente, é a simulação de um servidor. Para isso foi criada a task "serverSimulate".
 - Para rodar a task, utilize o comando "npm run gulp serverSimulate".
 
