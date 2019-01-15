@@ -1,6 +1,6 @@
-angular.module("reportsApp").directive("register", function(){
+angular.module("reportsApp").directive("cadastro", function(){
     return {
-        templateUrl: "cadastro.html",
+        templateUrl: "src/directives/cadastro.html",
         replace: true,
         restrict: "AE"
     };

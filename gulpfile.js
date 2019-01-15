@@ -38,9 +38,7 @@ gulp.task('serverSimulate', ['watch'], function() {
 
 gulp.task('sassTransformToCss', function() {
     return gulp.src(configPath.src)
-        .pipe(sass({
-            outputStyle: 'compressed'
-        }))
+        .pipe(sass())
         .pipe(gulp.dest(configPath.dest));
 });
 
