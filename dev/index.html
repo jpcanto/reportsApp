@@ -11,11 +11,12 @@
     <script src="src/utils/angular/angular.min.js"></script>
     <script src="src/js/main.js"></script>
     <script src="src/js/mostra-cadastro.js"></script>
+    <script src="src/directives/cadastroCtrl.js"></script>
 </head>
 
 <body ng-app="reportsApp" ng-controller="reportsObjCtrl">
 
-    <section class="cadastro">
+    <!-- <section class="cadastro">
         <button onclick="fechaCadastro()" class="fecha-cadastro">X</button>
         <comp class="cadastro__caixa">
             <div class="cadastro__caixa--titulo">
@@ -29,7 +30,9 @@
             <input ng-model="daily.situacao" class="form-cadastro" type="text" placeholder="Situação">
             <button ng-click="cadastraRelatorio(daily)">Cadastrar</button>
         </comp>
-    </section>
+    </section> -->
+
+    <register></register>
 
     <header>
         <p class="title">Relatórios</p>

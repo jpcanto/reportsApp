@@ -1,0 +1,15 @@
+<section class="cadastro">
+    <button onclick="fechaCadastro()" class="fecha-cadastro">X</button>
+    <comp class="cadastro__caixa">
+        <div class="cadastro__caixa--titulo">
+            <p>Cadastre um novo relatório</p>
+        </div>
+        <input ng-model="daily.sprint" class="form-cadastro" type="text" placeholder="Sprint">
+        <input ng-model="daily.apostila" class="form-cadastro" type="text" placeholder="Apostila">
+        <input ng-model="daily.feito" class="form-cadastro" type="text" placeholder="Feito">
+        <input ng-model="daily.falta" class="form-cadastro" type="text" placeholder="Falta">
+        <input ng-model="daily.impedimentos" class="form-cadastro" type="text" placeholder="Impedimentos">
+        <input ng-model="daily.situacao" class="form-cadastro" type="text" placeholder="Situação">
+        <button ng-click="cadastraRelatorio(daily)">Cadastrar</button>
+    </comp>
+</section>
