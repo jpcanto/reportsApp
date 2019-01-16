@@ -13,6 +13,20 @@
     <script src="src/services/http-get.js"></script>
     <script src="src/js/mostra-cadastro.js"></script>
     <script src="src/directives/cadastroCtrl.js"></script>
+    <script src="src/utils/angularfire/dist/angularfire.js"></script>
+    <script src="src/utils/firebase/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+          apiKey: "AIzaSyBOUSi4PnpCCAL3FnVjBz3E_IZQk6d3wVk",
+          authDomain: "reportswebapp.firebaseapp.com",
+          databaseURL: "https://reportswebapp.firebaseio.com",
+          projectId: "reportswebapp",
+          storageBucket: "reportswebapp.appspot.com",
+          messagingSenderId: "592613138489"
+        };
+        firebase.initializeApp(config);
+      </script>
 </head>
 
 <body ng-app="reportsApp" ng-controller="reportsObjCtrl">

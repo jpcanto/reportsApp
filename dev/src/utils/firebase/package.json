@@ -1,0 +1,136 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "firebase",
+        "scope": null,
+        "escapedName": "firebase",
+        "name": "firebase",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\Users\\joao.canto\\Desktop\\RelatoriosApp"
+    ]
+  ],
+  "_from": "firebase@latest",
+  "_hasShrinkwrap": false,
+  "_id": "firebase@5.7.3",
+  "_inCache": true,
+  "_location": "/firebase",
+  "_nodeVersion": "8.12.0",
+  "_npmOperationalInternal": {
+    "host": "s3://npm-registry-packages",
+    "tmp": "tmp/firebase_5.7.3_1547158562569_0.45679239223446766"
+  },
+  "_npmUser": {
+    "name": "feiyang.chen",
+    "email": "feiyang.chen1@gmail.com"
+  },
+  "_npmVersion": "6.4.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "firebase",
+    "scope": null,
+    "escapedName": "firebase",
+    "name": "firebase",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/firebase/-/firebase-5.7.3.tgz",
+  "_shasum": "e6d1cccf85e65705876f714820532eb88a36bb45",
+  "_shrinkwrap": null,
+  "_spec": "firebase",
+  "_where": "C:\\Users\\joao.canto\\Desktop\\RelatoriosApp",
+  "author": {
+    "name": "Firebase",
+    "email": "firebase-support@google.com",
+    "url": "https://firebase.google.com/"
+  },
+  "browser": "dist/index.cjs.js",
+  "bugs": {
+    "url": "https://github.com/firebase/firebase-js-sdk/issues"
+  },
+  "dependencies": {
+    "@firebase/app": "0.3.6",
+    "@firebase/auth": "0.9.1",
+    "@firebase/database": "0.3.9",
+    "@firebase/firestore": "0.9.3",
+    "@firebase/functions": "0.3.4",
+    "@firebase/messaging": "0.3.8",
+    "@firebase/polyfill": "0.3.4",
+    "@firebase/storage": "0.2.5"
+  },
+  "description": "Firebase JavaScript library for web and Node.js",
+  "devDependencies": {
+    "rollup": "0.57.1",
+    "rollup-plugin-commonjs": "9.1.0",
+    "rollup-plugin-node-resolve": "3.3.0",
+    "rollup-plugin-typescript2": "0.12.0",
+    "rollup-plugin-uglify": "3.0.0",
+    "typescript": "2.8.1"
+  },
+  "directories": {},
+  "dist": {
+    "integrity": "sha512-2WAp8T2Lz2ND+ZvdzEqGcJuomLfGTgngCV67yJTzFxoKQMOfTB4Rm7Tyw6+Gen6QNwsZAQgKNv2Cze04H35ewA==",
+    "shasum": "e6d1cccf85e65705876f714820532eb88a36bb45",
+    "tarball": "https://registry.npmjs.org/firebase/-/firebase-5.7.3.tgz",
+    "fileCount": 54,
+    "unpackedSize": 5543031,
+    "npm-signature": "-----BEGIN PGP SIGNATURE-----\r\nVersion: OpenPGP.js v3.0.4\r\nComment: https://openpgpjs.org\r\n\r\nwsFcBAEBCAAQBQJcN8QjCRA9TVsSAnZWagAALbEP/0LMjnBeuXYNT//T8NxP\n/tSz5s8Vs5RKwWnfKcHrgk2N+2182wsIBwN2VjlnoO6rB27PfiIE7anZjJoE\ng9GKY9ES9SuLebPDILVCx4lzfvliyZA9L4Vv/xR0tVea/KvOfLMG/yulbYEB\nUoN7sIUYwTUa5lv6h6XL5gVm0aRB7RmlVfC1o3FM/uMbtZaVK6SR1BmJhblK\ntxxu5YVA8g6XUI0J4kwEGngoZ7WElTsgxHMJB7KinUe23cOHUrRJwXRDk9M5\n4QpHcrgX+DfLNKRBloQxFbTINBnvDFyR42pyCi1YL0ITIRuPwR9MkzPsf/Ua\nBIHK/kkb5SGuljZ0ul7xXt+PvGHgXDwf4iQLOlIfKkO24ui5nBaQUGX8gS7A\nsVpM/e+hED1MYnX/6VNscNZuD/OZVoaLqX8G8BAuXTnjPiK28kldfFQbfetb\nVAk6+rYpi9sE4YMQ9GSF+ZlzhAKC0RAqAFvNlHQEV/yYOf1CItXe50Iw/WCP\n8AuoWp6O7j+p/0EPRBlGb8NbTHzLI5LewsJgvmyETT0u5PqIl2cP2r3ycC0s\nsSZ1mnh3flCj+n/SminhQsEVtFrYmgU3E8Mk1qibSZxwdTHr6RcQ28ypagsa\ntFduScDHkxU6ActkGKbP0ehRxYBLb/OuhOj7YWks/43mczuqBqdgJI7sb0YY\n3+iT\r\n=yCpw\r\n-----END PGP SIGNATURE-----\r\n"
+  },
+  "homepage": "https://firebase.google.com/",
+  "keywords": [
+    "authentication",
+    "database",
+    "Firebase",
+    "firebase",
+    "realtime",
+    "storage"
+  ],
+  "license": "Apache-2.0",
+  "main": "dist/index.node.cjs.js",
+  "maintainers": [
+    {
+      "name": "chholland",
+      "email": "chholland@google.com"
+    },
+    {
+      "name": "feiyang.chen",
+      "email": "feiyang.chen1@gmail.com"
+    },
+    {
+      "name": "firebase-ops",
+      "email": "operations+plainlogo@firebase.com"
+    },
+    {
+      "name": "hiranya911",
+      "email": "hiranya911@gmail.com"
+    },
+    {
+      "name": "vikrum",
+      "email": "vsnijjar+npmjs@gmail.com"
+    }
+  ],
+  "module": "dist/index.esm.js",
+  "name": "firebase",
+  "optionalDependencies": {},
+  "react-native": "dist/index.rn.cjs.js",
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/firebase/firebase-js-sdk.git"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "prepare": "npm run build"
+  },
+  "typings": "index.d.ts",
+  "version": "5.7.3"
+}
