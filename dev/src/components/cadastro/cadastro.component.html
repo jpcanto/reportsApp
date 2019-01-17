@@ -1,0 +1,15 @@
+<section class="cadastro">
+    <button onclick="fechaCadastro()" class="fecha-cadastro">X</button>
+    <comp class="cadastro__caixa">
+        <div class="cadastro__caixa--titulo">
+            <p>Cadastre um novo relatório</p>
+        </div>
+        <input ng-model="vm.apostila.sprint" class="form-cadastro" type="text" placeholder="Sprint">
+        <input ng-model="vm.apostila.apostila" class="form-cadastro" type="text" placeholder="Apostila">
+        <input ng-model="vm.apostila.feito" class="form-cadastro" type="text" placeholder="Feito">
+        <input ng-model="vm.apostila.falta" class="form-cadastro" type="text" placeholder="Falta">
+        <input ng-model="vm.apostila.impedimentos" class="form-cadastro" type="text" placeholder="Impedimentos">
+        <input ng-model="vm.apostila.situacao" class="form-cadastro" type="text" placeholder="Situação">
+        <button ng-click="vm.cadastraRelatorio()">Cadastrar</button>
+    </comp>
+</section>
