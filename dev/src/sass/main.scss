@@ -1,9 +1,8 @@
 @import '_partials/variables',
 '_partials/header',
-'_partials/contents',
 '_partials/nav',
-'_partials/rep-obj',
-'../directives/cadastro.scss';
+'../components/cadastro/cadastro.component.scss',
+'../components/listagem-apostilas/listagem-apostilas.component.scss';
 
 body {
     background: url(../img/bg.jpg);

@@ -5,7 +5,7 @@ angular
     .module("reportsApp")
     .controller("listagemApostilasController", listagemApostilasController)
     .component("listagemApostilas", {
-        templateUrl: 'src/components/listagem-apostilas.controller.html',
+        templateUrl: 'src/components/listagem-apostilas.component.html',
         controller: listagemApostilasController,
         controllerAs: 'vm'
     });
