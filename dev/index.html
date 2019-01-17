@@ -9,10 +9,10 @@
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/main.css">
     <script src="src/utils/angular/angular.min.js"></script>
-    <script src="src/js/main.js"></script>
+    <script src="src/js/controllers/reportsObjCtrl.js"></script>
     <script src="src/services/getDaily.js"></script>
-    <script src="src/js/mostra-cadastro.js"></script>
     <script src="src/directives/cadastroCtrl.js"></script>
+    <script src="src/js/mostra-cadastro.js"></script>
     <script src="src/utils/angularfire/dist/angularfire.js"></script>
     <script src="src/utils/firebase/firebase.js"></script>
     <script>
@@ -71,7 +71,7 @@
 
         <div class="reports-obj-block">
             <div id="reports-object">
-                <div class="reports-box" ng-repeat="value in dailyArray | filter:sprint | filter:apostila | filter:feito | filter:falta | filter:impedimentos | filter:situacao">
+                <div class="reports-box" ng-repeat="value in apostilaArray | filter:sprint | filter:apostila | filter:feito | filter:falta | filter:impedimentos | filter:situacao">
                     <div class="nome-apostila">{{value.apostila}}</div>
                     <div class="sprint-apostila">
                         <div class="sprint-apostila__text">{{value.sprint}}</div>
