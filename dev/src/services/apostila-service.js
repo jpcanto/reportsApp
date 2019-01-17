@@ -13,7 +13,7 @@
         vm.getApostila = getApostila;
 
         function getApostila() {
-            return $http.get('https://reportswebapp.firebaseio.com/dailyObject').then(function(response){
+            return $http.get('https://reportswebapp.firebaseio.com/apostilaObject').then(function(response){
                 return response.data;
             });
         };

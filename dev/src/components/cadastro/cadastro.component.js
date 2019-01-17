@@ -5,14 +5,14 @@
         .module("reportsApp")
         .controller("cadastroController", cadastroController)
         .component("cadastro", {
-            templateUrl: 'src/components/cadastro.component.html',
+            templateUrl: 'src/components/cadastro/cadastro.component.html',
             controller: cadastroController,
             controllerAs: 'vm'
         });
 
-    cadastroController.$inject = [];
+    cadastroController.$inject = ['$firebaseArray'];
 
-    function cadastroController() {
+    function cadastroController($firebaseArray) {
 
         var vm = this;
 

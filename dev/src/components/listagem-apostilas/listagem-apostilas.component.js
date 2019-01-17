@@ -5,7 +5,7 @@ angular
     .module("reportsApp")
     .controller("listagemApostilasController", listagemApostilasController)
     .component("listagemApostilas", {
-        templateUrl: 'src/components/listagem-apostilas.component.html',
+        templateUrl: 'src/components/listagem-apostilas/listagem-apostilas.component.html',
         controller: listagemApostilasController,
         controllerAs: 'vm'
     });
@@ -16,13 +16,13 @@ angular
 
     var vm = this;
      
-     vm.getApostila = function(){
+    vm.getApostila = function(){
         apostilaService.getApostila().then(
             function(response){
-              vm.apostilaArray = response;
+                vm.apostilaArray = response;
             }
         )
-     }
+    }
 
 };
 

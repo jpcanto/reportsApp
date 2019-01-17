@@ -45,7 +45,7 @@ nav {
     padding: 10px 0; }
 
 .cadastro {
-  display: block;
+  display: none;
   height: 100%;
   width: 100%; }
   .cadastro .cadastro__caixa {
