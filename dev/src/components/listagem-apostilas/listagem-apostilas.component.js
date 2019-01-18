@@ -10,19 +10,15 @@ angular
         controllerAs: 'vm'
     });
 
-    listagemApostilasController.$inject = ['$firebaseArray', 'apostilaService'];
+    listagemApostilasController.$inject = ['$firebaseArray'];
 
-    function listagemApostilasController($firebaseArray, apostilaService){
+    function listagemApostilasController($firebaseArray){
 
     var vm = this;
-     
-    vm.getApostila = function(){
-        apostilaService.getApostila().then(
-            function(response){
-                vm.apostilaArray = response;
-            }
-        )
-    }
+
+    var ref = firebase.database().ref("apostilaObject");
+    vm.apostilaArray = $firebaseArray(ref);
+    console.log("uhul, a chamada do banco funfou galerê !!");
 
 };
 
