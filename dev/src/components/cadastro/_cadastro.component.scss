@@ -3,7 +3,7 @@
     height: 100%;
     width: 100%;
     .cadastro__caixa {
-        background: #111;
+        background: palegoldenrod;
         display: block;
         left: 15%;
         position: fixed;
@@ -43,7 +43,7 @@
     }
     .form-cadastro {
         border: 0;
-        border-bottom: 2px solid #506380;
+        border-bottom: 2px solid lightsalmon;
         background: transparent;
         display: block;
         height: 3vh;
@@ -59,7 +59,7 @@
             width: 80%;
         }
         &::placeholder {
-            color: #506380;
+            color: lightsalmon;
             text-align: center;
         }
     }

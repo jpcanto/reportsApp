@@ -49,7 +49,7 @@ nav {
   height: 100%;
   width: 100%; }
   .cadastro .cadastro__caixa {
-    background: #111;
+    background: palegoldenrod;
     display: block;
     left: 15%;
     position: fixed;
@@ -83,7 +83,7 @@ nav {
     width: 100%; }
   .cadastro .form-cadastro {
     border: 0;
-    border-bottom: 2px solid #506380;
+    border-bottom: 2px solid lightsalmon;
     background: transparent;
     display: block;
     height: 3vh;
@@ -97,7 +97,7 @@ nav {
       outline: 0;
       width: 80%; }
     .cadastro .form-cadastro::placeholder {
-      color: #506380;
+      color: lightsalmon;
       text-align: center; }
   .cadastro button {
     color: #fff;
@@ -165,7 +165,7 @@ header.desativa,
     #reports-object .reports-box .situacao-apostila {
       color: #999999;
       display: block;
-      min-height: 50px; }
+      margin-bottom: 15px; }
     #reports-object .reports-box .change-reports {
       color: #fff;
       font-weight: bold;
@@ -173,6 +173,12 @@ header.desativa,
       border: 0;
       margin-bottom: 10px;
       padding: 10px 40px; }
+    #reports-object .reports-box__title {
+      color: #506380;
+      border-bottom: 2px solid;
+      margin: 10px auto;
+      padding: 5px;
+      width: max-content; }
 
 body {
   background: url(../img/bg.jpg);

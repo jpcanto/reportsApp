@@ -57,7 +57,7 @@
             color: #999999;
 
             display: block;
-            min-height: 50px;
+            margin-bottom: 15px;
         }
         .change-reports {
             color: #fff;
@@ -67,6 +67,14 @@
             border: 0;
             margin-bottom: 10px;
             padding: 10px 40px;
+        }
+        &__title {
+            color: #506380;
+
+            border-bottom: 2px solid;
+            margin: 10px auto;
+            padding: 5px;
+            width: max-content;
         }
     }
 }
