@@ -4,28 +4,22 @@
         <div class="nav-box">
             <p>Sprint</p>
             <select ng-model="sprint" name="sprint" class="selectFilter">
-                <option value="">Selecione uma sprint</option>
-                <option value="Semana 01">Semana 01</option>
-                <option value="Semana 02">Semana 02</option>
-                <option value="Semana 03">Semana 03</option>
+                <option value="">Filtro sprint</option>
+                <option value="{{value.sprint}}" ng-repeat="value in vm.apostilaArray">{{value.sprint}}</option>
             </select>
         </div>
         <div class="nav-box">
             <p>Apostila</p>
             <select ng-model="apostila" name="apostila" class="selectFilter">
-                <option value="">Selecione uma apostila</option>
-                <option value="Cir 01">Cir 01</option>
-                <option value="Nef 01">Nef 01</option>
-                <option value="Med-Cir 01">Med-Cir 01</option>
-                <option value="Gin 01">Gin 01</option>
+                <option value="">Filtro apostila</option>
+                <option value="{{value.apostila}}" ng-repeat="value in vm.apostilaArray">{{value.apostila}}</option>
             </select>
         </div>
         <div class="nav-box">
             <p>Situação</p>
             <select ng-model="situacao" name="situacao" class="selectFilter">
-                <option value="">Selecione uma situação</option>
-                <option value="T2, fluxo diagramação">T2, fluxo diagramação</option>
-                <option value="Na rua">Na rua</option>
+                <option value="">Filtro situação</option>
+                <option value="{{value.situacao}}" ng-repeat="value in vm.apostilaArray">{{value.situacao}}</option>
             </select>
         </div>
     </nav>

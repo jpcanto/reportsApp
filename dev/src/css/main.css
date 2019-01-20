@@ -144,9 +144,6 @@ header.desativa,
     margin: 50px auto;
     padding: 0 15px;
     width: 40%; }
-    #reports-object .reports-box:hover {
-      margin: 0 auto !important;
-      transition: 1s; }
     #reports-object .reports-box .nome-apostila {
       color: #fff;
       font-size: 2em;
@@ -188,3 +185,6 @@ header.desativa,
 body {
   background: url(../img/bg.jpg);
   background-size: cover; }
+
+button {
+  cursor: pointer; }
