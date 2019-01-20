@@ -1,11 +1,12 @@
 header {
   font-family: sans-serif;
-  background: #111;
-  padding: 3vh 0; }
+  background: transparent; }
   header .title {
     color: #fff;
     font-size: 3em;
-    text-align: center; }
+    text-align: center;
+    padding: 5vh 0;
+    background: url("../img/bg-header.jpg"); }
   header .mostra-cadastro {
     color: #fff;
     font-weight: bold;
@@ -16,6 +17,10 @@ header {
     margin: 5vh auto 0;
     margin-bottom: 10px;
     padding: 2vh 10vw; }
+
+hr {
+  border-top: 3px solid royalblue;
+  margin: 0 10%; }
 
 nav {
   color: #fff;
