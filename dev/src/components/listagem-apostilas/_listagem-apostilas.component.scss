@@ -20,6 +20,7 @@
         text-align: center;
 
         background: #111;
+        border: 5px solid;
         display: inline-block;
         margin: 50px auto;
         padding: 0 15px;
@@ -35,9 +36,12 @@
         }
         .sprint-apostila {
             color: #fff;
+            font-family: cursive;
+            font-size: 1.5em;
 
+            border: 2px solid;
             border-radius: 50%;
-            background: #292b2e;
+            background: #0a263e;
             display: flex;
             height: 100px;
             margin: 0 auto 20px;
@@ -65,10 +69,11 @@
             padding: 10px 40px;
         }
         &__title {
-            color: #506380;
+            color: #5aa6dc;
+            font-size: 1.3em;
 
-            border-bottom: 2px solid;
             margin: 10px auto;
+            opacity: .5;
             padding: 5px;
             width: max-content;
         }
