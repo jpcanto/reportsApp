@@ -33,6 +33,16 @@
             )
         };
 
+        vm.activateX = function() {
+            vm.activate;
+            if(vm.activate == true) {
+                vm.activate = false;
+            } else {
+                vm.activate = true;
+            }
+            console.log(vm.activate);
+        };
+
     }
 
 
