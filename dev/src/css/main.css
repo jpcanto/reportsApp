@@ -102,14 +102,16 @@ nav {
 
 .mostra-cadastro {
   color: #fff;
+  font-size: 1.3em;
   font-weight: bold;
   text-align: center;
   background: #292b2e;
-  border: 0;
+  border: 5px solid #000;
+  border-radius: 20px;
   display: flex;
   margin: 5vh auto 0;
   margin-bottom: 10px;
-  padding: 2vh 10vw; }
+  padding: 2vh 5vw; }
 
 .main-content {
   display: flex;
