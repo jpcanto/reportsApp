@@ -7,6 +7,7 @@
 caso seja utilizado localmente.
 
 ### Pré-requisitos:
-- O único pré requisito para rodar localmente, é a simulação de um servidor. Para isso foi criada a task "serverSimulate".
+- Caso o projeto seja acessado localmente, sem acesso por algum host com suporte a angularJS, é necessário a simulação de um servidor, para o correto funcionamento de algumas funções, como crregar as informações do banco.
+- Para acessar localmente o projeto, foi criada a task "serverSimulate" com gulp.
 - Para rodar a task, utilize o comando "npm run gulp serverSimulate".
 

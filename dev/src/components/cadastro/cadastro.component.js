@@ -15,6 +15,7 @@
     function cadastroController($firebaseArray) {
 
         var vm = this;
+        vm.activate = false;
 
         vm.cadastraRelatorio = function() {
             var ref = firebase.database().ref("apostilaObject");
@@ -34,13 +35,7 @@
         };
 
         vm.activateX = function() {
-            vm.activate;
-            if(vm.activate == true) {
-                vm.activate = false;
-            } else {
-                vm.activate = true;
-            }
-            console.log(vm.activate);
+            vm.activate = !vm.activate;
         };
 
     }
