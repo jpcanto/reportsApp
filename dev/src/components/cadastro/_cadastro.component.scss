@@ -81,20 +81,35 @@
         text-align: center;
 
         padding: 5vh 0;
-        background: url('../img/bg-header.jpg');
+    }
+    &__box{
+        display: flex;
+        margin: 0 auto;
+        width: fit-content;
+        &--title {
+            color: #fff;
+            font-family: sans-serif;
+            font-size: 1.1em;
+
+            align-self: center;
+            display: block;
+        }
+        button {
+            margin-left: 10px;
+        }
     }
 }
 .mostra-cadastro {
     color: #fff;
-    font-size: 1.3em;
-    font-weight: bold;
-    text-align: center;
+    font-size: 1.55em;
 
-    background: #292b2e;
-    border: 5px solid #000;
-    border-radius: 20px;
+    border-radius: 30px;
     display: flex;
-    margin: 5vh auto 0;
-    margin-bottom: 10px;
-    padding: 2vh 5vw;
+    height: 60px;
+    margin: auto;
+    transition: background-color 0.3s, color 0.3s;
+    width: 60px;
+    &:hover {
+        background-color: #d07373;
+    }
 }

@@ -12,8 +12,9 @@ nav {
   nav .nav-box {
     margin: 20px auto; }
   nav select {
-    color: #506380;
+    color: #603571;
     font-family: sans-serif;
+    font-size: 1.2em;
     background: transparent;
     border: 0;
     border-bottom: 2px solid;
@@ -97,21 +98,32 @@ nav {
   color: #fff;
   font-size: 3em;
   text-align: center;
-  padding: 5vh 0;
-  background: url("../img/bg-header.jpg"); }
+  padding: 5vh 0; }
+
+.presentation__box {
+  display: flex;
+  margin: 0 auto;
+  width: fit-content; }
+  .presentation__box--title {
+    color: #fff;
+    font-family: sans-serif;
+    font-size: 1.1em;
+    align-self: center;
+    display: block; }
+  .presentation__box button {
+    margin-left: 10px; }
 
 .mostra-cadastro {
   color: #fff;
-  font-size: 1.3em;
-  font-weight: bold;
-  text-align: center;
-  background: #292b2e;
-  border: 5px solid #000;
-  border-radius: 20px;
+  font-size: 1.55em;
+  border-radius: 30px;
   display: flex;
-  margin: 5vh auto 0;
-  margin-bottom: 10px;
-  padding: 2vh 5vw; }
+  height: 60px;
+  margin: auto;
+  transition: background-color 0.3s, color 0.3s;
+  width: 60px; }
+  .mostra-cadastro:hover {
+    background-color: #d07373; }
 
 .main-content {
   display: flex;
@@ -129,58 +141,68 @@ nav {
   width: 100%; }
   #reports-object .reports-box {
     font-family: sans-serif;
-    text-align: center;
-    background: #111;
-    border: 5px solid;
-    display: inline-block;
-    margin: 50px auto;
-    padding: 0 15px;
+    background-color: white;
+    border: 1px solid #C8C8C8;
+    border-radius: 10px;
+    margin: auto;
+    opacity: .8;
     width: 40%; }
     #reports-object .reports-box .nome-apostila {
-      color: #fff;
+      color: #909090;
       font-size: 2em;
-      border-bottom: 1px solid #908f8f;
-      display: block;
-      margin-bottom: 10px;
-      padding: 10px; }
+      background: #E0E0E0;
+      padding: 20px; }
     #reports-object .reports-box .sprint-apostila {
-      color: #fff;
-      font-family: cursive;
+      color: white;
       font-size: 1.5em;
-      border: 2px solid;
-      border-radius: 50%;
-      background: #0a263e;
-      display: flex;
-      height: 100px;
-      margin: 0 auto 20px;
-      width: 100px; }
+      font-weight: 700;
+      display: block;
+      background: #53455b;
+      margin: auto;
+      padding: 20px;
+      position: relative;
+      overflow: hidden;
+      transition: all 0.3s ease-in-out; }
+      #reports-object .reports-box .sprint-apostila::before {
+        background: white;
+        content: '';
+        position: absolute;
+        height: 220%;
+        opacity: .3;
+        transform: rotate(50deg);
+        width: 100%; }
       #reports-object .reports-box .sprint-apostila__text {
         margin: auto; }
     #reports-object .reports-box .feito-apostila,
     #reports-object .reports-box .falta-apostila,
     #reports-object .reports-box .impedimentos-apostila,
     #reports-object .reports-box .situacao-apostila {
-      color: #999999;
-      display: block;
-      margin-bottom: 15px; }
+      text-align: center;
+      border-bottom: 1px solid #C8C8C8;
+      padding: 15px; }
     #reports-object .reports-box .change-reports {
       color: #fff;
       font-weight: bold;
       background: #292b2e;
       border: 0;
-      margin-bottom: 10px;
-      padding: 10px 40px; }
-    #reports-object .reports-box__title {
-      color: #5aa6dc;
-      font-size: 1.3em;
+      display: block;
       margin: 10px auto;
+      padding: 10px 40px;
+      transition: all 0.3s ease-in-out; }
+      #reports-object .reports-box .change-reports:hover {
+        background-color: #53455b; }
+    #reports-object .reports-box__title {
+      color: #53455b;
+      font-size: 1.3em;
+      font-weight: 700;
+      margin: 10px 0;
       opacity: .5;
       padding: 5px;
       width: max-content; }
 
 body {
-  background: url(../img/bg.jpg);
-  background-size: cover; }
+  background-color: #5c5463;
+  background-image: radial-gradient(circle at top, #33263a 0%, #b3a4c7 40%); }
 
 button {
   cursor: pointer; }

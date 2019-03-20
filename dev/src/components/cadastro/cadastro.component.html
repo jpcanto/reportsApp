@@ -1,6 +1,9 @@
 <section class="presentation">
     <p class="title">Relatórios</p>
-    <button ng-click="vm.activateX()" class="mostra-cadastro">Cadastrar novo relatório</button>
+    <div class="presentation__box">
+        <p class="presentation__box--title">Cadastrar novo relatório</p>
+        <button ng-click="vm.activateX()" class="mostra-cadastro"></button>
+    </div>
 </section>
 <section class="cadastro" ng-show="vm.activate">
     <button ng-click="vm.activateX()" class="fecha-cadastro">X</button>

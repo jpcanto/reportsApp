@@ -5,8 +5,8 @@
 '../components/listagem-apostilas/listagem-apostilas.component.scss';
 
 body {
-    background: url(../img/bg.jpg);
-    background-size: cover;
+    background-color: #5c5463;
+    background-image: radial-gradient(circle at top, #33263a 0%, #b3a4c7 40%);
 }
 button {
     cursor: pointer;

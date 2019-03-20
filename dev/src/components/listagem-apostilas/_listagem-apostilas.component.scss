@@ -17,35 +17,41 @@
     width: 100%;
     .reports-box {
         font-family: sans-serif;
-        text-align: center;
 
-        background: #111;
-        border: 5px solid;
-        display: inline-block;
-        margin: 50px auto;
-        padding: 0 15px;
+        background-color: white;
+        border: 1px solid #C8C8C8;
+        border-radius: 10px;
+        margin: 10px auto;
+        opacity: .8;
         width: 40%;
         .nome-apostila {
-            color: #fff;
+            color: #909090;
             font-size: 2em;
-
-            border-bottom: 1px solid #908f8f;
-            display: block;
-            margin-bottom: 10px;
-            padding: 10px;
+            
+            background: #E0E0E0;
+            padding: 20px;
         }
         .sprint-apostila {
-            color: #fff;
-            font-family: cursive;
+            color: white;
             font-size: 1.5em;
-
-            border: 2px solid;
-            border-radius: 50%;
-            background: #0a263e;
-            display: flex;
-            height: 100px;
-            margin: 0 auto 20px;
-            width: 100px;
+            font-weight: 700;
+            
+            display: block;
+            background: #53455b;
+            margin: auto;
+            padding: 20px;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease-in-out;
+            &::before {
+                background: white;
+                content: '';
+                position: absolute;
+                height: 220%;
+                opacity: .3;
+                transform: rotate(50deg);
+                width: 100%;
+            }
             &__text {
                 margin: auto;
             }
@@ -54,10 +60,10 @@
         .falta-apostila,
         .impedimentos-apostila,
         .situacao-apostila {
-            color: #999999;
+            text-align: center;
 
-            display: block;
-            margin-bottom: 15px;
+            border-bottom: 1px solid #C8C8C8;
+            padding: 15px;
         }
         .change-reports {
             color: #fff;
@@ -65,14 +71,20 @@
 
             background: #292b2e;
             border: 0;
-            margin-bottom: 10px;
+            display: block;
+            margin: 10px auto;
             padding: 10px 40px;
+            transition: all 0.3s ease-in-out;
+            &:hover {
+                background-color: #53455b;
+            }
         }
         &__title {
-            color: #5aa6dc;
+            color: #53455b;
             font-size: 1.3em;
+            font-weight: 700;
 
-            margin: 10px auto;
+            margin: 10px 0;
             opacity: .5;
             padding: 5px;
             width: max-content;
