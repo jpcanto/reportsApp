@@ -144,9 +144,12 @@ nav {
     background-color: white;
     border: 1px solid #C8C8C8;
     border-radius: 10px;
-    margin: auto;
+    margin: 10px auto;
     opacity: .8;
+    transition: transform 0.8s;
     width: 40%; }
+    #reports-object .reports-box.ng-leave-active {
+      transform: scale(0.1); }
     #reports-object .reports-box .nome-apostila {
       color: #909090;
       font-size: 2em;

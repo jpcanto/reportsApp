@@ -23,7 +23,11 @@
         border-radius: 10px;
         margin: 10px auto;
         opacity: .8;
+        transition: transform 0.8s;
         width: 40%;
+        &.ng-leave-active {
+            transform: scale(0.1);
+        }
         .nome-apostila {
             color: #909090;
             font-size: 2em;
