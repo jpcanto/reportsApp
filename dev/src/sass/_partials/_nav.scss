@@ -1,36 +1,25 @@
 nav {
-    color: #fff;
-    font-family: sans-serif;
-    font-size: 1.2em;
-    text-align: center;
-    
     display: flex;
-    flex-wrap: wrap;
-    .nav-box {
-        margin: 20px auto;
+    flex-direction: column;
+    height: auto;
+    img {
+        height: 100px;
+        width: 100px;
+        margin: 10px auto;
     }
-    select {
-        color: #603571;
+    .nav-wrapper {
+        margin: auto;
+    }
+    .title {
+        color: #26a69a;
+        font-family: fantasy;
+        font-size: 2em;
+
+        margin: auto;
+        text-decoration: underline;
+    }
+    li {
         font-family: sans-serif;
-        font-size: 1.2em;
-
-        background: transparent;
-        border: 0;
-        border-bottom: 2px solid;
-        height: 30px;
-        &:focus {
-            outline: 0;
-        }
-    }
-    button {
-        color: #fff;
-
-        cursor: pointer;
-        background: linear-gradient(#99a2ff, #0010B2);
-        border: 1px solid #fff;
-        margin-top: 30px;
-    }
-    p {
-        padding: 10px 0;
+        font-weight: 600;
     }
 }

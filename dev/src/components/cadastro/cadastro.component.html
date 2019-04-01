@@ -1,16 +1,13 @@
 <section class="presentation">
-    <p class="title">Relatórios</p>
+    <p class="title">Relatórios de Apostilas</p>
     <div class="presentation__box">
-        <p class="presentation__box--title">Cadastrar novo relatório</p>
-        <button ng-click="vm.activateX()" class="mostra-cadastro">
-            <span></span>
-        </button>
+        <a ng-click="vm.activateX()" class="btn-floating btn-large waves-effect waves-light red"><i
+                class="material-icons">add</i></a>
     </div>
 </section>
 <section class="cadastro" ng-show="vm.activate">
-    <button ng-click="vm.activateX()" class="fecha-cadastro">X</button>
-    <comp class="cadastro__caixa">
-        <div class="cadastro__caixa--titulo">
+    <comp class="cadastro__caixa grey darken-2">
+        <div class="cadastro__caixa--titulo grey darken-3">
             <p>Cadastre um novo relatório</p>
         </div>
         <input ng-model="vm.apostila.sprint" class="form-cadastro" type="text" placeholder="Sprint">
@@ -19,6 +16,11 @@
         <input ng-model="vm.apostila.falta" class="form-cadastro" type="text" placeholder="Falta">
         <input ng-model="vm.apostila.impedimentos" class="form-cadastro" type="text" placeholder="Impedimentos">
         <input ng-model="vm.apostila.situacao" class="form-cadastro" type="text" placeholder="Situação">
-        <button ng-click="vm.cadastraRelatorio()">Cadastrar</button>
+        <div class="buttons">
+            <a ng-click="vm.cadastraRelatorio()" class="waves-effect waves-light btn-small green darken-4"><i
+                    class="material-icons left">done</i>Salvar</a>
+            <a ng-click="vm.activateX()" class="waves-effect waves-light btn-small red darken-4"><i
+                    class="material-icons left">do_not_disturb</i>Encerrar</a>
+        </div>
     </comp>
 </section>

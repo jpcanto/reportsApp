@@ -3,38 +3,40 @@
   background: transparent; }
 
 nav {
-  color: #fff;
-  font-family: sans-serif;
-  font-size: 1.2em;
-  text-align: center;
   display: flex;
-  flex-wrap: wrap; }
-  nav .nav-box {
-    margin: 20px auto; }
-  nav select {
-    color: #603571;
+  flex-direction: column;
+  height: auto; }
+  nav img {
+    height: 100px;
+    width: 100px;
+    margin: 10px auto; }
+  nav .nav-wrapper {
+    margin: auto; }
+  nav .title {
+    color: #26a69a;
+    font-family: fantasy;
+    font-size: 2em;
+    margin: auto;
+    text-decoration: underline; }
+  nav li {
     font-family: sans-serif;
-    font-size: 1.2em;
-    background: transparent;
-    border: 0;
-    border-bottom: 2px solid;
-    height: 30px; }
-    nav select:focus {
-      outline: 0; }
-  nav button {
+    font-weight: 600; }
+
+.presentation {
+  display: flex;
+  flex-direction: column;
+  margin: 30px 0; }
+  .presentation .title {
     color: #fff;
-    cursor: pointer;
-    background: linear-gradient(#99a2ff, #0010B2);
-    border: 1px solid #fff;
-    margin-top: 30px; }
-  nav p {
-    padding: 10px 0; }
+    font-size: 3em;
+    margin: auto; }
+  .presentation .presentation__box {
+    margin: auto; }
 
 .cadastro {
   height: 100%;
   width: 100%; }
   .cadastro .cadastro__caixa {
-    background: palegoldenrod;
     display: block;
     left: 15%;
     position: fixed;
@@ -42,170 +44,49 @@ nav {
     width: 70vw;
     z-index: 2; }
     .cadastro .cadastro__caixa--titulo {
+      color: #fff;
+      font-family: sans-serif;
+      font-size: 3em;
+      font-weight: 700;
       display: flex;
+      height: 15vh;
       width: 100%; }
-  .cadastro .fecha-cadastro {
-    color: #222;
-    font-family: cursive;
-    font-size: 2em;
-    background: #fff;
-    border-radius: 50%;
-    margin: 0;
-    position: fixed;
-    right: 0;
-    top: 0;
-    width: 60px;
-    z-index: 2; }
-  .cadastro p {
-    color: #fff;
-    text-align: center;
-    font-family: sans-serif;
-    font-weight: bold;
-    text-transform: uppercase;
-    background: #333;
-    margin-bottom: 5vh;
-    padding: 5vh 0;
-    width: 100%; }
-  .cadastro .form-cadastro {
-    border: 0;
-    border-bottom: 2px solid lightsalmon;
-    background: transparent;
-    display: block;
-    height: 3vh;
-    margin: 1vh auto;
-    width: 100px; }
-    .cadastro .form-cadastro:focus {
-      color: darkcyan;
-      text-align: center;
-      border-color: darkcyan;
-      transition: 1s;
-      outline: 0;
-      width: 80%; }
-    .cadastro .form-cadastro::placeholder {
-      color: lightsalmon;
-      text-align: center; }
-  .cadastro button {
-    color: #fff;
-    font-weight: bold;
-    background: #292b2e;
-    border: 0;
-    display: block;
-    margin: 10px auto;
-    padding: 10px;
-    width: 120px; }
-
-.presentation .title {
-  color: #fff;
-  font-size: 3em;
-  text-align: center;
-  padding: 5vh 0; }
-
-.presentation__box {
-  display: flex;
-  margin: 0 auto;
-  width: fit-content; }
-  .presentation__box--title {
-    color: #fff;
-    font-family: sans-serif;
-    font-size: 1.1em;
-    align-self: center;
-    display: block; }
-  .presentation__box button {
-    margin-left: 10px; }
-
-.mostra-cadastro {
-  color: #fff;
-  font-size: 1.55em;
-  border-radius: 30px;
-  display: flex;
-  height: 60px;
-  margin: auto;
-  transition: background-color 0.3s, color 0.3s;
-  width: 60px; }
-  .mostra-cadastro:hover {
-    background-color: #d07373; }
+      .cadastro .cadastro__caixa--titulo p {
+        margin: auto; }
+    .cadastro .cadastro__caixa .form-cadastro {
+      padding-left: 10px;
+      width: -webkit-fill-available; }
+    .cadastro .cadastro__caixa .buttons {
+      display: flex;
+      margin: 20px 0; }
+      .cadastro .cadastro__caixa .buttons a {
+        margin: auto; }
 
 .main-content {
-  display: flex;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1em;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  display: flex;
+  margin-bottom: 20vh; }
 
 .reports-obj-block {
   width: 100%; }
 
-#reports-object {
-  font-family: sans-serif;
-  display: flex;
-  flex-wrap: wrap;
-  margin: 0 auto;
-  width: 100%; }
-  #reports-object .reports-box {
-    font-family: sans-serif;
-    background-color: white;
-    border: 1px solid #C8C8C8;
-    border-radius: 10px;
-    margin: 10px auto;
-    opacity: .8;
-    transition: transform 0.8s;
-    width: 40%; }
-    #reports-object .reports-box.ng-leave-active {
-      transform: scale(0.1); }
-    #reports-object .reports-box .nome-apostila {
-      color: #909090;
-      font-size: 2em;
-      background: #E0E0E0;
-      padding: 20px; }
-    #reports-object .reports-box .sprint-apostila {
-      color: white;
-      font-size: 1.5em;
-      font-weight: 700;
-      display: block;
-      background: #53455b;
-      margin: auto;
-      padding: 20px;
-      position: relative;
-      overflow: hidden;
-      transition: all 0.3s ease-in-out; }
-      #reports-object .reports-box .sprint-apostila::before {
-        background: white;
-        content: '';
-        position: absolute;
-        height: 220%;
-        opacity: .3;
-        transform: rotate(50deg);
-        width: 100%; }
-      #reports-object .reports-box .sprint-apostila__text {
-        margin: auto; }
-    #reports-object .reports-box .feito-apostila,
-    #reports-object .reports-box .falta-apostila,
-    #reports-object .reports-box .impedimentos-apostila,
-    #reports-object .reports-box .situacao-apostila {
-      text-align: center;
-      border-bottom: 1px solid #C8C8C8;
-      padding: 15px; }
-    #reports-object .reports-box .change-reports {
-      color: #fff;
-      font-weight: bold;
-      background: #292b2e;
-      border: 0;
-      display: block;
-      margin: 10px auto;
-      padding: 10px 40px;
-      transition: all 0.3s ease-in-out; }
-      #reports-object .reports-box .change-reports:hover {
-        background-color: #53455b; }
-    #reports-object .reports-box__title {
-      color: #53455b;
-      font-size: 1.3em;
-      font-weight: 700;
-      margin: 10px 0;
-      opacity: .5;
-      padding: 5px;
-      width: max-content; }
+.filter nav {
+  flex-direction: initial;
+  padding: 15px 0; }
+  .filter nav .nav-title {
+    margin-left: 15px; }
+  .filter nav .nav-box {
+    margin: auto; }
+    .filter nav .nav-box p {
+      text-align: center; }
+  .filter nav select {
+    display: block; }
 
 body {
-  background-color: #5c5463;
-  background-image: radial-gradient(circle at top, #33263a 0%, #b3a4c7 40%); }
+  background-color: #26a69a; }
 
 button {
   cursor: pointer; }

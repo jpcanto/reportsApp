@@ -1,97 +1,32 @@
 .main-content {
-    display: flex;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.1em;
+
     background-size: cover;
     background-repeat: no-repeat;
+    display: flex;
+    margin-bottom: 20vh;
 }
 
 .reports-obj-block {
     width: 100%;
 }
 
-#reports-object {
-    font-family: sans-serif;
-
-    display: flex;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    width: 100%;
-    .reports-box {
-        font-family: sans-serif;
-
-        background-color: white;
-        border: 1px solid #C8C8C8;
-        border-radius: 10px;
-        margin: 10px auto;
-        opacity: .8;
-        transition: transform 0.8s;
-        width: 40%;
-        &.ng-leave-active {
-            transform: scale(0.1);
+.filter {
+    nav {
+        flex-direction: initial;
+        padding: 15px 0;
+        .nav-title {
+            margin-left: 15px;
         }
-        .nome-apostila {
-            color: #909090;
-            font-size: 2em;
-            
-            background: #E0E0E0;
-            padding: 20px;
-        }
-        .sprint-apostila {
-            color: white;
-            font-size: 1.5em;
-            font-weight: 700;
-            
-            display: block;
-            background: #53455b;
+        .nav-box {
             margin: auto;
-            padding: 20px;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease-in-out;
-            &::before {
-                background: white;
-                content: '';
-                position: absolute;
-                height: 220%;
-                opacity: .3;
-                transform: rotate(50deg);
-                width: 100%;
-            }
-            &__text {
-                margin: auto;
+            p {
+                text-align: center;
             }
         }
-        .feito-apostila,
-        .falta-apostila,
-        .impedimentos-apostila,
-        .situacao-apostila {
-            text-align: center;
-
-            border-bottom: 1px solid #C8C8C8;
-            padding: 15px;
-        }
-        .change-reports {
-            color: #fff;
-            font-weight: bold;
-
-            background: #292b2e;
-            border: 0;
+        select {
             display: block;
-            margin: 10px auto;
-            padding: 10px 40px;
-            transition: all 0.3s ease-in-out;
-            &:hover {
-                background-color: #53455b;
-            }
-        }
-        &__title {
-            color: #53455b;
-            font-size: 1.3em;
-            font-weight: 700;
-
-            margin: 10px 0;
-            opacity: .5;
-            padding: 5px;
-            width: max-content;
         }
     }
 }

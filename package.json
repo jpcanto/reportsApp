@@ -16,6 +16,7 @@
   },
   "devDependencies": {
     "angular-animate": "^1.7.8",
+    "angular-route": "^1.7.8",
     "browser-sync": "^2.26.3",
     "gulp": "^3.9.0",
     "gulp-concat": "^2.6.1",

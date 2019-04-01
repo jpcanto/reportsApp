@@ -1,49 +1,56 @@
 <section class="filter">
-    <nav>
+    <nav class="grey darken-3">
+        <p class="nav-title">Filtros:</p>
         <div class="nav-box">
             <p>Sprint</p>
             <select ng-model="sprint" name="sprint" class="selectFilter">
-                <option value="">Filtro sprint</option>
                 <option value="{{value.sprint}}" ng-repeat="value in vm.apostilaArray">{{value.sprint}}</option>
             </select>
         </div>
+
         <div class="nav-box">
             <p>Apostila</p>
             <select ng-model="apostila" name="apostila" class="selectFilter">
-                <option value="">Filtro apostila</option>
                 <option value="{{value.apostila}}" ng-repeat="value in vm.apostilaArray">{{value.apostila}}</option>
             </select>
         </div>
+
         <div class="nav-box">
             <p>Situação</p>
             <select ng-model="situacao" name="situacao" class="selectFilter">
-                <option value="">Filtro situação</option>
                 <option value="{{value.situacao}}" ng-repeat="value in vm.apostilaArray">{{value.situacao}}</option>
             </select>
         </div>
+
     </nav>
 </section>
 
 <section class="main-content">
 
-    <div class="reports-obj-block">
-        <div id="reports-object">
-            <div class="reports-box" ng-repeat="value in vm.apostilaArray | filter:sprint | filter:apostila | filter:feito | filter:falta | filter:impedimentos | filter:situacao">
-                <div class="nome-apostila">{{value.apostila}}</div>
-                <div class="sprint-apostila">
-                    <div class="sprint-apostila__text">{{value.sprint}}</div>
-                </div>
-                <div class="reports-box__title">Feito</div>
-                <div class="feito-apostila">{{value.feito}}</div>
-                <div class="reports-box__title">Falta</div>
-                <div class="falta-apostila">{{value.falta}}</div>
-                <div class="reports-box__title">Impedimentos</div>
-                <div class="impedimentos-apostila">{{value.impedimentos}}</div>
-                <div class="reports-box__title">Situação</div>
-                <div class="situacao-apostila">{{value.situacao}}</div>
-                <button class="change-reports">Modificar</button>
-            </div>
-        </div>
-    </div>
+    <table class="highlight deep-orange lighten-4">
+        <thead>
+            <tr>
+                <th>Apostila</th>
+                <th>Semana</th>
+                <th>Feito</th>
+                <th>Falta</th>
+                <th>Impedimentos</th>
+                <th>Situação</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr
+                ng-repeat="value in vm.apostilaArray | filter:sprint | filter:apostila | filter:feito | filter:falta | filter:impedimentos | filter:situacao">
+                <td>{{value.apostila}}</td>
+                <td>{{value.sprint}}</td>
+                <td>{{value.feito}}</td>
+                <td>{{value.falta}}</td>
+                <td>{{value.impedimentos}}</td>
+                <td>{{value.situacao}}</td>
+            </tr>
+        </tbody>
+
+    </table>
 
 </section>
