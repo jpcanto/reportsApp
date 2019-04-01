@@ -2,20 +2,25 @@
 <html lang="pt-br" ng-app="reportsApp">
 
 <head>
+
+  <base href="/home">
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
   <title>Dashboard</title>
+
   <link rel="stylesheet" href="src/utils/materialize/css/materialize.min.css">
   <link rel="stylesheet" href="src/css/main.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-  <script src="src/utils/materialize/js/materialize.min.js"></script>
   <script src="src/utils/angular/angular.min.js"></script>
+  <script src="src/js/app.js"></script>
   <script src="src/utils/angular-route/angular-route.min.js"></script>
   <script src="src/utils/angular-animate/angular-animate.min.js"></script>
+  <script src="src/utils/materialize/js/materialize.min.js"></script>
 
-  <script src="src/js/app.js"></script>
   <script src="src/components/listagem-apostilas/listagem-apostilas.component.js"></script>
   <script src="src/components/cadastro/cadastro.component.js"></script>
   <script src="src/utils/angularfire/dist/angularfire.js"></script>
@@ -42,8 +47,11 @@
     <p class="title">Gengis Scrum Dashboard</p>
     <div class="nav-wrapper">
       <ul class="right">
-        <li></i><a href="#/">Home</a></li>
-        <li></i><a href="#/relatorios">Relatórios de apostilas</a></li>
+        <li></i><a href="/">Home</a></li>
+        <li></i><a href="/relatorios">Relatórios de apostilas</a></li>
+        <li></i><a href="/academico">Acadêmico</a></li>
+        <li></i><a href="/midia">Mídia</a></li>
+        <li></i><a href="/documentacao">Documentação</a></li>
       </ul>
     </div>
   </nav>

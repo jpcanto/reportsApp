@@ -3,7 +3,9 @@
 
     angular
         .module("reportsApp", ['firebase', 'ngAnimate', 'ngRoute'])
-        .config(function ($routeProvider) {
+        .config(function ($routeProvider, $locationProvider) {
+
+            $locationProvider.html5Mode(true);
 
             $routeProvider
                 .when('/', {
@@ -12,6 +14,18 @@
 
                 .when('/relatorios', {
                     templateUrl: "views/relatorios.html"
+                })
+
+                .when('/academico', {
+                    templateUrl: "views/academico.html"
+                })
+
+                .when('/midia', {
+                    templateUrl: "views/midia.html"
+                })
+
+                .when('/documentacao', {
+                    templateUrl: "views/documentacao.html"
                 })
 
                 .otherwise({ redirectTo: '/' });
