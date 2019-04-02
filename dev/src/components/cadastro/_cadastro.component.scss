@@ -17,12 +17,9 @@
     height: 100%;
     width: 100%;
     .cadastro__caixa {
-        display: block;
-        left: 15%;
-        position: fixed;
-        top: 25%;
-        width: 70vw;
-        z-index: 2;
+        background: linear-gradient(to right, rgb(55, 59, 68), rgb(66, 134, 244));
+        overflow: hidden;
+        margin: 20px auto;
         &--titulo {
             color: #fff;
             font-family: sans-serif;
@@ -37,14 +34,20 @@
             }
         }
         .form-cadastro {
+            border-bottom: 0;
+            display: block;
             padding-left: 10px;
-            width: -webkit-fill-available;
+            width: 20%;
+            &:focus {
+                width: 100%;
+                transition: 2s;
+            }
         }
         .buttons {
             display: flex;
             margin: 20px 0;
             a {
-                margin: auto;
+                margin: 20px auto;
             }
         }
     }
