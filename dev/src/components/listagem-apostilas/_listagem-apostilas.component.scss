@@ -6,6 +6,12 @@
     background-repeat: no-repeat;
     display: flex;
     margin-bottom: 20vh;
+    table.highlight.apo-table {
+        background-color: white;
+    }
+    table.highlight.apo-table>tbody>tr:hover {
+        background-color: rgba(119, 128, 195, 0.5);
+    }
 }
 
 .reports-obj-block {
@@ -14,15 +20,21 @@
 
 .filter {
     nav {
-        flex-direction: initial;
         padding: 15px 0;
         .nav-title {
             margin-left: 15px;
+            margin-top: 0;
+            padding-top: 0;
         }
         .nav-box {
-            margin: auto;
-            p {
-                text-align: center;
+            display: flex;
+            .filter-box {
+                display: flex;
+                margin: auto;
+                p {
+                    line-height: 3;
+                    margin: 0 10px;
+                }
             }
         }
         select {

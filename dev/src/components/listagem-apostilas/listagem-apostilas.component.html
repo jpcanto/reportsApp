@@ -1,34 +1,35 @@
 <section class="filter">
-    <nav class="grey darken-3">
+    <nav class="blue darken-2">
         <p class="nav-title">Filtros:</p>
         <div class="nav-box">
-            <p>Sprint</p>
-            <select ng-model="sprint" name="sprint" class="selectFilter">
-                <option value="{{value.sprint}}" ng-repeat="value in vm.apostilaArray">{{value.sprint}}</option>
-            </select>
-        </div>
+            <div class="filter-box">
+                <p>Sprint</p>
+                <select ng-model="sprint" name="sprint" class="selectFilter">
+                    <option value="{{value.sprint}}" ng-repeat="value in vm.apostilaArray">{{value.sprint}}</option>
+                </select>
+            </div>
 
-        <div class="nav-box">
-            <p>Apostila</p>
-            <select ng-model="apostila" name="apostila" class="selectFilter">
-                <option value="{{value.apostila}}" ng-repeat="value in vm.apostilaArray">{{value.apostila}}</option>
-            </select>
-        </div>
+            <div class="filter-box">
+                <p>Apostila</p>
+                <select ng-model="apostila" name="apostila" class="selectFilter">
+                    <option value="{{value.apostila}}" ng-repeat="value in vm.apostilaArray">{{value.apostila}}</option>
+                </select>
+            </div>
 
-        <div class="nav-box">
-            <p>Situação</p>
-            <select ng-model="situacao" name="situacao" class="selectFilter">
-                <option value="{{value.situacao}}" ng-repeat="value in vm.apostilaArray">{{value.situacao}}</option>
-            </select>
+            <div class="filter-box">
+                <p>Situação</p>
+                <select ng-model="situacao" name="situacao" class="selectFilter">
+                    <option value="{{value.situacao}}" ng-repeat="value in vm.apostilaArray">{{value.situacao}}</option>
+                </select>
+            </div>
         </div>
-
     </nav>
 </section>
 
 <section class="main-content">
 
-    <table class="highlight deep-orange lighten-4">
-        <thead>
+    <table class="highlight apo-table">
+        <thead class="blue lighten-4">
             <tr>
                 <th>Apostila</th>
                 <th>Semana</th>
@@ -39,7 +40,7 @@
             </tr>
         </thead>
 
-        <tbody>
+        <tbody class="blue lighten-5">
             <tr
                 ng-repeat="value in vm.apostilaArray | filter:sprint | filter:apostila | filter:feito | filter:falta | filter:impedimentos | filter:situacao">
                 <td>{{value.apostila}}</td>

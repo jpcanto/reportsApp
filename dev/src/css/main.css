@@ -13,7 +13,7 @@ nav {
   nav .nav-wrapper {
     margin: auto; }
   nav .title {
-    color: #26a69a;
+    color: #fff;
     font-family: fantasy;
     font-size: 2em;
     margin: auto;
@@ -22,15 +22,12 @@ nav {
     font-family: sans-serif;
     font-weight: 600; }
 
-.home-description {
-  color: white; }
-
 .presentation {
   display: flex;
   flex-direction: column;
   margin: 30px 0; }
   .presentation .title {
-    color: #fff;
+    color: #f57f17;
     font-size: 3em;
     margin: auto; }
   .presentation .presentation__box {
@@ -72,24 +69,30 @@ nav {
   background-repeat: no-repeat;
   display: flex;
   margin-bottom: 20vh; }
+  .main-content table.highlight.apo-table {
+    background-color: white; }
+  .main-content table.highlight.apo-table > tbody > tr:hover {
+    background-color: rgba(119, 128, 195, 0.5); }
 
 .reports-obj-block {
   width: 100%; }
 
 .filter nav {
-  flex-direction: initial;
   padding: 15px 0; }
   .filter nav .nav-title {
-    margin-left: 15px; }
+    margin-left: 15px;
+    margin-top: 0;
+    padding-top: 0; }
   .filter nav .nav-box {
-    margin: auto; }
-    .filter nav .nav-box p {
-      text-align: center; }
+    display: flex; }
+    .filter nav .nav-box .filter-box {
+      display: flex;
+      margin: auto; }
+      .filter nav .nav-box .filter-box p {
+        line-height: 3;
+        margin: 0 10px; }
   .filter nav select {
     display: block; }
-
-body {
-  background-color: #26a69a; }
 
 button {
   cursor: pointer; }
