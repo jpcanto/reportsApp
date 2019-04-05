@@ -1,6 +1,26 @@
-<a ng-click="vm.activateY()" class="waves-effect waves-light btn yellow darken-3"><i class="material-icons left">
-        folder_open
-    </i>Primeiros passos</a>
+<nav ng-click="vm.showDocNav()" class="doc-nav yellow darken-3">
+
+    <ul id="slide-out" class="sidenav">
+        <a ng-click="vm.activateY()" class="waves-effect waves-light btn blue darken-3"><i
+                class="material-icons left">
+                folder_open
+            </i>Primeiros passos
+        </a>
+        <li>
+            <div class="divider"></div>
+        </li>
+        <a ng-click="vm.activateY()" class="waves-effect waves-light btn blue darken-3"><i
+                class="material-icons left">
+                folder_open
+            </i>Vídeos
+        </a>
+        <li>
+            <div class="divider"></div>
+        </li>
+    </ul>
+    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+
+</nav>
 
 <section ng-show="vm.activate" class="manual">
 
