@@ -1,0 +1,382 @@
+<a ng-click="vm.activateY()" class="waves-effect waves-light btn yellow darken-3"><i class="material-icons left">
+        folder_open
+    </i>Primeiros passos</a>
+
+<section ng-show="vm.activate" class="manual">
+
+    <h1>Bem vindo ao time Falcões</h1>
+
+    <p class="bloco-texto">
+        O Time falcões é onde fazemos toda a apostila digital para os alunos da MEDGRUPO. Pegamos as apostilas em
+        PDF dos alunos e geramos códigos em html para ela funcionar no browser e consequentemente no aplicativo, Medsoft
+        Pro.
+    </p>
+
+    <p class="bloco-texto">
+        Usamos uma biblioteca própria para os componentes criados pelo Squad 1 e Squad 3. Nós somos uma equipe dividida
+        em Squads, (Squad 1, Squad 2 e Squad 3) onde nosso responsável é o
+        P.O e todos os envolvidos tem que estar cientes do que cada time está fazendo no momento para não ter confusão,
+        trabalhar
+        com prazos, e sempre um ajudar o outro. Vão ter vezes que o pessoal do Squad 2 irão para Squad 3 ou o pessoal de
+        Squad
+        3 irão para Squad 2 e ter esse revezamento mas isso depende da necessidade. Você irá entender melhor...
+    </p>
+
+    <h4 class="titulo">TIME FALCÕES – (DIVISÃO)</h4>
+
+    <p class="bloco-texto">
+        <span class="topico">P.O</span>
+        - Responsável por comandar e visualizar a prioridade do time para desenvolver as tarefas adequadas. É capaz de
+        auxiliar o Squad inteiro quando precisar. Ele é responsável pela integração do produto com o cliente, fazendo
+        com
+        que o time execute as demandas necessárias.
+    </p>
+
+    <p class="bloco-texto">
+        Sempre avisar ao P.O e ao DEV TEAM qualquer dificuldade e impedimento que estiver tendo, faltas por motivos
+        pessoais, entre outros motivos, para que
+        ele possa estar ciente.
+    </p>
+
+    <p class="bloco-texto">
+        <span class="topico">Squad 1</span>
+        – Responsável pelos recortes de imagens das apostilas
+        (Insumos), criação do hypotesis, localizado depois do índice e antes do primeiro capitulo, porem não
+        são todas as apostilas que tem hypotesis. Também são responsáveis pela criação dos componentes de cada apostila,
+        através de css. Esses componentes é que irão dar um estilo igual o que está nas apostila de Layout, Saiba Mais,
+        Atenção, Tabelas
+        de duas colunas etc. Cada apostila vai ter seus componentes específicos e estruturados de uma forma organizada
+        pelo
+        Squad 1.
+    </p>
+
+    <p class="bloco-texto">
+        Obs:
+        Squad 1
+        sempre vai estar 2 ou 3 semanas na frente dos demais times.
+    </p>
+
+    <p class="bloco-texto">
+        <span class="topico">Squad 2</span>
+        – Responsável pela diagramação das apostilas, verificação da apostila no navegador após o término, visualização
+        no
+        abby, minificar o arquivo principal, subir pro aplicativo e visualizar no app se está tudo ok.
+    </p>
+
+    <p class="bloco-texto">
+        Obs:
+        Squad 2
+        sempre vai estar 2 semanas na frente da semana atual das apostilas.
+    </p>
+
+    <p class="bloco-texto">
+        <span class="topico">Squad 3</span>
+        – Responsável pela correção das apostilas depois que são corrigidas pelo acadêmico. Pois quando as apostilas são
+        finalizadas pelo
+        Squad 2
+        elas vão para o acadêmico avaliar, quando avaliado e houver erros o
+        Squad 3
+        pega para corrigir a lista que o acadêmico identificou. O
+        Squad 3
+        funciona como suporte para os demais times e está sempre disposto a ajudar. Quando necessário fazem algumas
+        alterações no css e criam componentes complexos.
+    </p>
+
+    <p class="bloco-texto">
+        Obs: Squad 3
+        sempre vai estar 1 semana na frente da semana da apostila atual e sempre acompanhando os outros time.
+    </p>
+
+    <h4 class="titulo">SQUAD 2 (TAREFAS)</h4>
+
+    <p class="bloco-texto">
+        <span class="topico">Diagramação</span>
+        – As apostilas são diagramas em arquivo HTML com estruturas da biblioteca que foi montada. Tudo que utilizamos
+        de
+        layout da apostila, imagens, Atenção, Saiba Mais etc, está localizada na biblioteca. Sendo assim é só copiar e
+        colar. Existe um arquivo
+        “SEMPRE CORRIGIR”
+        que estão algumas dicas e conteúdos que podem ajudar na diagramação.
+    </p>
+
+    <p class="bloco-texto">
+        <span class="topico">ABBY</span>
+        – O abby é um programa onde a gente compara somente o texto todo da apostila html junto com o texto da apostila
+        em
+        pdf e verifica se existe algum erro de português, diagramação ou palavras faltando.
+    </p>
+
+    <p class="bloco-texto">
+        <span class="topico">Minify</span>
+        – Depois de ter a apostila toda diagramada, com toda a correção exata, imagens nos seus devidos lugares e vídeos
+        funcionando: Hora de minificar o código !! 1° Crie uma
+        copia
+        do arquivo original. 2° Adicionar o script
+        (script.js)
+        no final da diagramação e no
+        script.js (Arquivo)
+        coloque o
+        ID da apostila.
+        3° Abra a apostila no browser, copie somente o body da apostila e cole na
+        copia
+        da apostila, apagando tudo que tem nela e deixando só o
+        body. 4° Exclua o script, os importes de estilos e as tags html. 5° Renomeie a tag body para comp. 6° Não
+        esqueça de
+        apertar um Ctrl + Z no arquivo script.js, pois o ID da apostila não pode ficar salvo lá. 7°
+        Aperte Ctrl + Shift + P
+        e escolha a opção
+        minify. 8° Agora copie o arquivo está pronto para o
+        medreader.
+    </p>
+
+    <p class="bloco-texto">
+        <span class="topico">MedReader</span>
+        – Programa que nós usamos para subir o arquivo minificado, ou seja, somente o body da apostila, para o
+        aplicativo. O
+        primeiro processo é por o ANO da apostila, se ela vai ser subida em homologação ou homologação/produção
+        (Verificar
+        com o Squad 3) e o nome da apostila na lista de apostilas. O segundo processo é para corrigir alguns espaços que
+        o
+        arquivo minificado deixa, geralmente são letras minúsculas que estão com espações desnecessários. Após a
+        correção do
+        arquivo é só clicar em validar. Feito isso
+        copie o arquivo minificado do medreader
+        e cole minificado do
+        vscode
+        no arquivo html para alterar as correções que você fez no programa.
+        CPF para a revisão no APP adminMedReader: 954.117.478-72/279.635.666-32;
+    </p>
+
+    <h4 class="titulo">SQUAD 2 (ABBY)</h4>
+
+    <p class="bloco-texto">
+        <span class="topico">ABBY</span>
+        – O abby é um programa onde a gente compara somente o texto todo da apostila html junto com o texto da apostila
+        em
+        pdf e verifica se existe algum erro de português, diagramação ou palavras faltando.
+        REVISÃO NO ABBY – PROCEDIMENTO
+        Copiar o
+        body
+        da apostila a ser comparada;
+        Colocar o
+        body
+        no “obterSomenteTexto.html” entre a tag:
+        "div id=‘texto’ div";
+        Abrir no browser;
+        Inspecionar, colocar na setinha “>>” / console;
+        Clicar em copy no final do menu à direita;
+        Colar em um bloco de notas e criar o arquivo “obterTexto” em UTF-8, pode salvar na área de trabalho;
+        Abra o ABBY remoto/local;
+        Pesquisar / Comparar;
+        Insira a apostila a ser comparada em arquivo PDF em umas das partes;
+        Insira o bloco de notas na outra parte;
+        Clique em comparar e espere;
+        Discard changes em “obterSomenteTexto.html”;
+    </p>
+
+    <h4 class="titulo">
+        PROCESSO PARA INICIAR A BRANCH
+    </h4>
+
+    <p class="bloco-texto">
+        (Serve para o Projeto 2019 || Projeto R3)
+        Criar a pasta "Projeto2019" ou "ProjetoR3";
+        Abrir ela com o Vscode;
+        Git init;
+        Git config --global user.name nome.sobrenome;
+        Git config --global user.email nome.sobrenome@medgrupo.com.br;
+        Git remote add origin "Z:/Projeto2019" ou "Z:/ProjetoR+";
+        Git pull;
+        Esperar até poder digitar novamente;
+        Mudar a Branch para master;
+        Atualizar master;
+        Git checkout –b “nome da sua branch nova”
+        Subir na sua nova Branch;
+        Commit para começar o Job
+    </p>
+
+    <h4 class="titulo">Commit e Merge</h4>
+
+    <h6 class="subtitulo">MEDCURSO / MED</h6>
+
+    <p class="bloco-texto">
+        Medcurso (ciclo 1):
+        Com duração de 11 meses.
+    </p>
+
+    <h6 class="subtitulo">M.E.D (ciclo 2):</h6>
+
+    <p class="bloco-texto">Com duração de 11 meses.</p>
+
+    <h6 class="subtitulo">Intensivão:</h6>
+
+    <p class="bloco-texto">
+        Com duração de 6 finais de semana. É realizado no segundo semestre de cada ano letivo.
+    </p>
+
+    <h6 class="subtitulo">RAC:</h6>
+
+    <p class="bloco-texto">
+        Com duração de 1 dia, é uma continuação do intensivão, com foco em alguns pontos específicos da clínica
+        médica.
+    </p>
+
+    <h6 class="subtitulo">RACIPE:</h6>
+
+    <p class="bloco-texto">
+        Com duração de 1 dia, é uma continuação do intensivão, com foco em alguns pontos específicos da
+        pediatria.
+    </p>
+
+    <h6 class="subtitulo">CP-MED:</h6>
+
+    <p class="bloco-texto">
+        Com duração de 3 dias, é o curso pratico.
+    </p>
+
+    <h6 class="subtitulo">MED Eletro:</h6>
+
+    <p class="bloco-texto">Curso de eletrocardiograma.</p>
+
+    <h6 class="subtitulo">R+(R3):</h6>
+
+    <p class="bloco-texto">
+        É o mais novo curso da Medgrupo para seus alunos, que tem como seus principais temas:
+        PED, CLM, CIR
+        e
+        GO.
+    </p>
+
+    <h6 class="subtitulo">MEDCURSO / MED/ R3</h6>
+
+    <p class="bloco-texto">
+        <span class="topico">Med Curso (MDC)</span>
+        – As apostilas MedCurso são para os alunos que estão no 5ºano. O nome padrão que damos para os arquivos
+        html,
+        biblioteca e para subir no medreader, ou seja, para identificar aquela apostila por exemplo:
+        GIN, NEF, ORT, OFT, PED
+        e por ai vai... Cada apostila tem seu
+        <span class="topico">ID. Ex:</span>
+        15576;
+        18954;
+        18950;
+    </p>
+
+    <p class="bloco-texto">
+        <span class="topico">M.E.D</span>
+        – As apostilas Med são diferentes da Med Curso. O nome padrão que damos para os arquivos html,
+        biblioteca e para
+        subir no medreader, ou seja, para identificar aquela apostila por exemplo:
+        MED CLM, MED GIN, MED PED
+        e por ai vai... Cada apostila tem seu
+        ID.
+    </p>
+
+    <p class="bloco-texto">
+        <span class="topico">R3</span>
+
+        – As apostilas r3 fazem parte de outro projeto das apostilas MEDCURSO E MED (PROJETO 2019). A
+        nomenclatura para os
+        arquivos html, biblioteca para subir no medreader, ou seja, para identificar aquela apostila são:
+        r3_clm_02,
+        r3_cir_03; Cada apostila também tem seu ID. Obs: o _02 e _03 que você viu na nomenclatura é da semana da
+        apostila.
+    </p>
+
+    <h4 class="titulo">DAILY / PÓS DAILY</h4>
+
+    <h6 class="subtitulo">Daily</h6>
+
+    <p class="bloco-texto">
+        – As dailys acontecem geralmente de segunda a quinta às 14:45. Serve para saber o que o time fez no dia
+        anterior e o
+        que ele fez/vai fazer no dia e comunicar para todos ficarem cientes. Saber se teve algum impedimento que
+        dificultou
+        o job ou de alguma forma atrasou o produto e passar para o time e ver a melhor forma de ajudar.
+        Pós Daily
+        – Geralmente é feita para dar algumas informações importantes para o time as vezes tendo alguma ligação
+        direta com
+        algum time especifico, mas para que todos fiquem cientes.
+    </p>
+
+    <h6 class="subtitulo">RETRO/ TRELLO</h6>
+
+    <p class="bloco-texto">
+        <span class="topico">Retro</span>
+        – Acontece todas as sextas à partir de 14:30. Para o time debater algumas ideias, falar sobre alguns
+        erros que foram
+        encontrados durante semana para que não se repita, alinhar certos componentes e ver quais ficam melhor.
+        E ter ideias
+        boas que possam melhorar o job de todos.
+    </p>
+
+
+    <p class="bloco-texto">
+        <span class="topico">Trello</span>
+        – Hoje utilizado só para relatar o que devemos melhorar e debater isso, que é chamado de DAKI.
+        <span class="topico">DROP</span>
+        O
+        DROP
+        são infrações que aconteceram durante a semana e que não deve mais acontecer, pois prejudica o andamento
+        do Squad.
+        <span class="topico">ADD</span>
+        O
+        ADD
+        são ideias novas propostas pelo Squad para ser debatida, podendo agilizar/melhorar nosso processo com o
+        produto.
+        <span class="topico">KEEP</span>
+        O
+        KEEP
+        são atividades e boas maneiras que algumas pessoas tem e devemos passar a praticar com o Squad e manter
+        isso em
+        prática sempre.
+        <span class="topico">IMPROVE</span>
+        O
+        IMPROVE
+        que são ideias boas que podem melhorar o job de todos ou de algum time.
+    </p>
+
+    <h6 class="subtitulo">PLANNING / KANBANIZE</h6>
+
+    <p class="bloco-texto">
+        <span class="topico">Planning</span>
+        – Acontece todas as sextas logo após a retro. Onde o time se reúne e faz uma analise de como foi a
+        semana, se foi
+        produtiva para o que foi planejado. Sendo assim, planejamos a próxima semana e o que cada um vai fazer e
+        qual
+        apostila pegar. Tudo isso feito e planejado pelos
+        cards
+        do
+        Kanbanize.
+        <span class="topico">Kanbanize</span>
+        – Local onde utilizamos com bastante frequência para manter a comunicação entre todos do time. O
+        kanbanize
+        é o nosso
+        board
+        dividido em 2 linhas horizontais(lanes). A linha de
+        Fluxo de Produção das apostilas, onde é feita a pré-produção dela, geração de imagens, índice, questões,
+        componentes etc, ate ela está
+        pronta para
+        ser diagramada. Na linha de baixo temos
+        Sustentação (tarefa T3)
+        onde o squad3 fica responsável por ajudar e fazer algumas tarefas de cards q foram solicitados para que
+        o processo
+        de apostila não fique parado. As comunicações são feitas através dos cards criados pelo P. O de acordo
+        com a
+        necessidade e a entrega das apostilas para ser diagramadas. E cada card pode estar em uma determinada
+        linha e
+        coluna. Por exemplo: MED CLM 01 – já foi toda pré-produzida e esta só aguardando diagramação, então ela
+        vai ficar na
+        coluna de “aguardando diagramação”. Quando alguém puxar para diagramar ficará na coluna de
+        “Diagramando”, caso não
+        tenha finalizado o card fica ali, o card nunca anda para trás, só quando volta do acadêmico para
+        corrigir.
+    </p>
+
+    <p class="copyright">© 2019 - LivinhoDesenv Web</p>
+
+    <a ng-click="vm.activateY()" class="waves-effect waves-light btn red darken-3"><i class="material-icons left">
+            close
+        </i>Close</a>
+
+</section>
