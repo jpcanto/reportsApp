@@ -3,25 +3,42 @@
 
     angular
         .module("reportsApp")
-        .controller("wellcomeControlle", wellcomeControlle)
+        .controller("wellcomeController", wellcomeController)
         .component("wellcome", {
             templateUrl: 'src/components/wellcome/wellcome.component.html',
-            controller: wellcomeControlle,
+            controller: wellcomeController,
             controllerAs: 'vm'
         });
 
-    function wellcomeControlle() {
+    wellcomeController.$inject = ['$http'];
+
+    function wellcomeController($http) {
 
         var vm = this;
 
-        vm.activateY = function () {
-            vm.activate = !vm.activate;
+        vm.activateX = function () {
+            vm.activateA = !vm.activateA;
         };
 
-        vm.showDocNav = function() {
-            var elems = document.querySelectorAll('.sidenav');
-            var instances = M.Sidenav.init(elems);
+        vm.activateY = function () {
+            vm.activateB = !vm.activateB;
+            if (vm.activateA == true) {
+                vm.activateX();
+            }
+            let elems = document.querySelectorAll('.carousel');
+            let instances = M.Carousel.init(elems);
         };
+
+        vm.showDocNav = function () {
+            let elems = document.querySelectorAll('.sidenav');
+            let instances = M.Sidenav.init(elems);
+        };
+
+        $http.get('src/data/videos.json')
+            .then(function (response) {
+                vm.objetoVideos = response.data;
+                console.log(response.data);
+            });
 
         vm.cadastraErro = function () {
             var ref = firebase.database().ref("apoErrors");
