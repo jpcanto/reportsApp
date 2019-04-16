@@ -74,9 +74,10 @@ nav {
   flex-direction: column;
   margin: 30px 0; }
   .presentation .title {
-    color: #f57f17;
     font-size: 3em;
-    margin: auto; }
+    border-left: 5px solid;
+    margin: auto;
+    padding-left: 10px; }
   .presentation .presentation__box {
     margin: auto; }
 
@@ -84,32 +85,42 @@ nav {
   height: 100%;
   width: 100%; }
   .cadastro .cadastro__caixa {
-    background: linear-gradient(to right, #373b44, #4286f4);
+    background: rgba(56, 56, 56, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
     overflow: hidden;
-    margin: 20px auto; }
-    .cadastro .cadastro__caixa--titulo {
-      color: #fff;
-      font-family: sans-serif;
-      font-size: 3em;
-      font-weight: 700;
-      display: flex;
-      height: 15vh;
-      width: 100%; }
-      .cadastro .cadastro__caixa--titulo p {
-        margin: auto; }
-    .cadastro .cadastro__caixa .form-cadastro {
-      border-bottom: 0;
-      display: block;
-      padding-left: 10px;
-      width: 20%; }
-      .cadastro .cadastro__caixa .form-cadastro:focus {
-        width: 100%;
-        transition: 2s; }
-    .cadastro .cadastro__caixa .buttons {
-      display: flex;
-      margin: 20px 0; }
-      .cadastro .cadastro__caixa .buttons a {
-        margin: 20px auto; }
+    padding: 30px;
+    width: 343px; }
+    .cadastro .cadastro__caixa--titulo p {
+      color: #34363A;
+      font-size: 32px;
+      font-weight: 600;
+      border-left: 5px solid #34363A;
+      margin: 0 0 35px;
+      padding: 10px 0 10px 50px;
+      position: relative;
+      z-index: 1; }
+  .cadastro .form-cadastro {
+    color: #212121;
+    font-size: 24px;
+    font-weight: 400;
+    background: none;
+    border: 0;
+    height: 60px;
+    outline: none;
+    position: relative;
+    width: 100%;
+    z-index: 1; }
+    .cadastro .form-cadastro:focus {
+      width: 100%;
+      transition: 2s; }
+  .cadastro .buttons {
+    display: flex;
+    margin: 20px 0; }
+    .cadastro .buttons a {
+      margin: 20px auto; }
 
 .main-content {
   font-family: Verdana, Geneva, Tahoma, sans-serif;

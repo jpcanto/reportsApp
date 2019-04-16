@@ -3,10 +3,11 @@
     flex-direction: column;
     margin: 30px 0;
     .title {
-        color: #f57f17;
         font-size: 3em;
 
+        border-left: 5px solid;
         margin: auto;
+        padding-left: 10px;
     }
     .presentation__box {
         margin: auto;
@@ -17,27 +18,38 @@
     height: 100%;
     width: 100%;
     .cadastro__caixa {
-        background: linear-gradient(to right, rgb(55, 59, 68), rgb(66, 134, 244));
-        overflow: hidden;
+        background: rgba(56, 56, 56, 0.5);
+        border: 1px solid rgba(0,0,0,.2);
+        border-radius: 5px;
+        box-shadow: 0 0 13px 3px rgba(0,0,0,.5);
         margin: 20px auto;
-        &--titulo {
-            color: #fff;
-            font-family: sans-serif;
-            font-size: 3em;
-            font-weight: 700;
+        overflow: hidden;
+        padding: 30px;
+        width: 343px;
+        &--titulo  p {
+                color: $cinzaSecundario;
+                font-size: 32px;
+                font-weight: 600;
 
-            display: flex;
-            height: 15vh;
-            width: 100%;
-            p {
-                margin: auto;
+                border-left: 5px solid $cinzaSecundario;
+                margin: 0 0 35px;
+                padding: 10px 0 10px 50px;
+                position: relative;
+                z-index: 1;
             }
         }
         .form-cadastro {
-            border-bottom: 0;
-            display: block;
-            padding-left: 10px;
-            width: 20%;
+            color: #212121;
+            font-size: 24px;
+            font-weight: 400;
+
+            background: none;
+            border: 0;
+            height: 60px;
+            outline: none;
+            position: relative;
+            width: 100%;
+            z-index: 1;
             &:focus {
                 width: 100%;
                 transition: 2s;
@@ -51,4 +63,3 @@
             }
         }
     }
-}
