@@ -16,7 +16,12 @@
 }
 
 .filter {
-    nav {
+    color: #b3b3b3;
+    font-size: 18px;
+    letter-spacing: 2px;
+
+    .nav {
+        background: $cinzaPrincipal;
         padding: 15px 0;
         .nav-title {
             margin-left: 15px;

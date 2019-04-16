@@ -2,25 +2,72 @@
   font-family: sans-serif;
   background: transparent; }
 
+.nav-wrapper {
+  margin: auto; }
+
 nav {
-  display: flex;
-  flex-direction: column;
-  height: auto; }
+  background-color: #383B42;
+  box-shadow: -4px 0px 10px rgba(14, 14, 14, 0.48) inset;
+  height: 100%;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 200px; }
   nav img {
-    height: 100px;
-    width: 100px;
-    margin: 10px auto; }
-  nav .nav-wrapper {
-    margin: auto; }
+    margin: 10px 20px;
+    width: 150px; }
   nav .title {
-    color: #fff;
-    font-family: fantasy;
-    font-size: 2em;
-    margin: auto;
-    text-decoration: underline; }
+    color: #F6F6EF;
+    font-size: 20px;
+    font-weight: normal;
+    letter-spacing: 2px;
+    text-align: center;
+    background-color: #34363A;
+    border-bottom: 1px solid rgba(101, 116, 134, 0.57);
+    line-height: 60px;
+    margin: 0; }
   nav li {
-    font-family: sans-serif;
-    font-weight: 600; }
+    border-bottom: 1px solid #42454D;
+    border-top: 1px solid #2E3036;
+    padding-left: 48px;
+    transition: all 0.6s;
+    width: -webkit-fill-available; }
+    nav li a {
+      color: #b3b3b3;
+      font-size: 18px;
+      letter-spacing: 1px;
+      text-decoration: none;
+      cursor: pointer;
+      display: block;
+      line-height: 55px;
+      position: relative;
+      transition: all 0.6s; }
+
+.page-title {
+  background-color: #fff;
+  border-bottom: 1px solid #C0C1C0;
+  display: block;
+  height: 60px;
+  margin-left: 200px; }
+  .page-title h2 {
+    color: #919191;
+    font-size: 20px;
+    letter-spacing: 3px;
+    text-shadow: 1px 1px 2px #fff;
+    font-weight: normal;
+    line-height: 60px;
+    margin: 0;
+    padding-left: 40px;
+    position: relative; }
+    .page-title h2::before {
+      background-color: #383B42;
+      content: '';
+      left: -19px;
+      height: 36px;
+      position: absolute;
+      transform: rotate(45deg);
+      top: 12px;
+      width: 36px; }
 
 .presentation {
   display: flex;
@@ -77,22 +124,27 @@ nav {
 .reports-obj-block {
   width: 100%; }
 
-.filter nav {
-  padding: 15px 0; }
-  .filter nav .nav-title {
-    margin-left: 15px;
-    margin-top: 0;
-    padding-top: 0; }
-  .filter nav .nav-box {
-    display: flex; }
-    .filter nav .nav-box .filter-box {
-      display: flex;
-      margin: auto; }
-      .filter nav .nav-box .filter-box p {
-        line-height: 3;
-        margin: 0 10px; }
-  .filter nav select {
-    display: block; }
+.filter {
+  color: #b3b3b3;
+  font-size: 18px;
+  letter-spacing: 2px; }
+  .filter .nav {
+    background: #383B42;
+    padding: 15px 0; }
+    .filter .nav .nav-title {
+      margin-left: 15px;
+      margin-top: 0;
+      padding-top: 0; }
+    .filter .nav .nav-box {
+      display: flex; }
+      .filter .nav .nav-box .filter-box {
+        display: flex;
+        margin: auto; }
+        .filter .nav .nav-box .filter-box p {
+          line-height: 3;
+          margin: 0 10px; }
+    .filter .nav select {
+      display: block; }
 
 @media only screen and (min-width: 993px) {
   nav.doc-nav a.sidenav-trigger {
