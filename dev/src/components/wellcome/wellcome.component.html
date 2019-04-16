@@ -428,7 +428,7 @@
 <section ng-show="vm.activateB" ng-repeat="videos in vm.objetoVideos" class="videos-manual">
 
     <div class="carousel">
-            <iframe class ="carousel-item" src="{{videos.url}}"
+            <iframe class ="carousel-item" src="{{vm.trustAsUrl(videos.url)}}"
             webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
     </div>
 

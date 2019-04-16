@@ -10,9 +10,9 @@
             controllerAs: 'vm'
         });
 
-    wellcomeController.$inject = ['$http'];
+    wellcomeController.$inject = ['$http', '$sce'];
 
-    function wellcomeController($http) {
+    function wellcomeController($http, $sce) {
 
         var vm = this;
 
@@ -39,6 +39,10 @@
                 vm.objetoVideos = response.data;
                 console.log(response.data);
             });
+
+            vm.trustAsUrl = function(url){
+                return $sce.trustAsResourceUrl(url)
+               }
 
         vm.cadastraErro = function () {
             var ref = firebase.database().ref("apoErrors");
