@@ -24,6 +24,7 @@ nav {
     text-align: center;
     background-color: #34363A;
     border-bottom: 1px solid rgba(101, 116, 134, 0.57);
+    box-shadow: -4px 0px 10px rgba(14, 14, 14, 0.48) inset;
     line-height: 60px;
     margin: 0; }
   nav li {
@@ -94,10 +95,10 @@ nav {
     padding: 30px;
     width: 343px; }
     .cadastro .cadastro__caixa--titulo p {
-      color: #34363A;
+      color: #111;
       font-size: 32px;
       font-weight: 600;
-      border-left: 5px solid #34363A;
+      border-left: 5px solid #111;
       margin: 0 0 35px;
       padding: 10px 0 10px 50px;
       position: relative;
@@ -125,8 +126,7 @@ nav {
 .main-content {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.1em;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background: rgba(255, 255, 255, 0.6);
   display: flex;
   margin-bottom: 20vh; }
   .main-content table.highlight.apo-table > tbody > tr:hover {
@@ -167,6 +167,8 @@ nav {
   background-color: rgba(0, 102, 210, 0.5);
   border-radius: 15px;
   margin: 15px;
+  max-height: 500px;
+  overflow-y: scroll;
   padding: 15px; }
   .manual h1 {
     border-bottom: 2px solid; }
@@ -203,3 +205,7 @@ nav {
 
 button {
   cursor: pointer; }
+
+body {
+  background: url(../img/bg.jpg);
+  background-repeat: no-repeat; }
