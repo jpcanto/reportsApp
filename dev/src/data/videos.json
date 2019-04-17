@@ -1,65 +1,86 @@
 [
     {
-        "url": "https://player.vimeo.com/video/327758628"
+        "url": "https://player.vimeo.com/video/327758628",
+        "legenda": "Video 1"
     },
     {
-        "url": "https://player.vimeo.com/video/327758652"
+        "url": "https://player.vimeo.com/video/327758652",
+        "legenda": "Video 2"
     },
     {
-        "url": "https://player.vimeo.com/video/327758687"
+        "url": "https://player.vimeo.com/video/327758687",
+        "legenda": "Video 3"
     },
     {
-        "url": "https://player.vimeo.com/video/327758742"
+        "url": "https://player.vimeo.com/video/327758742",
+        "legenda": "Video 4"
     },
     {
-        "url": "https://player.vimeo.com/video/327758804"
+        "url": "https://player.vimeo.com/video/327758804",
+        "legenda": "Video 5"
     },
     {
-        "url": "https://player.vimeo.com/video/327758831"
+        "url": "https://player.vimeo.com/video/327758831",
+        "legenda": "Video 6"
     },
     {
-        "url": "https://player.vimeo.com/video/327758899"
+        "url": "https://player.vimeo.com/video/327758899",
+        "legenda": "Video 7"
     },
     {
-        "url": "https://player.vimeo.com/video/327759039"
+        "url": "https://player.vimeo.com/video/327759039",
+        "legenda": "Video 8"
     },
     {
-        "url": "https://player.vimeo.com/video/327759256"
+        "url": "https://player.vimeo.com/video/327759256",
+        "legenda": "Video 9"
     },
     {
-        "url": "https://player.vimeo.com/video/327759335"
+        "url": "https://player.vimeo.com/video/327759335",
+        "legenda": "Video 10"
     },
     {
-        "url": "https://player.vimeo.com/video/327759382"
+        "url": "https://player.vimeo.com/video/327759382",
+        "legenda": "Video 11"
     },
     {
-        "url": "https://player.vimeo.com/video/327759431"
+        "url": "https://player.vimeo.com/video/327759431",
+        "legenda": "Video 12"
     },
     {
-        "url": "https://player.vimeo.com/video/327759495"
+        "url": "https://player.vimeo.com/video/327759495",
+        "legenda": "Video 13"
     },
     {
-        "url": "https://player.vimeo.com/video/327759618"
+        "url": "https://player.vimeo.com/video/327759618",
+        "legenda": "Video 14"
     },
     {
-        "url": "https://player.vimeo.com/video/327759711"
+        "url": "https://player.vimeo.com/video/327759711",
+        "legenda": "Video 15"
     },
     {
-        "url": "https://player.vimeo.com/video/327759993"
+        "url": "https://player.vimeo.com/video/327759993",
+        "legenda": "Video 16"
     },
     {
-        "url": "https://player.vimeo.com/video/327760074"
+        "url": "https://player.vimeo.com/video/327760074",
+        "legenda": "Video 17"
     },
     {
-        "url": "https://player.vimeo.com/video/327760141"
+        "url": "https://player.vimeo.com/video/327760141",
+        "legenda": "Video 18"
     },
     {
-        "url": "https://player.vimeo.com/video/327760202"
+        "url": "https://player.vimeo.com/video/327760202",
+        "legenda": "Video 19"
     },
     {
-        "url": "https://player.vimeo.com/video/327760254"
+        "url": "https://player.vimeo.com/video/327760254",
+        "legenda": "Video 20"
     },
     {
-        "url": "https://player.vimeo.com/video/327760302"
+        "url": "https://player.vimeo.com/video/327760302",
+        "legenda": "Video 21"
     }
 ]

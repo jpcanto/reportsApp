@@ -187,5 +187,15 @@ nav {
     font-weight: bold;
     display: block; }
 
+.videos-manual {
+  display: flex; }
+  .videos-manual .container-videos {
+    margin: 50px auto; }
+  .videos-manual .legenda {
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    border-left: 4px solid;
+    padding-left: 15px; }
+
 button {
   cursor: pointer; }

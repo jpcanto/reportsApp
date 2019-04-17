@@ -18,15 +18,16 @@
 
         vm.activateX = function () {
             vm.activateA = !vm.activateA;
+            if (vm.activateB == true) {
+                vm.activateB = !vm.activateB
+            }
         };
 
         vm.activateY = function () {
             vm.activateB = !vm.activateB;
             if (vm.activateA == true) {
-                vm.activateX();
+                vm.activateA = !vm.activateA;
             }
-            let elems = document.querySelectorAll('.carousel');
-            let instances = M.Carousel.init(elems);
         };
 
         vm.showDocNav = function () {
