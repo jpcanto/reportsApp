@@ -20,8 +20,8 @@
                     templateUrl: "views/academico.html"
                 })
 
-                .when('/documentacao', {
-                    templateUrl: "views/documentacao.html"
+                .when('/treinamento', {
+                    templateUrl: "views/treinamento.html"
                 })
 
                 .otherwise({ redirectTo: '/' });
