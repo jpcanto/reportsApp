@@ -20,10 +20,6 @@
                     templateUrl: "views/academico.html"
                 })
 
-                .when('/midia', {
-                    templateUrl: "views/midia.html"
-                })
-
                 .when('/documentacao', {
                     templateUrl: "views/documentacao.html"
                 })
