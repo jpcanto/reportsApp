@@ -208,4 +208,5 @@ button {
 
 body {
   background: url(../img/bg.jpg);
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
