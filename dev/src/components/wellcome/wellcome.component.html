@@ -428,7 +428,7 @@
 <section ng-show="vm.activateB" ng-repeat="videos in vm.objetoVideos" class="videos-manual">
 
     <div class="container-videos">
-            <iframe class ="container-videos__item" width="640" height="347" frameborder="0" ng-src="{{vm.trustAsUrl(videos.url)}}"
+            <iframe class ="container-videos__item" ng-src="{{vm.trustAsUrl(videos.url)}}"
             webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
             <p class="legenda">{{videos.legenda}}</p>
     </div>

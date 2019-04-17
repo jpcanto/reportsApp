@@ -46,6 +46,11 @@
 
     .container-videos {
         margin: 50px auto;
+        &__item {
+            frameborder: 0;
+            height: 347px;
+            width: 640px;
+        }
     }
     .legenda {
         font-size: 1.4em;

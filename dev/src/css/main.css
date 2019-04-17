@@ -191,6 +191,10 @@ nav {
   display: flex; }
   .videos-manual .container-videos {
     margin: 50px auto; }
+    .videos-manual .container-videos__item {
+      frameborder: 0;
+      height: 347px;
+      width: 640px; }
   .videos-manual .legenda {
     font-size: 1.4em;
     letter-spacing: 2px;
