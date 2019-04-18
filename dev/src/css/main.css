@@ -76,6 +76,46 @@ nav {
       top: 12px;
       width: 36px; }
 
+.home-title {
+  margin-bottom: 100px; }
+  .home-title .title,
+  .home-title .wellcome {
+    color: #565656;
+    font-family: 'CoreCircus', sans-serif;
+    text-align: center;
+    background: linear-gradient(45deg, #2d2d2d 9%, black 100%);
+    border-bottom: 4px double rgba(255, 255, 255, 0.25);
+    border-top: 4px double rgba(255, 255, 255, 0.25);
+    left: 55%;
+    line-height: 1;
+    margin: 0;
+    padding: 15px 0;
+    position: relative;
+    top: 120px;
+    transform: translate(-50%, -50%); }
+    .home-title .title:before,
+    .home-title .wellcome:before {
+      color: rgba(91, 91, 212, 0.7);
+      text-align: left;
+      text-shadow: none;
+      animation: flicker 3s linear infinite;
+      content: attr(data-heading);
+      left: 43%;
+      overflow: hidden;
+      position: absolute;
+      width: 100%;
+      z-index: 5; }
+  .home-title .title {
+    top: 85px; }
+
+@keyframes flicker {
+  0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
+    opacity: .99;
+    text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.4), 1px -1px 0 rgba(255, 255, 255, 0.4), -1px 1px 0 rgba(255, 255, 255, 0.4), 1px 1px 0 rgba(255, 255, 255, 0.4), 0 -2px 8px, 0 0 2px, 0 0 5px blue, 0 0 15px #ff4444, 0 0 2px blue, 0 2px 3px #000; }
+  20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
+    opacity: 0.4;
+    text-shadow: none; } }
+
 .videos-manual {
   display: flex; }
   .videos-manual .container-videos {
