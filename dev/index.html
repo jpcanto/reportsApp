@@ -24,6 +24,7 @@
 
   <script src="src/utils/angularfire/dist/angularfire.js"></script>
   <script src="src/utils/firebase/firebase.js"></script>
+  <script src="src/js/main.js"></script>
   <script src="src/components/listagem-apostilas/listagem-apostilas.component.js"></script>
   <script src="src/components/cadastro/cadastro.component.js"></script>
   <script src="src/js/controllers/homeController.js"></script>
@@ -53,7 +54,7 @@
         <li></i><a href="/">Home</a></li>
         <li></i><a href="/relatorios">Relatórios</a></li>
         <li></i><a href="/academico">Acadêmico</a></li>
-        <li></i><a class="dropdown-trigger" data-target='dropdown1'>Treinamento</a></li>
+        <li></i><a class="dropdown-trigger" data-target='dropdown1'>Treinamento<i class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
       <ul id='dropdown1' class='dropdown-content'>
         <li><a href="/tutorial"><i class="material-icons">library_books</i>Tutorial</a></li>
@@ -69,12 +70,5 @@
   <div class="container" ng-view></div>
 
 </body>
-
-<script>
-  document.addEventListener('DOMContentLoaded', function () {
-    var elems = document.querySelectorAll('.dropdown-trigger');
-    var instances = M.Dropdown.init(elems);
-  });
-</script>
 
 </html>
