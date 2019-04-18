@@ -23,9 +23,9 @@
 
             animation: flicker 3s linear infinite;
             content: attr(data-heading);
-            left: 43%;
+            left: 107px;
             overflow: hidden;
-            position: absolute;
+            position: relative;
             width: 100%;
             z-index: 5;
         }
