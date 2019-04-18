@@ -9,7 +9,9 @@
 
             $routeProvider
                 .when('/', {
-                    templateUrl: "views/home.html"
+                    templateUrl: "views/home.html",
+                    controller: "homeController",
+                    controllerAs: 'vm'
                 })
 
                 .when('/relatorios', {
@@ -22,6 +24,16 @@
 
                 .when('/treinamento', {
                     templateUrl: "views/treinamento.html"
+                })
+
+                .when('/tutorial', {
+                    templateUrl: "views/tutorial.html"
+                })
+
+                .when('/videos', {
+                    templateUrl: "views/videos.html",
+                    controller: "videosController",
+                    controllerAs: 'vm'
                 })
 
                 .otherwise({ redirectTo: '/' });

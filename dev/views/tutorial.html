@@ -1,26 +1,4 @@
-<div class="nav" ng-click="vm.showDocNav()">
-
-    <ul id="slide-out" class="sidenav">
-        <a ng-click="vm.activateX()" class="waves-effect waves-light btn blue darken-3"><i class="material-icons left">
-                folder_open
-            </i>Primeiros passos
-        </a>
-        <li>
-            <div class="divider"></div>
-        </li>
-        <a ng-click="vm.activateY()" class="waves-effect waves-light btn blue darken-3"><i class="material-icons left">
-                folder_open
-            </i>Vídeos
-        </a>
-        <li>
-            <div class="divider"></div>
-        </li>
-    </ul>
-    <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="material-icons">menu</i></a>
-
-</div>
-
-<section ng-show="vm.activateA" class="manual">
+<section class="manual">
 
     <h1>Bem vindo ao time Falcões</h1>
 
@@ -418,20 +396,5 @@
     </p>
 
     <p class="copyright">© 2019 - LivinhoDesenv Web</p>
-
-    <a ng-click="vm.activateX()" class="waves-effect waves-light btn red darken-3"><i class="material-icons left">
-            close
-        </i>Close</a>
-
-</section>
-
-<section ng-show="vm.activateB" ng-repeat="videos in vm.objetoVideos" class="videos-manual">
-
-    <div class="container-videos">
-            <iframe class ="container-videos__item" ng-src="{{vm.trustAsUrl(videos.url)}}"
-            webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-            <p class="legenda">{{videos.legenda}}</p>
-    </div>
-
 
 </section>

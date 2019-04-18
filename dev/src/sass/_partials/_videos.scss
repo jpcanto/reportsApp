@@ -1,0 +1,19 @@
+.videos-manual {
+    display: flex;
+
+    .container-videos {
+        margin: 50px auto;
+        &__item {
+            frameborder: 0;
+            height: 347px;
+            width: 640px;
+        }
+    }
+    .legenda {
+        font-size: 1.4em;
+        letter-spacing: 2px;
+        
+        border-left: 4px solid;
+        padding-left: 15px;
+    }
+}

@@ -1,0 +1,10 @@
+<section ng-repeat="videos in vm.objetoVideos" class="videos-manual">
+
+    <div class="container-videos">
+        <iframe class="container-videos__item" ng-src="{{vm.trustAsUrl(videos.url)}}" webkitallowfullscreen
+            mozallowfullscreen allowfullscreen></iframe>
+        <p class="legenda">{{videos.legenda}}</p>
+    </div>
+
+
+</section>

@@ -16,17 +16,18 @@
   <link rel="stylesheet" href="src/css/main.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
+  <script src="src/utils/materialize/js/materialize.min.js"></script>
   <script src="src/utils/angular/angular.min.js"></script>
   <script src="src/js/app.js"></script>
   <script src="src/utils/angular-route/angular-route.min.js"></script>
   <script src="src/utils/angular-animate/angular-animate.min.js"></script>
-  <script src="src/utils/materialize/js/materialize.min.js"></script>
 
-  <script src="src/components/listagem-apostilas/listagem-apostilas.component.js"></script>
-  <script src="src/components/cadastro/cadastro.component.js"></script>
-  <script src="src/components/wellcome/wellcome.component.js"></script>
   <script src="src/utils/angularfire/dist/angularfire.js"></script>
   <script src="src/utils/firebase/firebase.js"></script>
+  <script src="src/components/listagem-apostilas/listagem-apostilas.component.js"></script>
+  <script src="src/components/cadastro/cadastro.component.js"></script>
+  <script src="src/js/controllers/homeController.js"></script>
+  <script src="src/js/controllers/videosController.js"></script>
   <script>
     // Initialize Firebase
     var config = {
@@ -52,7 +53,11 @@
         <li></i><a href="/">Home</a></li>
         <li></i><a href="/relatorios">Relatórios</a></li>
         <li></i><a href="/academico">Acadêmico</a></li>
-        <li></i><a href="/treinamento">Treinamento</a></li>
+        <li></i><a class="dropdown-trigger" data-target='dropdown1'>Treinamento</a></li>
+      </ul>
+      <ul id='dropdown1' class='dropdown-content'>
+        <li><a href="/tutorial"><i class="material-icons">library_books</i>Tutorial</a></li>
+        <li><a href="/videos"><i class="material-icons">switch_video</i>Vídeos</a></li>
       </ul>
     </div>
   </nav>
@@ -60,8 +65,16 @@
     <h2> TESTE </h2>
   </section>
 
+
   <div class="container" ng-view></div>
 
 </body>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function () {
+    var elems = document.querySelectorAll('.dropdown-trigger');
+    var instances = M.Dropdown.init(elems);
+  });
+</script>
 
 </html>

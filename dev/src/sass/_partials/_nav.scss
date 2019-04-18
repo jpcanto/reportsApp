@@ -50,6 +50,15 @@ nav {
         }
     }
 
+    ul#dropdown1 {
+        left: -40px;
+        top: -54px;
+        & a {
+            color: #444;
+            box-shadow: -4px 0px 10px rgba(14, 14, 14, 0.48) inset;
+        }
+    }
+
 }
 
 .page-title {

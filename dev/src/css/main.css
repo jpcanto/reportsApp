@@ -43,6 +43,12 @@ nav {
       line-height: 55px;
       position: relative;
       transition: all 0.6s; }
+  nav ul#dropdown1 {
+    left: -40px;
+    top: -54px; }
+    nav ul#dropdown1 a {
+      color: #444;
+      box-shadow: -4px 0px 10px rgba(14, 14, 14, 0.48) inset; }
 
 .page-title {
   background-color: #fff;
@@ -69,6 +75,48 @@ nav {
       transform: rotate(45deg);
       top: 12px;
       width: 36px; }
+
+.videos-manual {
+  display: flex; }
+  .videos-manual .container-videos {
+    margin: 50px auto; }
+    .videos-manual .container-videos__item {
+      frameborder: 0;
+      height: 347px;
+      width: 640px; }
+  .videos-manual .legenda {
+    font-size: 1.4em;
+    letter-spacing: 2px;
+    border-left: 4px solid;
+    padding-left: 15px; }
+
+.manual {
+  color: white;
+  font-size: 1.1em;
+  background-color: rgba(0, 102, 210, 0.5);
+  border-radius: 15px;
+  margin: 15px;
+  max-height: 500px;
+  overflow-y: scroll;
+  padding: 15px; }
+  .manual h1 {
+    border-bottom: 2px solid; }
+  .manual .titulo {
+    margin: 20px 0; }
+  .manual .bloco-texto {
+    margin-left: 20px; }
+  .manual .subtitulo {
+    color: #f9a825;
+    font-weight: bold;
+    text-decoration: underline;
+    margin: 10px 0; }
+  .manual .copyright {
+    text-align: center;
+    font-weight: bold; }
+  .manual .topico {
+    font-family: sans-serif;
+    font-weight: bold;
+    display: block; }
 
 .presentation {
   display: flex;
@@ -156,52 +204,6 @@ nav {
           margin: 0 10px; }
     .filter .nav select {
       display: block; }
-
-@media only screen and (min-width: 993px) {
-  nav.doc-nav a.sidenav-trigger {
-    display: block; } }
-
-.manual {
-  color: white;
-  font-size: 1.1em;
-  background-color: rgba(0, 102, 210, 0.5);
-  border-radius: 15px;
-  margin: 15px;
-  max-height: 500px;
-  overflow-y: scroll;
-  padding: 15px; }
-  .manual h1 {
-    border-bottom: 2px solid; }
-  .manual .titulo {
-    margin: 20px 0; }
-  .manual .bloco-texto {
-    margin-left: 20px; }
-  .manual .subtitulo {
-    color: #f9a825;
-    font-weight: bold;
-    text-decoration: underline;
-    margin: 10px 0; }
-  .manual .copyright {
-    text-align: center;
-    font-weight: bold; }
-  .manual .topico {
-    font-family: sans-serif;
-    font-weight: bold;
-    display: block; }
-
-.videos-manual {
-  display: flex; }
-  .videos-manual .container-videos {
-    margin: 50px auto; }
-    .videos-manual .container-videos__item {
-      frameborder: 0;
-      height: 347px;
-      width: 640px; }
-  .videos-manual .legenda {
-    font-size: 1.4em;
-    letter-spacing: 2px;
-    border-left: 4px solid;
-    padding-left: 15px; }
 
 button {
   cursor: pointer; }
