@@ -29,18 +29,6 @@
   <script src="src/components/cadastro/cadastro.component.js"></script>
   <script src="src/js/controllers/homeController.js"></script>
   <script src="src/js/controllers/videosController.js"></script>
-  <script>
-    // Initialize Firebase
-    var config = {
-      apiKey: "AIzaSyBOUSi4PnpCCAL3FnVjBz3E_IZQk6d3wVk",
-      authDomain: "reportswebapp.firebaseapp.com",
-      databaseURL: "https://reportswebapp.firebaseio.com",
-      projectId: "reportswebapp",
-      storageBucket: "reportswebapp.appspot.com",
-      messagingSenderId: "592613138489"
-    };
-    firebase.initializeApp(config);
-  </script>
 
 </head>
 
@@ -54,7 +42,8 @@
         <li></i><a href="/">Home</a></li>
         <li></i><a href="/relatorios">Relatórios</a></li>
         <li></i><a href="/academico">Acadêmico</a></li>
-        <li></i><a class="dropdown-trigger" data-target='dropdown1'>Treinamento<i class="material-icons right">arrow_drop_down</i></a></li>
+        <li></i><a class="dropdown-trigger" data-target='dropdown1'>Treinamento<i
+              class="material-icons right">arrow_drop_down</i></a></li>
       </ul>
       <ul id='dropdown1' class='dropdown-content'>
         <li><a href="/tutorial"><i class="material-icons">library_books</i>Tutorial</a></li>
