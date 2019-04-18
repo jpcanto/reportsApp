@@ -9,12 +9,12 @@
         background: linear-gradient(45deg, rgba(45,45,45,1) 9%,rgba(0,0,0,1) 100%);
         border-bottom: 4px double rgba(255, 255, 255, 0.25);
         border-top: 4px double rgba(255, 255, 255, 0.25);
-        left: 55%;
+        left: 50%;
         line-height: 1;
         margin: 0;
         padding: 15px 0;
         position: relative;
-        top: 120px;
+        top: 86px;
         transform: translate(-50%, -50%);
         &:before {
             color: rgba(91, 91, 212, 0.7);
@@ -32,7 +32,7 @@
     }
 
     .title {
-        top: 85px;
+        top: 46px;
     }
     
     @keyframes flicker {
@@ -46,4 +46,11 @@
         }
     }
 
+}
+
+.home-descricao {
+    color: rgb(91, 91, 212);
+
+    background-color: white;
+    padding: 15px;
 }

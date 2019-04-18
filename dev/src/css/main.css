@@ -86,12 +86,12 @@ nav {
     background: linear-gradient(45deg, #2d2d2d 9%, black 100%);
     border-bottom: 4px double rgba(255, 255, 255, 0.25);
     border-top: 4px double rgba(255, 255, 255, 0.25);
-    left: 55%;
+    left: 50%;
     line-height: 1;
     margin: 0;
     padding: 15px 0;
     position: relative;
-    top: 120px;
+    top: 86px;
     transform: translate(-50%, -50%); }
     .home-title .title:before,
     .home-title .wellcome:before {
@@ -106,7 +106,7 @@ nav {
       width: 100%;
       z-index: 5; }
   .home-title .title {
-    top: 85px; }
+    top: 46px; }
 
 @keyframes flicker {
   0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
@@ -115,6 +115,11 @@ nav {
   20%, 21.999%, 63%, 63.999%, 65%, 69.999% {
     opacity: 0.4;
     text-shadow: none; } }
+
+.home-descricao {
+  color: #5b5bd4;
+  background-color: white;
+  padding: 15px; }
 
 .videos-manual {
   display: flex; }
@@ -160,12 +165,12 @@ nav {
 
 .presentation {
   display: flex;
-  flex-direction: column;
-  margin: 30px 0; }
+  margin: 30px 5px; }
   .presentation .title {
+    color: #fff;
     font-size: 3em;
     border-left: 5px solid;
-    margin: auto;
+    margin: 10px 0;
     padding-left: 10px; }
   .presentation .presentation__box {
     margin: auto; }
@@ -178,15 +183,15 @@ nav {
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
     box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
-    margin: 20px auto;
+    margin: 5px 0 20px 5px;
     overflow: hidden;
     padding: 30px;
-    width: 343px; }
+    width: 50vw; }
     .cadastro .cadastro__caixa--titulo p {
-      color: #111;
+      color: #fff;
       font-size: 32px;
       font-weight: 600;
-      border-left: 5px solid #111;
+      border-left: 5px solid #fff;
       margin: 0 0 35px;
       padding: 10px 0 10px 50px;
       position: relative;
