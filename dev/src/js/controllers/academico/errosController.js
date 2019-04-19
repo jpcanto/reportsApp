@@ -9,6 +9,14 @@
 
         var vm = this;
 
+        vm.errorFixed = function () {
+            vm.fixedError = true;
+        };
+
+        vm.ToFix = function () {
+            vm.errorToFix = true;
+        };
+
     };
 
 })();
