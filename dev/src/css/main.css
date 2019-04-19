@@ -86,13 +86,10 @@ nav {
     background: linear-gradient(45deg, #2d2d2d 9%, black 100%);
     border-bottom: 4px double rgba(255, 255, 255, 0.25);
     border-top: 4px double rgba(255, 255, 255, 0.25);
-    left: 50%;
     line-height: 1;
     margin: 0;
     padding: 15px 0;
-    position: relative;
-    top: 53px;
-    transform: translate(-50%, -50%); }
+    position: relative; }
     .home-title .title:before,
     .home-title .wellcome:before {
       color: rgba(91, 91, 212, 0.7);
@@ -105,8 +102,6 @@ nav {
       position: relative;
       width: 100%;
       z-index: 5; }
-  .home-title .title {
-    top: 46px; }
 
 @keyframes flicker {
   0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
