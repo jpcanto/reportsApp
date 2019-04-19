@@ -46,10 +46,11 @@ nav {
       line-height: 55px;
       position: relative;
       transition: all 0.6s; }
-  nav ul#dropdown1 {
+  nav .dropdown-content {
+    font-weight: 700;
     left: -40px;
     top: -54px; }
-    nav ul#dropdown1 a {
+    nav .dropdown-content a {
       color: #444;
       box-shadow: -4px 0px 10px rgba(14, 14, 14, 0.48) inset; }
 
@@ -101,7 +102,7 @@ nav {
       text-shadow: none;
       animation: flicker 3s linear infinite;
       content: attr(data-heading);
-      left: 135px;
+      left: 136px;
       overflow: hidden;
       position: relative;
       width: 100%;
@@ -166,6 +167,91 @@ nav {
     font-family: "Cuprum", sans-serif;
     font-weight: bold;
     display: block; }
+
+.correcoes {
+  /*	
+	Side Navigation Menu V2, RWD
+	===================
+	License:
+	https://goo.gl/EaUPrt
+	===================
+	Author: @PableraShow
+
+ */ }
+  .correcoes .title {
+    color: #fff;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: left;
+    border-left: 5px solid;
+    line-height: 1em;
+    margin-left: 10px;
+    padding-left: 10px; }
+  .correcoes h2 {
+    font-size: 1em;
+    font-weight: 300;
+    text-align: center;
+    display: block;
+    line-height: 1em;
+    padding-bottom: 2em;
+    color: #FB667A; }
+  .correcoes h2 a {
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #FB667A;
+    text-decoration: none; }
+  .correcoes .container th h1 {
+    color: #185875;
+    font-family: "Bungee Inline", cursive;
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: left; }
+  .correcoes .container th {
+    padding: 10px; }
+  .correcoes .container td {
+    color: #fff;
+    font-family: "Playfair Display SC", serif;
+    font-size: 1em;
+    font-weight: normal;
+    -webkit-box-shadow: 0 2px 2px -2px #0E1119;
+    -moz-box-shadow: 0 2px 2px -2px #0E1119;
+    box-shadow: 0 2px 2px -2px #0E1119; }
+  .correcoes .container {
+    text-align: left;
+    overflow: hidden;
+    width: 100%;
+    margin: 0 10px;
+    display: table;
+    max-width: 98%; }
+  .correcoes .container td, .correcoes .container th {
+    padding: 2% 10px; }
+  .correcoes .container tr:nth-child(odd) {
+    background-color: rgba(50, 60, 80, 0.8); }
+  .correcoes .container tr:nth-child(even) {
+    background-color: rgba(50, 60, 80, 0.8); }
+  .correcoes .container th {
+    background-color: #1F2739; }
+  .correcoes .container td:first-child {
+    color: #FB667A; }
+  .correcoes .container tr:hover {
+    background-color: #464A52;
+    -webkit-box-shadow: 0 6px 6px -6px #0E1119;
+    -moz-box-shadow: 0 6px 6px -6px #0E1119;
+    box-shadow: 0 6px 6px -6px #0E1119; }
+  .correcoes .container td:hover {
+    color: #fff;
+    font-weight: bold;
+    background-image: linear-gradient(to right top, #e1443d, #e44a43, #e85049, #eb554f, #ee5b55);
+    box-shadow: #EEC472 -1px 1px, #EEC472 -2px 2px, #EEC472 -3px 3px, #EEC472 -4px 4px, #EEC472 -5px 5px, #EEC472 -6px 6px;
+    transform: translate3d(6px, -6px, 0);
+    transition-delay: 0s;
+    transition-duration: 0.4s;
+    transition-property: all;
+    transition-timing-function: line; }
+  @media (max-width: 800px) {
+    .correcoes .container td:nth-child(4),
+    .correcoes .container th:nth-child(4) {
+      display: none; } }
 
 .presentation {
   display: flex;
@@ -263,4 +349,7 @@ body {
   background-attachment: fixed; }
 
 .view-container {
-  margin-left: 200px; }
+  margin-left: 210px; }
+
+.title {
+  font-family: "Cuprum", sans-serif; }

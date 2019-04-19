@@ -18,8 +18,12 @@
                     templateUrl: "views/relatorios.html"
                 })
 
-                .when('/academico', {
-                    templateUrl: "views/academico.html"
+                .when('/erros', {
+                    templateUrl: "views/academico-erros.html"
+                })
+
+                .when('/regras', {
+                    templateUrl: "views/academico-regras.html"
                 })
 
                 .when('/treinamento', {

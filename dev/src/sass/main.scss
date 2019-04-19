@@ -3,7 +3,8 @@
 '_partials/nav',
 '_partials/home',
 '_partials/videos',
-'_partials/tutorial.scss',
+'_partials/tutorial',
+'_partials/academico',
 '../components/cadastro/cadastro.component.scss',
 '../components/listagem-apostilas/listagem-apostilas.component.scss';
 
@@ -18,5 +19,9 @@ body {
 }
 
 .view-container {
-    margin-left: 200px;
+    margin-left: 210px;
+}
+
+.title {
+    font-family: $mainFont;
 }

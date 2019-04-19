@@ -56,7 +56,9 @@ nav {
         }
     }
 
-    ul#dropdown1 {
+    .dropdown-content {
+        font-weight: 700;
+
         left: -40px;
         top: -54px;
         & a {

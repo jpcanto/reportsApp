@@ -15,7 +15,8 @@
   <link rel="stylesheet" href="src/utils/materialize/css/materialize.min.css">
   <link rel="stylesheet" href="src/css/main.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Cuprum:400,700|Playfair+Display+SC" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Cuprum:400,700|Playfair+Display+SC|Staatliches"
+    rel="stylesheet">
 
   <script src="src/utils/materialize/js/materialize.min.js"></script>
   <script src="src/utils/angular/angular.min.js"></script>
@@ -43,8 +44,14 @@
         <li></i><a href="/">Home</a></li>
         <li></i><a href="/relatorios">Relatórios</a></li>
         <li></i><a href="/academico">Acadêmico</a></li>
+        <li></i><a class="dropdown-trigger" data-target='dropdown2'>Acadêmico<i
+              class="material-icons right nav-icon">arrow_drop_down</i></a></li>
         <li></i><a class="dropdown-trigger" data-target='dropdown1'>Treinamento<i
               class="material-icons right nav-icon">arrow_drop_down</i></a></li>
+      </ul>
+      <ul id='dropdown2' class='dropdown-content'>
+        <li><a href="/erros"><i class="material-icons">error</i>Erros</a></li>
+        <li><a href="/regras"><i class="material-icons">library_books</i>Regras</a></li>
       </ul>
       <ul id='dropdown1' class='dropdown-content'>
         <li><a href="/tutorial"><i class="material-icons">library_books</i>Tutorial</a></li>
