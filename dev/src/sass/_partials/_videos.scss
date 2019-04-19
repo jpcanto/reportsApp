@@ -2,14 +2,19 @@
     display: flex;
 
     .container-videos {
+        background: rgba(0, 102, 210, 0.5);
+        border: 5px double #fff;
+        border-radius: 15px;
         margin: 40px 10px;
+        padding: 15px;
         &__item {
-            frameborder: 0;
+            border: 0;
             height: 347px;
             width: 640px;
         }
     }
     .legenda {
+        color: #fff;
         font-size: 1.4em;
         letter-spacing: 2px;
         

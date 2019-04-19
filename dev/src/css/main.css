@@ -124,12 +124,17 @@ nav {
 .videos-manual {
   display: flex; }
   .videos-manual .container-videos {
-    margin: 40px 10px; }
+    background: rgba(0, 102, 210, 0.5);
+    border: 5px double #fff;
+    border-radius: 15px;
+    margin: 40px 10px;
+    padding: 15px; }
     .videos-manual .container-videos__item {
-      frameborder: 0;
+      border: 0;
       height: 347px;
       width: 640px; }
   .videos-manual .legenda {
+    color: #fff;
     font-size: 1.4em;
     letter-spacing: 2px;
     border-left: 4px solid;
