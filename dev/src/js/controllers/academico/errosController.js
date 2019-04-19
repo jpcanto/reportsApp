@@ -15,6 +15,7 @@
 
         vm.ToFix = function () {
             vm.errorToFix = true;
+            vm.fixedError = false;
         };
 
     };
