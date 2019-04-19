@@ -243,9 +243,12 @@ nav {
           color: #185875; }
         .correcoes .container tr.academico-verify.fixed-error td label {
           color: #fff; }
-        .correcoes .container tr.academico-verify.fixed-error td .with-gap.uncheck:checked + span:after,
-        .correcoes .container tr.academico-verify.fixed-error td .with-gap.uncheck:checked + span:before {
-          border: 2px solid #00ffe7; }
+    .correcoes .container tr.academico-verify.fixed-error.error-to-fix {
+      background-color: rgba(243, 67, 67, 0.5) !important;
+      transition: 2s; }
+      .correcoes .container tr.academico-verify.fixed-error.error-to-fix .with-gap.uncheck:checked + span:after,
+      .correcoes .container tr.academico-verify.fixed-error.error-to-fix .with-gap.uncheck:checked + span:before {
+        border: 2px solid #fb667a; }
     .correcoes .container tr:hover {
       background-color: #464A52;
       -webkit-box-shadow: 0 6px 6px -6px #0E1119;

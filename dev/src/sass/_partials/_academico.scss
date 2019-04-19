@@ -95,15 +95,20 @@
             font-family: $thirdFont;
             color: #185875;
          }
-         label {
-            color: #fff;
-         }
-         .with-gap.uncheck:checked+span:after,
-         .with-gap.uncheck:checked+span:before {
-            border: 2px solid #00ffe7;
+            label {
+               color: #fff;
+            }
          }
       }
-   }
+
+      &.academico-verify.fixed-error.error-to-fix {
+         background-color: rgba(243, 67, 67, 0.5) !important;
+         transition: 2s;
+         .with-gap.uncheck:checked+span:after,
+            .with-gap.uncheck:checked+span:before {
+               border: 2px solid #fb667a;
+            }
+      }
       
       &:hover {
          background-color: #464A52;
