@@ -19,11 +19,15 @@
                 })
 
                 .when('/erros', {
-                    templateUrl: "views/academico-erros.html"
+                    templateUrl: "views/academico-erros.html",
+                    controller: "errosController",
+                    controllerAs: 'vm'
                 })
 
                 .when('/regras', {
-                    templateUrl: "views/academico-regras.html"
+                    templateUrl: "views/academico-regras.html",
+                    controller: "regrasController",
+                    controllerAs: 'vm'
                 })
 
                 .when('/treinamento', {
