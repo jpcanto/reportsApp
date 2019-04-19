@@ -101,7 +101,7 @@
          }
       }
 
-      &.academico-verify.fixed-error.error-to-fix {
+      &.academico-verify.error-to-fix {
          background-color: rgba(243, 67, 67, 0.5) !important;
          transition: 2s;
          .with-gap.uncheck:checked+span:after,

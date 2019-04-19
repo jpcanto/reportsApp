@@ -33,10 +33,7 @@
             </tr>
         </thead>
         <tbody>
-            <tr class="academico-verify" ng-class="{
-            'fixed-error' : vm.fixedError,
-            'error-to-fix' : vm.errorToFix,
-        }">
+            <tr class="academico-verify" id="academico-verify">
                 <td>R+ GO 15</td>
                 <td>12%</td>
                 <td>08</td>
@@ -44,13 +41,11 @@
                 </td>
                 <td>
                     <label>
-                        <input class="with-gap" name="group1" type="radio" ng-click="errorFixed()"
-                            ng-model="vm.fixedError" value="true" />
+                        <input class="with-gap" name="group1" type="radio" ng-click="vm.errorFixed()" value="true" />
                         <span>OK</span>
                     </label>
                     <label>
-                        <input class="with-gap uncheck" name="group1" type="radio" ng-click="ToFix()"
-                            ng-model="vm.errorToFix" value="true" />
+                        <input class="with-gap uncheck" name="group1" type="radio" ng-click="vm.toFix()" value="true" />
                         <span>X</span>
                     </label>
                 </td>

@@ -10,12 +10,14 @@
         var vm = this;
 
         vm.errorFixed = function () {
-            vm.fixedError = true;
+            let getPath = document.getElementById('academico-verify');
+            getPath.classList.toggle('fixed-error');
+            getPath.classList.remove('error-to-fix');
         };
 
-        vm.ToFix = function () {
-            vm.errorToFix = true;
-            vm.fixedError = false;
+        vm.toFix = function () {
+            let getPath = document.getElementById('academico-verify');
+            getPath.classList.toggle('error-to-fix');
         };
 
     };
