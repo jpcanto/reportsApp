@@ -117,14 +117,14 @@ nav {
     text-shadow: none; } }
 
 .home-descricao {
-  color: #5b5bd4;
-  background-color: white;
+  color: #fff;
+  background-color: rgba(0, 102, 210, 0.5);
   padding: 15px; }
 
 .videos-manual {
   display: flex; }
   .videos-manual .container-videos {
-    margin: 50px auto; }
+    margin: 40px 10px; }
     .videos-manual .container-videos__item {
       frameborder: 0;
       height: 347px;
@@ -257,3 +257,6 @@ body {
   background: url(../img/bg.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed; }
+
+.view-container {
+  margin-left: 200px; }
