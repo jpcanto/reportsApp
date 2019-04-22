@@ -1,86 +1,86 @@
 [
     {
         "url": "https://player.vimeo.com/video/327758628",
-        "legenda": "Video 1"
+        "legenda": "Video 1: Introdução à MEDGRUPO"
     },
     {
         "url": "https://player.vimeo.com/video/327758652",
-        "legenda": "Video 2"
+        "legenda": "Video 2: A equipe falcões"
     },
     {
         "url": "https://player.vimeo.com/video/327758687",
-        "legenda": "Video 3"
+        "legenda": "Video 3: Configurando a máquina"
     },
     {
         "url": "https://player.vimeo.com/video/327758742",
-        "legenda": "Video 4"
+        "legenda": "Video 4: Baixando e configurando R+"
     },
     {
         "url": "https://player.vimeo.com/video/327758804",
-        "legenda": "Video 5"
+        "legenda": "Video 5: Criando a branch"
     },
     {
         "url": "https://player.vimeo.com/video/327758831",
-        "legenda": "Video 6"
+        "legenda": "Video 6: Estrutura dos arquivos R+"
     },
     {
         "url": "https://player.vimeo.com/video/327758899",
-        "legenda": "Video 7"
+        "legenda": "Video 7: Biblioteca R+"
     },
     {
         "url": "https://player.vimeo.com/video/327759039",
-        "legenda": "Video 8"
+        "legenda": "Video 8: Utilizando o robô R+ (Giotheus)"
     },
     {
         "url": "https://player.vimeo.com/video/327759256",
-        "legenda": "Video 9"
+        "legenda": "Video 9: Mergeando as modificações"
     },
     {
         "url": "https://player.vimeo.com/video/327759335",
-        "legenda": "Video 10"
+        "legenda": "Video 10: Conhecendo as extensões utilizadas"
     },
     {
         "url": "https://player.vimeo.com/video/327759382",
-        "legenda": "Video 11"
+        "legenda": "Video 11: Instalando as extensões"
     },
     {
         "url": "https://player.vimeo.com/video/327759431",
-        "legenda": "Video 12"
+        "legenda": "Video 12: Minificando"
     },
     {
         "url": "https://player.vimeo.com/video/327759495",
-        "legenda": "Video 13"
+        "legenda": "Video 13: Colocando posição"
     },
     {
         "url": "https://player.vimeo.com/video/327759618",
-        "legenda": "Video 14"
+        "legenda": "Video 14: Minificando apostila com posição"
     },
     {
         "url": "https://player.vimeo.com/video/327759711",
-        "legenda": "Video 15"
+        "legenda": "Video 15: Upload html utilizando ADMIM MEDREADER"
     },
     {
         "url": "https://player.vimeo.com/video/327759993",
-        "legenda": "Video 16"
+        "legenda": "Video 16: Cloudberry, configurando e resumindo"
     },
     {
         "url": "https://player.vimeo.com/video/327760074",
-        "legenda": "Video 17"
+        "legenda": "Video 17: Upando arquivos Cloud"
     },
     {
         "url": "https://player.vimeo.com/video/327760141",
-        "legenda": "Video 18"
+        "legenda": "Video 18: Falcões, SCRUM"
     },
     {
         "url": "https://player.vimeo.com/video/327760202",
-        "legenda": "Video 19"
+        "legenda": "Video 19: Divisão da equipe Falcões"
     },
     {
         "url": "https://player.vimeo.com/video/327760254",
-        "legenda": "Video 20"
+        "legenda": "Video 20: Regras DESENV"
     },
     {
         "url": "https://player.vimeo.com/video/327760302",
-        "legenda": "Video 21"
+        "legenda": "Video 21: Configurando e usando Mass Image Compressor"
     }
 ]
