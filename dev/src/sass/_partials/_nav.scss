@@ -3,13 +3,19 @@
 }
 
 nav {
+    font-family: $secondFont;
+
     background-color: #383B42;
     box-shadow: -4px 0px 10px rgba(14, 14, 14, 0.48) inset;
     height: 100%;
     left: 0;
     position: fixed;
     top: 0;
-    width: 200px;
+    width: 210px;
+
+    .nav-icon {
+        height: 55px !important;
+    }
 
     img {
         margin: 10px 20px;
@@ -50,7 +56,9 @@ nav {
         }
     }
 
-    ul#dropdown1 {
+    .dropdown-content {
+        font-weight: 700;
+
         left: -40px;
         top: -54px;
         & a {

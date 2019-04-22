@@ -18,8 +18,16 @@
                     templateUrl: "views/relatorios.html"
                 })
 
-                .when('/academico', {
-                    templateUrl: "views/academico.html"
+                .when('/erros', {
+                    templateUrl: "views/academico-erros.html",
+                    controller: "errosController",
+                    controllerAs: 'vm'
+                })
+
+                .when('/regras', {
+                    templateUrl: "views/academico-regras.html",
+                    controller: "regrasController",
+                    controllerAs: 'vm'
                 })
 
                 .when('/treinamento', {
