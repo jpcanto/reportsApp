@@ -15,7 +15,9 @@
                 })
 
                 .when('/relatorios', {
-                    templateUrl: "views/relatorios.html"
+                    templateUrl: "views/relatorios.html",
+                    controller: "relatoriosController",
+                    controllerAs: 'vm'
                 })
 
                 .when('/erros', {

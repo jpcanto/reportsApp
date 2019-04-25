@@ -1,0 +1,33 @@
+@keyframes typing {
+    from { width: 0 }
+    to { width:8.75em }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: white }
+}
+
+.titulo-component {
+    color: #fff;
+    font-size: 3em;
+    
+    animation: typing 4s steps(16, end);
+    margin: 10px 0;
+    overflow:hidden;
+    padding-left: 10px;
+    position: relative;
+    white-space: nowrap;
+    width: fit-content;
+
+    span {
+        color: #FFF;
+        
+        animation: blink-caret 1s step-end infinite;
+        border-right: .1em solid;
+        position: relative;
+        right:0;
+        top:0;
+        width:0;
+    }
+}
