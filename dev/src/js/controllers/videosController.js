@@ -21,8 +21,8 @@
             return $sce.trustAsResourceUrl(url)
         }
 
-        vm.scroll = function() {
-            $location.hash('video12');
+        vm.scroll = function(element) {
+            $location.hash(element);
         }
 
     };

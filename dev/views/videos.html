@@ -11,7 +11,7 @@
     <p class="title">Index vídeos</p>
     <div class="nav-wrapper">
         <ul class="right">
-            <a ng-click='vm.scroll()' ng-repeat="videos in vm.objetoVideos">
+            <a ng-click='vm.scroll("video" + $index)' ng-repeat="videos in vm.objetoVideos">
                 <i class="material-icons right nav-icon">adjust</i>
                 <span>{{videos.legenda}}</span>
             </a>
