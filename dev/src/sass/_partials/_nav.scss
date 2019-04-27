@@ -2,7 +2,8 @@
     margin: auto;
 }
 
-nav {
+nav,
+nav.videos-nav {
     font-family: $secondFont;
 
     background-color: #383B42;
@@ -67,6 +68,14 @@ nav {
         }
     }
 
+}
+
+nav.videos-nav {
+    box-shadow: 0px -4px 10px rgba(14, 14, 14, 0.48) inset;
+    left: unset;
+    overflow: scroll;
+    right: 0;
+    width: 500px;
 }
 
 .page-title {

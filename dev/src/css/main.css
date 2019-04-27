@@ -5,7 +5,8 @@
 .nav-wrapper {
   margin: auto; }
 
-nav {
+nav,
+nav.videos-nav {
   font-family: "Playfair Display SC", serif;
   background-color: #383B42;
   box-shadow: -4px 0px 10px rgba(14, 14, 14, 0.48) inset;
@@ -14,12 +15,15 @@ nav {
   position: fixed;
   top: 0;
   width: 210px; }
-  nav .nav-icon {
+  nav .nav-icon,
+  nav.videos-nav .nav-icon {
     height: 55px !important; }
-  nav img {
+  nav img,
+  nav.videos-nav img {
     margin: 10px 20px;
     width: 150px; }
-  nav .title {
+  nav .title,
+  nav.videos-nav .title {
     color: #F6F6EF;
     font-size: 20px;
     font-weight: normal;
@@ -30,13 +34,15 @@ nav {
     box-shadow: -4px 0px 10px rgba(14, 14, 14, 0.48) inset;
     line-height: 60px;
     margin: 0; }
-  nav li {
+  nav li,
+  nav.videos-nav li {
     border-bottom: 1px solid #42454D;
     border-top: 1px solid #2E3036;
     padding-left: 48px;
     transition: all 0.6s;
     width: -webkit-fill-available; }
-    nav li a {
+    nav li a,
+    nav.videos-nav li a {
       color: #b3b3b3;
       font-size: 18px;
       letter-spacing: 1px;
@@ -46,13 +52,22 @@ nav {
       line-height: 55px;
       position: relative;
       transition: all 0.6s; }
-  nav .dropdown-content {
+  nav .dropdown-content,
+  nav.videos-nav .dropdown-content {
     font-weight: 700;
     left: -40px;
     top: -54px; }
-    nav .dropdown-content a {
+    nav .dropdown-content a,
+    nav.videos-nav .dropdown-content a {
       color: #444;
       box-shadow: -4px 0px 10px rgba(14, 14, 14, 0.48) inset; }
+
+nav.videos-nav {
+  box-shadow: 0px -4px 10px rgba(14, 14, 14, 0.48) inset;
+  left: unset;
+  overflow: scroll;
+  right: 0;
+  width: 500px; }
 
 .page-title {
   background-color: #fff;
@@ -122,11 +137,10 @@ nav {
   padding: 15px; }
 
 .videos-manual {
-  display: flex; }
+  display: flex;
+  flex-direction: column;
+  width: 70%; }
   .videos-manual .container-videos {
-    background: rgba(0, 102, 210, 0.5);
-    border: 5px double #fff;
-    border-radius: 15px;
     margin: 40px 10px;
     padding: 15px; }
     .videos-manual .container-videos__item {
@@ -139,6 +153,22 @@ nav {
     letter-spacing: 2px;
     border-left: 4px solid;
     padding-left: 15px; }
+  .videos-manual-title {
+    display: block;
+    pointer-events: none;
+    opacity: 0;
+    font-size: 18px;
+    color: white;
+    background: rgba(0, 102, 210, 0.5);
+    text-align: right;
+    padding: 2px 12px;
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    transform: translateY(-50%);
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    transition: all 300ms ease-in-out; }
 
 .manual {
   color: white;
@@ -156,7 +186,7 @@ nav {
   .manual .bloco-texto {
     margin-left: 20px; }
   .manual .subtitulo {
-    color: #f9a825;
+    color: #ff5656;
     font-weight: bold;
     text-decoration: underline;
     margin: 10px 0; }
@@ -269,12 +299,6 @@ nav {
 .presentation {
   display: flex;
   margin: 30px 5px; }
-  .presentation .title {
-    color: #fff;
-    font-size: 3em;
-    border-left: 5px solid;
-    margin: 10px 0;
-    padding-left: 10px; }
   .presentation .presentation__box {
     margin: auto; }
 
@@ -319,6 +343,37 @@ nav {
     .cadastro .buttons a {
       margin: 20px auto; }
 
+@keyframes typing {
+  from {
+    width: 0; }
+  to {
+    width: 8.75em; } }
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent; }
+  50% {
+    border-color: white; } }
+
+.titulo-component {
+  color: #fff;
+  font-size: 3em;
+  animation: typing 4s steps(16, end);
+  margin: 10px 0;
+  overflow: hidden;
+  padding-left: 10px;
+  position: relative;
+  white-space: nowrap;
+  width: fit-content; }
+  .titulo-component span {
+    color: #FFF;
+    animation: blink-caret 1s step-end infinite;
+    border-right: .1em solid;
+    position: relative;
+    right: 0;
+    top: 0;
+    width: 0; }
+
 .main-content {
   font-family: "Cuprum", sans-serif;
   font-size: 1.1em;
@@ -353,16 +408,15 @@ nav {
     .filter .nav select {
       display: block; }
 
-button {
-  cursor: pointer; }
-
-body {
-  background: url(../img/bg.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed; }
-
-.view-container {
-  margin-left: 210px; }
-
-.title {
-  font-family: "Cuprum", sans-serif; }
+html {
+  scroll-behavior: smooth; }
+  html body {
+    background: url(../img/bg.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed; }
+    html body button {
+      cursor: pointer; }
+    html body .view-container {
+      margin-left: 210px; }
+    html body .title {
+      font-family: "Cuprum", sans-serif; }

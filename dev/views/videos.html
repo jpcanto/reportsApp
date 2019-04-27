@@ -1,10 +1,20 @@
 <section ng-repeat="videos in vm.objetoVideos" class="videos-manual">
 
-    <div class="container-videos">
-        <iframe class="container-videos__item" ng-src="{{vm.trustAsUrl(videos.url)}}" webkitallowfullscreen
-            mozallowfullscreen allowfullscreen></iframe>
+    <div id="video{{$index}}" class="container-videos">
+        <iframe class="container-videos__item" ng-src="{{vm.trustAsUrl(videos.url)}}"></iframe>
         <p class="legenda">{{videos.legenda}}</p>
     </div>
 
-
 </section>
+
+<nav class="videos-nav" style="overflow: scroll">
+    <p class="title">Index vídeos</p>
+    <div class="nav-wrapper">
+        <ul class="right">
+            <a ng-click='vm.scroll()' ng-repeat="videos in vm.objetoVideos">
+                <i class="material-icons right nav-icon">adjust</i>
+                <span>{{videos.legenda}}</span>
+            </a>
+        </ul>
+    </div>
+</nav>

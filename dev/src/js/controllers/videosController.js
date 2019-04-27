@@ -5,9 +5,9 @@
         .module("reportsApp")
         .controller("videosController", videosController)
 
-    videosController.$inject = ['$http', '$sce'];
+    videosController.$inject = ['$http', '$sce', '$location'];
 
-    function videosController($http, $sce) {
+    function videosController($http, $sce, $location) {
 
         var vm = this;
 
@@ -17,9 +17,13 @@
                 console.log(response.data);
             });
 
-            vm.trustAsUrl = function(url){
-                return $sce.trustAsResourceUrl(url)
-               }
+        vm.trustAsUrl = function (url) {
+            return $sce.trustAsResourceUrl(url)
+        }
+
+        vm.scroll = function() {
+            $location.hash('video12');
+        }
 
     };
 

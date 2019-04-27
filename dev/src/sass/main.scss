@@ -9,20 +9,24 @@
 '../components/titulo/titulo.component.scss',
 '../components/tabelas/tabelas.component.scss';
 
-button {
-    cursor: pointer;
-}
+html {
+    scroll-behavior: smooth;
+    
+    body {
+        background: url(../img/bg.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        
+        button {
+            cursor: pointer;
+        }
 
-body {
-    background: url(../img/bg.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-
-.view-container {
-    margin-left: 210px;
-}
-
-.title {
-    font-family: $mainFont;
+        .view-container {
+            margin-left: 210px;
+        }
+        
+        .title {
+            font-family: $mainFont;
+        }
+    }
 }

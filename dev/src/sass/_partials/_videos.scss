@@ -1,10 +1,9 @@
 .videos-manual {
     display: flex;
+    flex-direction: column;
+    width: 70%;
 
     .container-videos {
-        background: rgba(0, 102, 210, 0.5);
-        border: 5px double #fff;
-        border-radius: 15px;
         margin: 40px 10px;
         padding: 15px;
         &__item {
@@ -12,6 +11,7 @@
             height: 347px;
             width: 640px;
         }
+        
     }
     .legenda {
         color: #fff;
@@ -20,5 +20,23 @@
         
         border-left: 4px solid;
         padding-left: 15px;
+    }
+    
+        &-title {
+            display: block;
+            pointer-events: none;
+            opacity: 0;
+            font-size: 18px;
+            color: white;
+            background: rgba(0, 102, 210, 0.5);
+            text-align: right;
+            padding: 2px 12px;
+            position: absolute;
+            top: 50%;
+            right: 30px;
+            transform: translateY(-50%);
+            border-top-left-radius: 50px;
+            border-bottom-left-radius: 50px;
+            transition: all 300ms ease-in-out;
     }
 }
