@@ -2,4 +2,60 @@
 
 <cadastro></cadastro>
 
-<tabelas></tabelas>
+<section class="filter">
+    <div class="nav">
+        <p class="nav-title">Filtros:</p>
+        <div class="nav-box">
+            <div class="filter-box">
+                <p>Sprint</p>
+                <select ng-model="sprint" name="sprint" class="selectFilter">
+                    <option value="{{value.sprint}}" ng-repeat="value in vm.apostilaArray">{{value.sprint}}</option>
+                </select>
+            </div>
+
+            <div class="filter-box">
+                <p>Apostila</p>
+                <select ng-model="apostila" name="apostila" class="selectFilter">
+                    <option value="{{value.objeto1}}" ng-repeat="value in vm.apostilaArray">{{value.objeto1}}</option>
+                </select>
+            </div>
+
+            <div class="filter-box">
+                <p>Situação</p>
+                <select ng-model="situacao" name="situacao" class="selectFilter">
+                    <option value="{{value.situacao}}" ng-repeat="value in vm.apostilaArray">{{value.situacao}}</option>
+                </select>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main-content">
+
+    <table class="highlight apo-table">
+        <thead>
+            <tr>
+                <th>Apostila</th>
+                <th>Semana</th>
+                <th>Feito</th>
+                <th>Falta</th>
+                <th>Impedimentos</th>
+                <th>Situação</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr
+                ng-repeat="value in vm.apostilaArray | filter:sprint | filter:apostila | filter:feito | filter:falta | filter:impedimentos | filter:situacao">
+                <td>{{value.apostila}}</td>
+                <td>{{value.sprint}}</td>
+                <td>{{value.feito}}</td>
+                <td>{{value.falta}}</td>
+                <td>{{value.impedimentos}}</td>
+                <td>{{value.situacao}}</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</section>
