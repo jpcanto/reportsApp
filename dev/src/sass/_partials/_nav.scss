@@ -81,20 +81,28 @@ nav.videos-nav {
     overflow: scroll;
     right: 0;
     width: 500px;
-    a {
-        &:hover {
-            i {
-                color: rgb(34, 117, 206);
-                font-size: 32px;
-
-                transition: .7s ease-in;
+    .title {
+        position: fixed;
+        width: 482px;
+        z-index: 2;
+    }
+    .nav-wrapper {
+        margin-top: 65px;
+        a {
+            &:hover {
+                i {
+                    color: rgb(34, 117, 206);
+                    font-size: 32px;
+    
+                    transition: .7s ease-in;
+                }
+                                span {
+                                    color: rgb(34, 117, 206);
+                                    font-size: 1.2em;
+    
+                                    transition: .7s ease-in;
+                                }
             }
-                            span {
-                                color: rgb(34, 117, 206);
-                                font-size: 1.2em;
-
-                                transition: .7s ease-in;
-                            }
         }
     }
 }

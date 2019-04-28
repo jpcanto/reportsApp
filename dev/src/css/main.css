@@ -72,14 +72,20 @@ nav.videos-nav {
   overflow: scroll;
   right: 0;
   width: 500px; }
-  nav.videos-nav a:hover i {
-    color: #2275ce;
-    font-size: 32px;
-    transition: .7s ease-in; }
-  nav.videos-nav a:hover span {
-    color: #2275ce;
-    font-size: 1.2em;
-    transition: .7s ease-in; }
+  nav.videos-nav .title {
+    position: fixed;
+    width: 482px;
+    z-index: 2; }
+  nav.videos-nav .nav-wrapper {
+    margin-top: 65px; }
+    nav.videos-nav .nav-wrapper a:hover i {
+      color: #2275ce;
+      font-size: 32px;
+      transition: .7s ease-in; }
+    nav.videos-nav .nav-wrapper a:hover span {
+      color: #2275ce;
+      font-size: 1.2em;
+      transition: .7s ease-in; }
 
 .page-title {
   background-color: #fff;
