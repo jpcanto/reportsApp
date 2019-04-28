@@ -75,11 +75,11 @@ nav.videos-nav {
   nav.videos-nav a:hover i {
     color: #2275ce;
     font-size: 32px;
-    transition: 1.2s ease-in; }
+    transition: .7s ease-in; }
   nav.videos-nav a:hover span {
     color: #2275ce;
     font-size: 1.2em;
-    transition: 1.2s ease-in; }
+    transition: .7s ease-in; }
 
 .page-title {
   background-color: #fff;
