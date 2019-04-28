@@ -32,6 +32,12 @@
                     controllerAs: 'vm'
                 })
 
+                .when('/estilos', {
+                    templateUrl: "views/novos-estilos.html",
+                    controller: "estilosController",
+                    controllerAs: 'vm'
+                })
+
                 .when('/treinamento', {
                     templateUrl: "views/treinamento.html"
                 })

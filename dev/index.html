@@ -27,13 +27,16 @@
   <script src="src/utils/angularfire/dist/angularfire.js"></script>
   <script src="src/utils/firebase/firebase.js"></script>
   <script src="src/js/main.js"></script>
+
   <script src="src/components/cadastro/cadastro.component.js"></script>
   <script src="src/components/titulo/titulo.component.js"></script>
+
   <script src="src/js/controllers/homeController.js"></script>
   <script src="src/js/controllers/relatoriosController.js"></script>
   <script src="src/js/controllers/videosController.js"></script>
   <script src="src/js/controllers/academico/errosController.js"></script>
   <script src="src/js/controllers/academico/regrasController.js"></script>
+  <script src="src/js/controllers/producoes/estilosController.js"></script>
 
 </head>
 
@@ -46,18 +49,23 @@
       <ul class="right">
         <li></i><a href="/">Home</a></li>
         <li></i><a href="/relatorios">Relatórios</a></li>
-        <li></i><a class="dropdown-trigger" data-target='dropdown2'>Acadêmico<i
-              class="material-icons right nav-icon">arrow_drop_down</i></a></li>
         <li></i><a class="dropdown-trigger" data-target='dropdown1'>Treinamento<i
               class="material-icons right nav-icon">arrow_drop_down</i></a></li>
+        <li></i><a class="dropdown-trigger" data-target='dropdown2'>Acadêmico<i
+              class="material-icons right nav-icon">arrow_drop_down</i></a></li>
+        <li></i><a class="dropdown-trigger" data-target='dropdown3'>M.E.D Produções<i
+              class="material-icons right nav-icon">arrow_drop_down</i></a></li>
+      </ul>
+      <ul id='dropdown1' class='dropdown-content'>
+        <li><a href="/tutorial"><i class="material-icons">library_books</i>Tutorial</a></li>
+        <li><a href="/videos"><i class="material-icons">switch_video</i>Vídeos</a></li>
       </ul>
       <ul id='dropdown2' class='dropdown-content'>
         <li><a href="/erros"><i class="material-icons">error</i>Erros</a></li>
         <li><a href="/regras"><i class="material-icons">library_books</i>Regras</a></li>
       </ul>
-      <ul id='dropdown1' class='dropdown-content'>
-        <li><a href="/tutorial"><i class="material-icons">library_books</i>Tutorial</a></li>
-        <li><a href="/videos"><i class="material-icons">switch_video</i>Vídeos</a></li>
+      <ul id='dropdown3' class='dropdown-content'>
+        <li><a href="/estilos"><i class="material-icons">error</i>Novos estilos</a></li>
       </ul>
     </div>
   </nav>

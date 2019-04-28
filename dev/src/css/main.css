@@ -14,7 +14,7 @@ nav.videos-nav {
   left: 0;
   position: fixed;
   top: 0;
-  width: 210px; }
+  width: 242px; }
   nav .nav-icon,
   nav.videos-nav .nav-icon {
     height: 55px !important; }
@@ -389,6 +389,6 @@ html {
     html body button {
       cursor: pointer; }
     html body .view-container {
-      margin-left: 210px; }
+      margin-left: 242px; }
     html body .title {
       font-family: "Cuprum", sans-serif; }
