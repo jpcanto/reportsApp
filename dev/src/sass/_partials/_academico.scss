@@ -37,14 +37,6 @@
     color: #FB667A;
     text-decoration: none;
   }
-  
-  .container th h1 {
-      color: #185875;
-      font-family: $thirdFont;
-      font-size: 1.2em;
-      font-weight: bold;
-     text-align: left;
-  }
 
     .with-gap.uncheck:checked+span:after {
        background-color: #fb667a;
@@ -63,72 +55,22 @@
      padding: 2% 10px;
    }
 
-   td {
-      color: #fff;
-      font-family: $secondFont;
-      font-size: 1em;
-      font-weight: normal;
-  
-      -webkit-box-shadow: 0 2px 2px -2px #0E1119;
-      -moz-box-shadow: 0 2px 2px -2px #0E1119;
-      box-shadow: 0 2px 2px -2px #0E1119;
-
-      &:first-child {
-         color: #FB667A;
-     }
-
-      label {
-         display: block;
-        .with-gap.uncheck:checked+span:after,
-        .with-gap.uncheck:checked+span:before {
-           border: 2px solid #fb667a;
-          }
-      }
-   }
-   tr {
-      &.academico-verify.fixed-error {
-         background-color: rgba(107, 255, 146, 0.5) !important;
-         transition: 2s;
-         td {
-            font-weight: 800;
-            &:first-child {
-            font-family: $thirdFont;
-            color: #185875;
+}
+      tr {
+         &.academico-verify.fixed-error {
+            background-color: rgba(107, 255, 146, 0.5) !important;
+            transition: 2s;
          }
-            label {
-               color: #fff;
-            }
+   
+         &.academico-verify.error-to-fix {
+            background-color: rgba(243, 67, 67, 0.5) !important;
+            transition: 2s;
+            .with-gap.uncheck:checked+span:after,
+               .with-gap.uncheck:checked+span:before {
+                  border: 2px solid #fb667a;
+               }
          }
       }
-
-      &.academico-verify.error-to-fix {
-         background-color: rgba(243, 67, 67, 0.5) !important;
-         transition: 2s;
-         .with-gap.uncheck:checked+span:after,
-            .with-gap.uncheck:checked+span:before {
-               border: 2px solid #fb667a;
-            }
-      }
-      
-      &:hover {
-         background-color: #464A52;
-         -webkit-box-shadow: 0 6px 6px -6px #0E1119;
-         -moz-box-shadow: 0 6px 6px -6px #0E1119;
-         box-shadow: 0 6px 6px -6px #0E1119;
-      }
-      &:nth-child(odd) {
-         background-color: rgba(50, 60, 80, .8);
-       }
-      &:nth-child(even) {
-         background-color: rgba(50, 60, 80, .8);
-      }
-   }
-
-   th {
-     background-color: #1F2739;
-     padding: 10px;
-   }
-  }
   
   @media (max-width: 800px) {
      .container td:nth-child(4),

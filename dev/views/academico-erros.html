@@ -1,65 +1,52 @@
 <section class="correcoes">
 
-    <h1 class="title">Planilha de erros</h1>
+        <titulo data="vm.dataText"></titulo>
 
+    <div class="main-content">
+        <table class="highlight">
+            <thead>
+                <tr>
+                    <th>Apostila</th>
+                    <th>Semana</th>
+                    <th>Feito</th>
+                    <th>Falta</th>
+                    <th>Impedimentos</th>
+                    <th>Situação</th>
+                </tr>
+            </thead>
 
-    <table class="container">
-        <thead>
-            <tr>
-                <th>
-                    <h1>Apostila</h1>
-                </th>
-                <th>
-                    <h1>Porcentagem</h1>
-                </th>
-                <th>
-                    <h1>Página</h1>
-                </th>
-                <th>
-                    <h1>Erro</h1>
-                </th>
-                <th>
-                    <h1>Status Acad</h1>
-                </th>
-                <th>
-                    <h1>Acadêmico</h1>
-                </th>
-                <th>
-                    <h1>Status Dev</h1>
-                </th>
-                <th>
-                    <h1>Dev</h1>
-                </th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr class="academico-verify" id="academico-verify">
-                <td>R+ GO 15</td>
-                <td>12%</td>
-                <td>08</td>
-                <td>No trecho "bla bla bla bla bla bla bla" retirar o negrito da palavra "bla" e colocar em itálico.
-                </td>
-                <td>
-                    <label>
-                        <input class="with-gap" name="group1" type="radio" ng-click="vm.errorFixed()" value="true" />
-                        <span>OK</span>
-                    </label>
-                    <label>
-                        <input class="with-gap uncheck" name="group1" type="radio" ng-click="vm.toFix()" value="true" />
-                        <span>X</span>
-                    </label>
-                </td>
-                <td>Xênia</td>
-                <td>
-                    <label>
-                        <input class="with-gap dev-check" name="group2" type="radio" ng-click="errorCheck()"
-                            ng-model="errfixedError" value="true" />
-                        <span>OK</span>
-                    </label>
-                </td>
-                <td>JP</td>
-            </tr>
-        </tbody>
-    </table>
+            <tbody>
+                <tr class="academico-verify" id="academico-verify">
+                    <td>R+ GO 15</td>
+                    <td>12%</td>
+                    <td>08</td>
+                    <td>No trecho " bla bla bla bla bla bla bla" retirar o negrito da palavra "bla" e colocar
+                        em itálico. </td>
+                    <td>
+                        <label>
+                            <input class="with-gap" name="group1" type="radio" ng-click="vm.errorFixed()"
+                                value="true" />
+                            <span>OK</span>
+                        </label>
+                        <label>
+                            <input class="with-gap uncheck" name="group1" type="radio" ng-click="vm.toFix()"
+                                value="true" />
+                            <span>X</span>
+                        </label>
+                    </td>
+                    <td>Xênia</td>
+                    <td>
+                        <label>
+                            <input class="with-gap dev-check" name="group2" type="radio" ng-click="errorCheck()"
+                                ng-model="errfixedError" value="true" />
+                            <span>OK</span>
+                        </label>
+                    </td>
+                    <td>JP</td>
+                </tr>
+            </tbody>
+
+        </table>
+    </div>
 
 </section>

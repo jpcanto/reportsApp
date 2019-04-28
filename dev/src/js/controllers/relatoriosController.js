@@ -15,6 +15,7 @@
         var ref = firebase.database().ref("apostilaObject");
         vm.apostilaArray = $firebaseArray(ref);
         
+        
     };
 
 })();
