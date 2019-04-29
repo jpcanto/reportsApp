@@ -71,10 +71,10 @@ nav.videos-nav {
   left: unset;
   overflow: scroll;
   right: 0;
-  width: 500px; }
+  width: 400px; }
   nav.videos-nav .title {
     position: fixed;
-    width: 482px;
+    width: 395px;
     z-index: 2; }
   nav.videos-nav .nav-wrapper {
     margin-top: 65px; }
@@ -157,7 +157,7 @@ nav.videos-nav {
 .videos-manual {
   display: flex;
   flex-direction: column;
-  width: 70%; }
+  margin-right: 400px; }
   .videos-manual .container-videos {
     margin: 40px 10px;
     padding: 15px; }
