@@ -41,6 +41,7 @@
                 <th>Falta</th>
                 <th>Impedimentos</th>
                 <th>Situação</th>
+                <th>Interação</th>
             </tr>
         </thead>
 
@@ -53,6 +54,7 @@
                 <td>{{value.falta}}</td>
                 <td>{{value.impedimentos}}</td>
                 <td>{{value.situacao}}</td>
+                <td class="remove"><button ng-click="vm.teste(value)" class="red darken-3 waves"">Remover</button></td>
             </tr>
         </tbody>
 

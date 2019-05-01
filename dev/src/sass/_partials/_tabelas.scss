@@ -8,6 +8,23 @@
     table.highlight.apo-table>tbody>tr:hover {
         background-color: rgba(119, 128, 195, 0.5);
     }
+    .remove {
+        color: #fff;
+
+        align-items: center;
+        padding: 0;
+        button {
+            color: white;
+            font-weight: bold;
+
+            background-image: linear-gradient(to right top, #BB1B1D, #b12222, #a62828, #9b2d2d, #903131);
+            border: 2px solid #444;
+            border-radius: 5px;
+            height: 100%;
+            outline: none;
+            width: 100%;
+        }
+    }
 }
 
 .reports-obj-block {

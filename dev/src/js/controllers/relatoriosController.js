@@ -15,6 +15,16 @@
         var ref = firebase.database().ref("apostilaObject");
         vm.apostilaArray = $firebaseArray(ref);
         
+        vm.teste = function(element) {
+            console.log(element);
+            vm.apostilaArray.$remove(element)
+            .then(function(ref){
+                console.log(element);
+            },
+            function(error){
+                console.log(error);
+            })
+        };
         
     };
 
