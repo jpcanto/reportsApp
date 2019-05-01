@@ -15,7 +15,7 @@
         var ref = firebase.database().ref("apostilaObject");
         vm.apostilaArray = $firebaseArray(ref);
         
-        vm.teste = function(element) {
+        vm.removeRow = function(element) {
             console.log(element);
             vm.apostilaArray.$remove(element)
             .then(function(ref){
