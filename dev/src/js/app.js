@@ -47,6 +47,12 @@
                 })
 
                 .when('/videos', {
+                    templateUrl: "views/agenda.html",
+                    controller: "falcoesController",
+                    controllerAs: 'vm'
+                })
+
+                .when('/agenda', {
                     templateUrl: "views/videos.html",
                     controller: "videosController",
                     controllerAs: 'vm'

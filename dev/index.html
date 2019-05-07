@@ -15,8 +15,7 @@
   <link rel="stylesheet" href="src/utils/materialize/css/materialize.min.css">
   <link rel="stylesheet" href="src/css/main.css">
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Cuprum:400,700|Playfair+Display+SC|Staatliches"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Bungee+Inline|Cuprum:400,700|Playfair+Display+SC|Staatliches" rel="stylesheet">
 
   <script src="src/utils/materialize/js/materialize.min.js"></script>
   <script src="src/utils/angular/angular.min.js"></script>
@@ -39,6 +38,7 @@
   <script src="src/js/controllers/academico/errosController.js"></script>
   <script src="src/js/controllers/academico/regrasController.js"></script>
   <script src="src/js/controllers/producoes/estilosController.js"></script>
+  <script src="src/js/controllers/falcoesController.js"></script>
 
 </head>
 
@@ -49,25 +49,70 @@
     <p class="title">Sexta Feira</p>
     <div class="nav-wrapper">
       <ul class="right">
-        <li></i><a href="/">Home</a></li>
-        <li></i><a href="/relatorios">Relatórios</a></li>
-        <li></i><a class="dropdown-trigger" data-target='dropdown1'>Treinamento<i
-              class="material-icons right nav-icon">arrow_drop_down</i></a></li>
-        <li></i><a class="dropdown-trigger" data-target='dropdown2'>Acadêmico<i
-              class="material-icons right nav-icon">arrow_drop_down</i></a></li>
-        <li></i><a class="dropdown-trigger" data-target='dropdown3'>M.E.D Produções<i
-              class="material-icons right nav-icon">arrow_drop_down</i></a></li>
+        <li>
+          </i>
+          <a href="/">Home</a>
+        </li>
+        <li>
+          </i>
+          <a href="/relatorios">Relatórios</a>
+        </li>
+        <li>
+          </i>
+          <a class="dropdown-trigger" data-target='dropdown1'>Treinamento
+            <i class="material-icons right nav-icon">arrow_drop_down</i>
+          </a>
+        </li>
+        <li>
+          </i>
+          <a class="dropdown-trigger" data-target='dropdown2'>Acadêmico
+            <i class="material-icons right nav-icon">arrow_drop_down</i>
+          </a>
+        </li>
+        <li>
+          </i>
+          <a class="dropdown-trigger" data-target='dropdown3'>M.E.D Produções
+            <i class="material-icons right nav-icon">arrow_drop_down</i>
+          </a>
+        </li>
+        <li>
+          </i>
+          <a class="dropdown-trigger" data-target='dropdown4'>Falcões
+            <i class="material-icons right nav-icon">arrow_drop_down</i>
+          </a>
+        </li>
       </ul>
       <ul id='dropdown1' class='dropdown-content'>
-        <li><a href="/tutorial"><i class="material-icons">library_books</i>Tutorial</a></li>
-        <li><a href="/videos"><i class="material-icons">switch_video</i>Vídeos</a></li>
+        <li>
+          <a href="/tutorial">
+            <i class="material-icons">library_books</i>Tutorial</a>
+        </li>
+        <li>
+          <a href="/videos">
+            <i class="material-icons">switch_video</i>Vídeos</a>
+        </li>
       </ul>
       <ul id='dropdown2' class='dropdown-content'>
-        <li><a href="/erros"><i class="material-icons">error</i>Erros</a></li>
-        <li><a href="/regras"><i class="material-icons">library_books</i>Regras</a></li>
+        <li>
+          <a href="/erros">
+            <i class="material-icons">error</i>Erros</a>
+        </li>
+        <li>
+          <a href="/regras">
+            <i class="material-icons">library_books</i>Regras</a>
+        </li>
       </ul>
       <ul id='dropdown3' class='dropdown-content'>
-        <li><a href="/estilos"><i class="material-icons">error</i>Novos estilos</a></li>
+        <li>
+          <a href="/estilos">
+            <i class="material-icons">error</i>Novos estilos</a>
+        </li>
+      </ul>
+      <ul id='dropdown4' class='dropdown-content'>
+        <li>
+          <a href="/agenda">
+            <i class="material-icons">assignment</i>Agenda recebimento</a>
+        </li>
       </ul>
     </div>
   </nav>
