@@ -46,13 +46,13 @@
                     templateUrl: "views/tutorial.html"
                 })
 
-                .when('/videos', {
+                .when('/agenda', {
                     templateUrl: "views/agenda.html",
                     controller: "falcoesController",
                     controllerAs: 'vm'
                 })
 
-                .when('/agenda', {
+                .when('/videos', {
                     templateUrl: "views/videos.html",
                     controller: "videosController",
                     controllerAs: 'vm'
