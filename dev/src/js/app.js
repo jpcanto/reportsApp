@@ -43,7 +43,9 @@
                 })
 
                 .when('/tutorial', {
-                    templateUrl: "views/tutorial.html"
+                    templateUrl: "views/tutorial.html",
+                    controller: "tutorialController",
+                    controllerAs: 'vm'
                 })
 
                 .when('/agenda', {

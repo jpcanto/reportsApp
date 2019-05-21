@@ -193,10 +193,11 @@ nav.videos-nav {
   font-size: 1.1em;
   background-color: rgba(0, 102, 210, 0.5);
   border-radius: 15px;
+  display: none;
   margin: 15px;
-  max-height: 500px;
-  overflow-y: scroll;
   padding: 15px; }
+  .manual.active {
+    display: block; }
   .manual h1 {
     border-bottom: 2px solid; }
   .manual .titulo {
@@ -215,6 +216,19 @@ nav.videos-nav {
     font-family: "Cuprum", sans-serif;
     font-weight: bold;
     display: block; }
+
+.tutorial-menu {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0;
+  width: -webkit-fill-available; }
+  .tutorial-menu a {
+    margin: 0 10px; }
+
+.introducao {
+  color: #fff;
+  font-family: "Staatliches", cursive;
+  margin-left: 40px; }
 
 .correcoes {
   /*	

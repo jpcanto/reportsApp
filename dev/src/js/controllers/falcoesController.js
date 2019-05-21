@@ -9,16 +9,14 @@
 
         var vm = this;
 
-        let success = function (successMsg) {
-            asyncOutput(successMsg);
-        };
+        // import {Trello} from 'trello-api';
 
-        let error = function (errorMsg) {
-            asyncOutput(errorMsg);
-        };
+        // let trello = new Trello('774800cd537e508a765dab9dada0e066', '89a36b53c6548083009b3f8d580c0aee187bd8e04d76f72e28af5c2b8b4bb0e0');
 
-        var trello = Trello.get('/boards/555c8e81e8d5aff570505f5b/lists', success, error);
-        console.log(trello);
+        // trello.getTokens('MY MEMBER ID')
+        //     .then((res) => console.log(res))
+        //     .catch((err) => console.log(err));
     };
+
 
 })();
