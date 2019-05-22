@@ -1,217 +1,239 @@
-
-
-<section class="tutorial-menu">
-    <a class="waves-effect waves-light btn-large" ng-click="vm.showContent()"><i class="material-icons left">directions_walk</i>SCRUM</a>
-    <a class="waves-effect waves-light btn-large"><i class="material-icons left">directions_walk</i>GIT</a>
-    <a class="waves-effect waves-light btn-large"><i class="material-icons right">cloud</i>SQUAD</a>
-</section>
-
-<section class="introducao">
-    <h1>Welcome Falcões</h1>
-
-    <p>
-        O Time falcões é onde diagramamos todas as apostilas digitais para os alunos da MEDGRUPO. convertemos as apostilas de PDF
-        para HTML.
-    </p>
-
-    <p>
-        Usamos uma biblioteca própria para os componentes criados pelo Squad 1. Nós somos uma equipe sectionidida em Squads (Squad
-        1 e Squad 2).
-    </p>
+<section class="tutorial-menu" id="tutorial-menu">
+    <div class="box">
+        <a class="text">SCRUM</a>
+        <div ng-click="vm.showContentScrum()" class="icon">
+            <i class="material-icons right">directions_walk</i>
+        </div>
+    </div>
+    <div class="box">
+        <a class="text">GIT</a>
+        <div ng-click="vm.showContentDaki()" class="icon">
+            <i class="material-icons right">import_contacts</i>
+        </div>
+    </div>
+    <div class="box">
+        <a class="text">SQUAD</a>
+        <div ng-click="vm.showContentSquad()" class="icon">
+            <i class="material-icons right">group</i>
+        </div>
+    </div>
+    <a ng-click="vm.showContent()" class="btn-floating btn-large waves-effect waves-light red">
+        <i class="material-icons">dehaze</i>
+    </a>
 </section>
 
 <section class="manual" id="manual">
 
-    <div class>
-        <h1>Scrum</h1>
-        <h2>P.O (Product Owner)</h2>
-        <p>fundamental para o sucesso do projeto Scrum!</p>
+    <div class="introducao">
+        <h1>Welcome Falcões</h1>
+
         <p>
-            O Product Owner é o ponto central do projeto ágil e é quem exerce a liderança
-            <br>sobre o produto que está sendo desenvolvido.
-        </p>
-        <p>É ele quem diz o que precisa e o que não precisa ser feito em relação ao produto que está sendo desenvolvido.</p>
-        <p>
-            É um dos os três papéis que constituem uma Equipe Scrum clássica
-            <br>(os outros são o Scrum Master e a Equipe de Desenvolvimento).
-        </p>
-        <p>O Product Owner é quem faz a ponte entre a área de negócios e a Equipe Scrum.</p>
-
-        <img src="src/img/Interação-Product-Owner.png">
-
-        <div class="container-legenda">
-            <p class="legenda-imagem">De um lado, o Product Owner deve entender as necessidades e prioridades de todos os envolvidos na empresa para
-                agir como seu porta-voz. Neste sentido, ele atua como um gestor do produto, garantindo que a solução correta
-                é desenvolvida</p>
-            <p class="legenda-imagem">Do outro lado, o Product Owner deve se comunicar com o time scrum para ajudar na ordem em que o produto será
-                construído. O Product Owner também deve garantir que os critérios para aceitação do produto estão especificados
-                e que os testes que verificam esses critérios foram executados para determinar que o produto (ou release)
-                possa ser considerado como pronto ao final do Sprint.</p>
-        </div>
-
-        <img src="src/img/responsibilidadepng.png">
-
-        <h2>Participação no Planejamento</h2>
-        <p>
-            O Product Owner é um participante-chave nas atividades de planejamento de Produto, Release e Sprints:
-        </p>
-        <ul>
-            <li>
-                Durante o planejamento do Produto o Product Owner trabalha com todas as partes interessadas da empresa (diretoria, demais
-                departamentos, etc.) para conseguir visualizar o produto ideal.
-            </li>
-            <li>
-                Durante o planejamento de Release o Product Owner trabalha com as partes interessadas e a Equipe Scrum para definir o conteúdo
-                do próximo lançamento.
-            </li>
-            <li>
-                Durante o planejamento do Sprint , o Product Owner trabalha com a Equipe de Desenvolvimento para definir um objetivo para
-                o Sprint.
-            </li>
-        </ul>
-
-        <h2>Grooming do Product Backlog</h2>
-        <p>
-            O Product Owner é responsável por definir os critérios de aceitação para cada item do Product Backlog (o Scrum Master é quem
-            o ajuda com isso).
+            O Time falcões é onde diagramamos todas as apostilas digitais para os alunos da MEDGRUPO. convertemos as apostilas de PDF
+            para HTML.
         </p>
 
         <p>
-            <i>
-                Importante: O Product Owner deve assegurar que os critérios de aceitação (e testes de aceitação com frequência específicas)
-                foram criados antes que o item seja considerado na reunião de planejamento de Sprint. Sem eles, a equipe
-                teria uma incompleta compreensão do item e não estaria pronto para incluí-lo em um Sprint...
-            </i>
-        </p>
-
-        <p>
-            O Product Owner é responsável por confirmar se os critérios foram satisfatoriamente atendidos.
-        </p>
-
-        <h2>
-            Cerimônias scrum
-        </h2>
-
-        <h3>
-            Daily
-        </h3>
-
-        <p>
-            – As dailys acontecem geralmente de segunda a quinta às 14:45. Serve para saber o que o time fez no dia anterior e o que
-            ele fez/vai fazer no dia e comunicar para todos ficarem cientes. Saber se teve algum impedimento que dificultou
-            o job ou de alguma forma atrasou o produto e passar para o time e ver a melhor forma de ajudar. Pós Daily – Geralmente
-            é feita para dar algumas informações importantes para o time as vezes tendo alguma ligação direta com algum time
-            especifico, mas para que todos fiquem cientes.
-        </p>
-
-        <h3>
-            Retrô
-        </h3>
-        <p>
-            – Acontece todas as sextas à partir de 14:30. Para o time debater algumas ideias, falar sobre alguns erros que foram encontrados
-            durante semana para que não se repita, alinhar certos componentes e ver quais ficam melhor. E ter ideias boas
-            que possam melhorar o job de todos.
-        </p>
-        <p>
-            Trello
-        </p>
-        <p>
-            – Hoje utilizado só para relatar o que devemos melhorar e debater isso, que é chamado de DAKI.
-        </p>
-
-        <div class="conteudo-daki">
-            <div class="daki">
-                <h3>DROP</h3>
-                <p>
-                    O DROP são infrações que aconteceram durante a semana e que não deve mais acontecer, pois prejudica o andamento do Squad.
-                </p>
-            </div>
-
-            <div class="daki">
-                <h3>ADD</h3>
-                <p>
-                    O ADD são ideias novas propostas pelo Squad para ser debatida, podendo agilizar/melhorar nosso processo com o produto.
-                </p>
-            </div>
-
-            <div class="daki">
-                <h3>KEEP</h3>
-                <p>
-                    O KEEP são atividades e boas maneiras que algumas pessoas tem e devemos passar a praticar com o Squad e manter isso em prática
-                    sempre.
-                </p>
-            </div>
-
-            <div class="daki">
-                <h3>IMPROVE</h3>
-                <p>
-                    O IMPROVE que são ideias boas que podem melhorar o job de todos ou de algum time.
-                </p>
-            </div>
-        </div>
-
-        <h3>
-            Planning
-        </h3>
-
-        <p>
-            Planning
-        </p>
-        <p>
-            – Acontece todas as sextas logo após a retro. Onde o time se reúne e faz uma analise de como foi a semana, se foi produtiva
-            para o que foi planejado. Sendo assim, planejamos a próxima semana e o que cada um vai fazer e qual apostila
-            pegar. Tudo isso feito e planejado pelos cards do Kanbanize.
-        </p>
-        <p>
-            Kanbanize
-        </p>
-        <p>
-            – Local onde utilizamos com bastante frequência para manter a comunicação entre todos do time. O kanbanize é o nosso board
-            dividido em 2 linhas horizontais(lanes). A linha de Fluxo de Produção das apostilas, onde é feita a pré-produção
-            dela, geração de imagens, índice, questões, componentes etc, ate ela está pronta para ser diagramada. Na linha
-            de baixo temos Sustentação (tarefa T3) onde o squad3 fica responsável por ajudar e fazer algumas tarefas de cards
-            q foram solicitados para que o processo de apostila não fique parado. As comunicações são feitas através dos
-            cards criados pelo P. O de acordo com a necessidade e a entrega das apostilas para ser diagramadas. E cada card
-            pode estar em uma determinada linha e coluna. Por exemplo: MED CLM 01 – já foi toda pré-produzida e esta só aguardando
-            diagramação, então ela vai ficar na coluna de “aguardando diagramação”. Quando alguém puxar para diagramar ficará
-            na coluna de “Diagramando”, caso não tenha finalizado o card fica ali, o card nunca anda para trás, só quando
-            volta do acadêmico para corrigir.
+            Usamos uma biblioteca própria para os componentes criados pelo Squad 1. Nós somos uma equipe dividida em Squads (Squad 1
+            e Squad 2).
         </p>
     </div>
 
-    <div class="container">
-        <h1> Squad </h1>
-        <h2> Squad 1 - Preparação de Insumos </h2>
+    <div>
+        <div class="conteudo-scrum" id="conteudo-scrum">
+            <h1>Scrum</h1>
+            <h2>P.O (Product Owner)</h2>
+            <p>fundamental para o sucesso do projeto Scrum!</p>
+            <p>
+                O Product Owner é o ponto central do projeto ágil e é quem exerce a liderança
+                <br>sobre o produto que está sendo desenvolvido.
+            </p>
+            <p>É ele quem diz o que precisa e o que não precisa ser feito em relação ao produto que está sendo desenvolvido.</p>
+            <p>
+                É um dos os três papéis que constituem uma Equipe Scrum clássica
+                <br>(os outros são o Scrum Master e a Equipe de Desenvolvimento).
+            </p>
+            <p>O Product Owner é quem faz a ponte entre a área de negócios e a Equipe Scrum.</p>
 
-        <p>
-            – Responsável pelos recortes de imagens das apostilas (Insumos). Também são responsáveis pela criação dos componentes de
-            cada apostila, utilizando o css. Esses componentes é que serão utilizados para stylizar as apostilas digitais.
-            Cada apostila vai ter seus componentes específicos e estruturados de uma forma organizada pelo Squad 1.
-        </p>
-        <p>
-            <b>Obs:</b>
-            Squad 1 sempre vai estar 3 semanas na frente dos demais times.
-        </p>
+            <img src="src/img/Interação-Product-Owner.png">
 
-        <h2> Squad 1 - Preparação de Insumos </h2>
+            <div class="container-legenda">
+                <p class="legenda-imagem">De um lado, o Product Owner deve entender as necessidades e prioridades de todos os envolvidos na empresa
+                    para agir como seu porta-voz. Neste sentido, ele atua como um gestor do produto, garantindo que a solução
+                    correta é desenvolvida</p>
+                <p class="legenda-imagem">Do outro lado, o Product Owner deve se comunicar com o time scrum para ajudar na ordem em que o produto será
+                    construído. O Product Owner também deve garantir que os critérios para aceitação do produto estão especificados
+                    e que os testes que verificam esses critérios foram executados para determinar que o produto (ou release)
+                    possa ser considerado como pronto ao final do Sprint.</p>
+            </div>
 
-        <p>
-            – Responsável pela diagramação das apostilas, revisão no browser após o término, revisão no abby, minificar o arquivo principal,
-            subir para o aplicativo e testar no app.
-        </p>
+            <img src="src/img/responsibilidadepng.png">
 
-        <p>
-            Após a finalização das apostilas enviamos ela para o acadêmico para validação (feita toda a correção da apostila linha por
-            linha para encontrar erros de texto e divergências de componentes), quando a apostila volta para a lane de correção
-            temos acesso a uma planilha de erros constanto todos os erros encontrados pelo acadêmico é feita a correção e
-            enviada novamente.
+            <h2>Participação no Planejamento</h2>
+            <p>
+                O Product Owner é um participante-chave nas atividades de planejamento de Produto, Release e Sprints:
+            </p>
+            <ul>
+                <li>
+                    Durante o planejamento do Produto o Product Owner trabalha com todas as partes interessadas da empresa (diretoria, demais
+                    departamentos, etc.) para conseguir visualizar o produto ideal.
+                </li>
+                <li>
+                    Durante o planejamento de Release o Product Owner trabalha com as partes interessadas e a Equipe Scrum para definir o conteúdo
+                    do próximo lançamento.
+                </li>
+                <li>
+                    Durante o planejamento do Sprint , o Product Owner trabalha com a Equipe de Desenvolvimento para definir um objetivo para
+                    o Sprint.
+                </li>
+            </ul>
 
-        </p>
-        <p>
-            <b>Obs:</b>
-            T2 sempre vai estar 2 semanas na frente da semana atual das apostilas.
-        </p>
+            <h2>Grooming do Product Backlog</h2>
+            <p>
+                O Product Owner é responsável por definir os critérios de aceitação para cada item do Product Backlog (o Scrum Master é quem
+                o ajuda com isso).
+            </p>
 
+            <p>
+                <i>
+                    Importante: O Product Owner deve assegurar que os critérios de aceitação (e testes de aceitação com frequência específicas)
+                    foram criados antes que o item seja considerado na reunião de planejamento de Sprint. Sem eles, a equipe
+                    teria uma incompleta compreensão do item e não estaria pronto para incluí-lo em um Sprint...
+                </i>
+            </p>
+
+            <p>
+                O Product Owner é responsável por confirmar se os critérios foram satisfatoriamente atendidos.
+            </p>
+
+            <h2>
+                Cerimônias scrum
+            </h2>
+
+            <h3>
+                Daily
+            </h3>
+
+            <p>
+                – As dailys acontecem geralmente de segunda a quinta às 14:45. Serve para saber o que o time fez no dia anterior e o que
+                ele fez/vai fazer no dia e comunicar para todos ficarem cientes. Saber se teve algum impedimento que dificultou
+                o job ou de alguma forma atrasou o produto e passar para o time e ver a melhor forma de ajudar. Pós Daily
+                – Geralmente é feita para dar algumas informações importantes para o time as vezes tendo alguma ligação direta
+                com algum time especifico, mas para que todos fiquem cientes.
+            </p>
+
+            <h3>
+                Retrô
+            </h3>
+            <p>
+                – Acontece todas as sextas à partir de 14:30. Para o time debater algumas ideias, falar sobre alguns erros que foram encontrados
+                durante semana para que não se repita, alinhar certos componentes e ver quais ficam melhor. E ter ideias
+                boas que possam melhorar o job de todos.
+            </p>
+            <p>
+                Trello
+            </p>
+            <p>
+                – Hoje utilizado só para relatar o que devemos melhorar e debater isso, que é chamado de DAKI.
+            </p>
+        </div>
+
+        <div class="conteudo-daki" id="conteudo-daki">
+            <div class="linha">
+                <div class="daki">
+                    <h3>DROP</h3>
+                    <p>
+                        O DROP são infrações que aconteceram durante a semana e que não deve mais acontecer, pois prejudica o andamento do Squad.
+                    </p>
+                </div>
+
+                <div class="daki">
+                    <h3>ADD</h3>
+                    <p>
+                        O ADD são ideias novas propostas pelo Squad para ser debatida, podendo agilizar/melhorar nosso processo com o produto.
+                    </p>
+                </div>
+            </div>
+
+            <div class="linha">
+                <div class="daki">
+                    <h3>KEEP</h3>
+                    <p>
+                        O KEEP são atividades e boas maneiras que algumas pessoas tem e devemos passar a praticar com o Squad e manter isso em prática
+                        sempre.
+                    </p>
+                </div>
+
+                <div class="daki">
+                    <h3>IMPROVE</h3>
+                    <p>
+                        O IMPROVE que são ideias boas que podem melhorar o job de todos ou de algum time.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="conteudo-squad" id="conteudo-squad">
+            <h3>
+                Planning
+            </h3>
+
+            <p>
+                Planning
+            </p>
+            <p>
+                – Acontece todas as sextas logo após a retro. Onde o time se reúne e faz uma analise de como foi a semana, se foi produtiva
+                para o que foi planejado. Sendo assim, planejamos a próxima semana e o que cada um vai fazer e qual apostila
+                pegar. Tudo isso feito e planejado pelos cards do Kanbanize.
+            </p>
+            <p>
+                Kanbanize
+            </p>
+            <p>
+                – Local onde utilizamos com bastante frequência para manter a comunicação entre todos do time. O kanbanize é o nosso board
+                dividido em 2 linhas horizontais(lanes). A linha de Fluxo de Produção das apostilas, onde é feita a pré-produção
+                dela, geração de imagens, índice, questões, componentes etc, ate ela está pronta para ser diagramada. Na
+                linha de baixo temos Sustentação (tarefa T3) onde o squad3 fica responsável por ajudar e fazer algumas tarefas
+                de cards q foram solicitados para que o processo de apostila não fique parado. As comunicações são feitas
+                através dos cards criados pelo P. O de acordo com a necessidade e a entrega das apostilas para ser diagramadas.
+                E cada card pode estar em uma determinada linha e coluna. Por exemplo: MED CLM 01 – já foi toda pré-produzida
+                e esta só aguardando diagramação, então ela vai ficar na coluna de “aguardando diagramação”. Quando alguém
+                puxar para diagramar ficará na coluna de “Diagramando”, caso não tenha finalizado o card fica ali, o card
+                nunca anda para trás, só quando volta do acadêmico para corrigir.
+            </p>
+
+            <h1> Squad </h1>
+            <h2> Squad 1 - Preparação de Insumos </h2>
+
+            <p>
+                – Responsável pelos recortes de imagens das apostilas (Insumos). Também são responsáveis pela criação dos componentes de
+                cada apostila, utilizando o css. Esses componentes é que serão utilizados para stylizar as apostilas digitais.
+                Cada apostila vai ter seus componentes específicos e estruturados de uma forma organizada pelo Squad 1.
+            </p>
+            <p>
+                <b>Obs:</b>
+                Squad 1 sempre vai estar 3 semanas na frente dos demais times.
+            </p>
+
+            <h2> Squad 1 - Preparação de Insumos </h2>
+
+            <p>
+                – Responsável pela diagramação das apostilas, revisão no browser após o término, revisão no abby, minificar o arquivo principal,
+                subir para o aplicativo e testar no app.
+            </p>
+
+            <p>
+                Após a finalização das apostilas enviamos ela para o acadêmico para validação (feita toda a correção da apostila linha por
+                linha para encontrar erros de texto e divergências de componentes), quando a apostila volta para a lane de
+                correção temos acesso a uma planilha de erros constanto todos os erros encontrados pelo acadêmico é feita
+                a correção e enviada novamente.
+
+            </p>
+            <p>
+                <b>Obs:</b>
+                T2 sempre vai estar 2 semanas na frente da semana atual das apostilas.
+            </p>
+
+        </div>
 
     </div>
 

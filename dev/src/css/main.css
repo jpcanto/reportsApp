@@ -192,12 +192,24 @@ nav.videos-nav {
   color: white;
   font-size: 1.1em;
   background-color: rgba(0, 102, 210, 0.5);
-  border-radius: 15px;
-  display: none;
-  margin: 15px;
-  padding: 15px; }
+  display: block;
+  margin: auto;
+  overflow: hidden;
+  padding: 2px;
+  transition: 1.5s;
+  width: 0; }
   .manual.active {
-    display: block; }
+    padding: 15px;
+    transition: width 1.5s;
+    width: 100%; }
+  .manual .conteudo-scrum,
+  .manual .conteudo-daki,
+  .manual .conteudo-squad {
+    display: none; }
+    .manual .conteudo-scrum.active,
+    .manual .conteudo-daki.active,
+    .manual .conteudo-squad.active {
+      display: block; }
   .manual h1 {
     border-bottom: 2px solid; }
   .manual .titulo {
@@ -218,17 +230,68 @@ nav.videos-nav {
     display: block; }
 
 .tutorial-menu {
+  background: #fff;
+  box-shadow: 0px 9px 15px 0px rgba(0, 0, 0, 0.75);
   display: flex;
+  height: 0;
   justify-content: center;
-  margin: 10px 0;
+  overflow: hidden;
+  padding-top: 10px;
+  transition: height 1.5s;
   width: -webkit-fill-available; }
-  .tutorial-menu a {
-    margin: 0 10px; }
+  .tutorial-menu.active {
+    height: 85px;
+    padding-bottom: 15px;
+    transition: 1.5; }
+    .tutorial-menu.active .btn-floating {
+      margin-top: 65px;
+      transition: 1.5s; }
+  .tutorial-menu .btn-floating {
+    position: absolute;
+    transition: 1.5s; }
+  .tutorial-menu .box {
+    background: linear-gradient(to right, #2e6b9e, #1f1f1f);
+    border-radius: 50px;
+    margin: 0 20px;
+    width: 200px; }
+    .tutorial-menu .box a {
+      color: #fff;
+      font-family: "Cuprum", sans-serif;
+      background: #4d4d4d;
+      border: 5px solid #fff;
+      border-radius: 50px;
+      display: block;
+      height: 43px;
+      margin-left: 9px;
+      margin-top: 8px;
+      padding: 5px 10px;
+      width: 175px; }
+    .tutorial-menu .box .icon {
+      align-items: center;
+      background: #4d4d4d;
+      border: 5px solid #fff;
+      border-radius: 50px;
+      cursor: pointer;
+      bottom: 52px;
+      display: flex;
+      height: 62px;
+      justify-content: center;
+      left: 142px;
+      position: relative;
+      width: 62px; }
+      .tutorial-menu .box .icon i {
+        color: #fff;
+        margin-left: 0; }
 
 .introducao {
   color: #fff;
   font-family: "Staatliches", cursive;
   margin-left: 40px; }
+
+.conteudo-daki .linha {
+  display: flex; }
+  .conteudo-daki .linha .daki {
+    width: 50%; }
 
 .correcoes {
   /*	
