@@ -8,7 +8,7 @@ var config = {
   };
   firebase.initializeApp(config);
 
-document.addEventListener('DOMContentLoaded', function () {
-    var elems = document.querySelectorAll('.dropdown-trigger');
-    var instances = M.Dropdown.init(elems);
+document.addEventListener('DOMContentLoaded', () => {
+    let elems = document.querySelectorAll('.dropdown-trigger');
+    let instances = M.Dropdown.init(elems);
   });

@@ -470,9 +470,8 @@ nav.videos-nav {
 html {
   scroll-behavior: smooth; }
   html body {
-    background: url(../img/bg.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed; }
+    background: url(../img/bg.jpg) no-repeat fixed top;
+    background-size: cover; }
     html body button {
       cursor: pointer; }
     html body .view-container {

@@ -1,11 +1,12 @@
-var gulp = require('gulp');
-var sass = require('gulp-sass');
-var browserSync = require('browser-sync');
-var imageMin = require('gulp-imagemin');
-var minifyJs = require('gulp-minify');
-var concatJs = require('gulp-concat');
+let gulp = require('gulp');
+let sass = require('gulp-sass');
+let browserSync = require('browser-sync');
+let imageMin = require('gulp-imagemin');
+let minifyJs = require('gulp-minify');
+let concatJs = require('gulp-concat');
+let replace = require('gulp-replace');
 
-var configPath = {
+let configPath = {
     src: './dev/src/sass/**/*.scss',
     srcJs: './dev/src/js/**/*.js',
     dest: './dev/src/css/',
@@ -13,21 +14,15 @@ var configPath = {
     dist: './dist/'
 };
 
-gulp.task('build', ['sassTransformToCss', 'minifyJs', 'imgMinify'], function(){
-    return gulp.src([
-        './dev/index.html',
-        './dev/data/**/*',
-        './dev/src/css/reset.css',
-        './dev/src/css/main.css',
-        './dev/src/fonts/**/*',
-        './dev/src/img/**/*',
-        './dev/src/js/main-min.js',
-        './dev/src/utils/angular/angular.min.js'
-    ])
+gulp.task('build', ['sassTransformToCss', 'dist', 'imgMinify', 'changePath'], () =>  {
+});
+
+gulp.task('dist', () => {
+    return gulp.src('./dev/**/*')
     .pipe(gulp.dest(configPath.dist));
 });
 
-gulp.task('serverSimulate', ['watch'], function() {
+gulp.task('serverSimulate', ['watch'], () =>  {
     browserSync.init({
         server: {
             baseDir: './dev'
@@ -36,27 +31,33 @@ gulp.task('serverSimulate', ['watch'], function() {
     });
 });
 
-gulp.task('sassTransformToCss', function() {
+gulp.task('sassTransformToCss', () =>  {
     return gulp.src(configPath.src)
         .pipe(sass())
         .pipe(gulp.dest(configPath.dest));
 });
 
-gulp.task('minifyJs', function (){
+gulp.task('minifyJs', () => {
     return gulp.src(configPath.srcJs)
     .pipe(concatJs('main.js'))
     .pipe(minifyJs())
     .pipe(gulp.dest('./dev/src/js/'));
 });
 
-gulp.task('watch', function() {
+gulp.task('watch', () =>  {
     gulp.watch(configPath.src, ['sassTransformToCss']).on('change', browserSync.reload);
     gulp.watch('./dev/src/js/**/*.js').on('change', browserSync.reload);
     gulp.watch('./dev/index.html').on('change', browserSync.reload);
 });
 
-gulp.task('imgMinify', function() {
+gulp.task('imgMinify', () =>  {
     gulp.src('./dev/src/img/*')
         .pipe(imageMin())
         .pipe(gulp.dest('./dist/src/img/'));
+});
+
+gulp.task('changePath', () => {
+    gulp.src(['./dev/index.html'])
+    .pipe(replace('src/', 'sextafeira/src/'))
+    .pipe(gulp.dest('./dist'));
 });
