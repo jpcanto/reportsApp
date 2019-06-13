@@ -2,6 +2,24 @@
   font-family: "Cuprum", sans-serif;
   background: transparent; }
 
+section.optional-menu {
+  background: rgba(68, 65, 65, 0.5);
+  display: none;
+  margin-left: 15px;
+  padding: 5px;
+  position: absolute;
+  top: 5px;
+  z-index: 10; }
+  section.optional-menu i {
+    color: #fff;
+    font-size: 40px; }
+
+@media only screen and (max-width: 1024px) {
+  section.optional-menu {
+    display: block; }
+    section.optional-menu i {
+      margin: 0; } }
+
 .nav-wrapper {
   margin: auto; }
 
@@ -14,7 +32,8 @@ nav.videos-nav {
   left: 0;
   position: fixed;
   top: 0;
-  width: 242px; }
+  width: 242px;
+  z-index: 9; }
   nav .nav-icon,
   nav.videos-nav .nav-icon {
     height: 55px !important; }
@@ -113,6 +132,18 @@ nav.videos-nav {
       top: 12px;
       width: 36px; }
 
+@media only screen and (max-width: 1024px) {
+  nav {
+    display: none; }
+  nav.open {
+    display: block; }
+  .page-title {
+    margin-left: 0; }
+    .page-title h2 {
+      padding-left: 120px; }
+      .page-title h2::before {
+        display: none; } }
+
 .home-title {
   margin-bottom: 100px; }
   .home-title .title,
@@ -187,6 +218,19 @@ nav.videos-nav {
     border-top-left-radius: 50px;
     border-bottom-left-radius: 50px;
     transition: all 300ms ease-in-out; }
+
+@media only screen and (max-width: 1024px) {
+  .videos-manual {
+    align-items: initial;
+    margin-right: 0; }
+    .videos-manual .container-videos {
+      margin: 0;
+      padding: 0; }
+      .videos-manual .container-videos__item {
+        height: auto;
+        width: auto; }
+    .videos-manual .legenda {
+      padding: 0 15px; } }
 
 .manual {
   color: white;
@@ -346,6 +390,10 @@ nav.videos-nav {
     .correcoes tr.academico-verify.error-to-fix .with-gap.uncheck:checked + span:after,
     .correcoes tr.academico-verify.error-to-fix .with-gap.uncheck:checked + span:before {
       border: 2px solid #fb667a; }
+  @media only screen and (max-width: 1024px) {
+    .correcoes .academico-verify td {
+      font-size: .8em;
+      padding: 15px 0; } }
   @media (max-width: 800px) {
     .correcoes .container td:nth-child(4),
     .correcoes .container th:nth-child(4) {
@@ -363,6 +411,10 @@ nav.videos-nav {
     color: #fff;
     align-items: center;
     padding: 0; }
+
+@media only screen and (max-width: 1024px) {
+  .main-content th {
+    padding: 15px 0; } }
 
 .reports-obj-block {
   width: 100%; }
@@ -398,7 +450,7 @@ nav.videos-nav {
 .cadastro {
   height: 100%;
   width: 100%; }
-  .cadastro .cadastro__caixa {
+  .cadastro__caixa {
     background: rgba(56, 56, 56, 0.5);
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 5px;
@@ -407,7 +459,7 @@ nav.videos-nav {
     overflow: hidden;
     padding: 30px;
     width: 50vw; }
-    .cadastro .cadastro__caixa--titulo p {
+    .cadastro__caixa--titulo p {
       color: #fff;
       font-size: 32px;
       font-weight: 600;
@@ -416,6 +468,9 @@ nav.videos-nav {
       padding: 10px 0 10px 50px;
       position: relative;
       z-index: 1; }
+  @media only screen and (max-width: 1024px) {
+    .cadastro .cadastro__caixa {
+      width: 96%; } }
   .cadastro .form-cadastro {
     color: #212121;
     font-size: 24px;
@@ -467,6 +522,10 @@ nav.videos-nav {
     top: 0;
     width: 0; }
 
+@media only screen and (max-width: 1024px) {
+  .titulo-component {
+    font-size: 2em; } }
+
 html {
   scroll-behavior: smooth; }
   html body {
@@ -476,5 +535,8 @@ html {
       cursor: pointer; }
     html body .view-container {
       margin-left: 242px; }
+    @media only screen and (max-width: 1024px) {
+      html body .view-container {
+        margin-left: 0; } }
     html body .title {
       font-family: "Cuprum", sans-serif; }

@@ -1,3 +1,5 @@
+var vm = this;
+
 var config = {
     apiKey: "AIzaSyBOUSi4PnpCCAL3FnVjBz3E_IZQk6d3wVk",
     authDomain: "reportswebapp.firebaseapp.com",
@@ -12,3 +14,9 @@ document.addEventListener('DOMContentLoaded', () => {
     let elems = document.querySelectorAll('.dropdown-trigger');
     let instances = M.Dropdown.init(elems);
   });
+
+  vm.openMenu = () => {
+    let getPath = document.querySelector('nav');
+    console.log(getPath);
+    getPath.classList.toggle('open');
+  };

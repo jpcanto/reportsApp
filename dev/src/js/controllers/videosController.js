@@ -21,7 +21,7 @@
             return $sce.trustAsResourceUrl(url)
         }
 
-        vm.scroll = function(element) {
+        vm.scroll = function (element) {
             $location.hash(element);
         }
 

@@ -1,3 +1,26 @@
+section.optional-menu {
+    background: rgba(68, 65, 65, 0.5);
+    display: none;
+    margin-left: 15px;
+    padding: 5px;
+    position: absolute;
+    top: 5px;
+    z-index: 10;
+    i {
+        color: #fff;
+        font-size: 40px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    section.optional-menu {
+        display: block;
+        i {
+            margin: 0;
+        }
+    }
+ }
+
 .nav-wrapper {
     margin: auto;
 }
@@ -13,6 +36,7 @@ nav.videos-nav {
     position: fixed;
     top: 0;
     width: 242px;
+    z-index: 9;
 
     .nav-icon {
         height: 55px !important;
@@ -136,3 +160,21 @@ nav.videos-nav {
         }
     }
 }
+
+@media only screen and (max-width: 1024px) {
+    nav {
+        display: none;
+    }
+    nav.open {
+        display: block;
+    }
+    .page-title {
+        margin-left: 0;
+        h2 {
+            padding-left: 120px;
+            &::before {
+                display: none;
+            }
+        }
+    }
+ }
