@@ -1,8 +1,11 @@
+<a class="waves-effect waves-light btn" id="open-indice" ng-click="vm.openIndice()">
+    <i class="material-icons right" id="open-indice-arrow">arrow_back</i>Abrir índice</a>
+
 <section ng-repeat="videos in vm.objetoVideos" class="videos-manual">
 
     <div id="video{{$index}}" class="container-videos">
-        <iframe class="container-videos__item" ng-src="{{vm.trustAsUrl(videos.url)}}" frameborder="0"
-            webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+        <iframe class="container-videos__item" ng-src="{{vm.trustAsUrl(videos.url)}}" frameborder="0" webkitallowfullscreen mozallowfullscreen
+            allowfullscreen></iframe>
         <p class="legenda">{{videos.legenda}}</p>
     </div>
 

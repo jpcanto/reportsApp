@@ -25,6 +25,11 @@
             $location.hash(element);
         }
 
+        vm.openIndice = () => {
+            let getPath = document.querySelector('.videos-nav');
+            getPath.classList.toggle('open-indice')
+        }
+
     };
 
 })();

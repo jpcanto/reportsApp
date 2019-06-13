@@ -130,6 +130,10 @@ nav.videos-nav {
         }
     }
 }
+nav.videos-nav.open-indice {
+    display: block;
+    animation: indice-right 1s;
+}
 
 .page-title {
     background-color: #fff;
@@ -176,5 +180,16 @@ nav.videos-nav {
                 display: none;
             }
         }
+    }
+ }
+
+ @keyframes indice-right{
+    0% {
+        right: -300px;
+        opacity: 0;
+    }
+    100% {
+        right: 0;
+        opacity: 1;
     }
  }

@@ -58,3 +58,16 @@
         }
     }
  }
+
+ #open-indice {
+    float: right;
+    padding-right: 0;
+    z-index: 10;
+    i {
+        font-size: 1.3rem;
+
+        background: #3d635f8a;
+        line-height: inherit;
+        width: 45px;
+    }
+ }

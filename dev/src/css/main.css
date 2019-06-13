@@ -106,6 +106,10 @@ nav.videos-nav {
       font-size: 1.2em;
       transition: .7s ease-in; }
 
+nav.videos-nav.open-indice {
+  display: block;
+  animation: indice-right 1s; }
+
 .page-title {
   background-color: #fff;
   border-bottom: 1px solid #C0C1C0;
@@ -143,6 +147,14 @@ nav.videos-nav {
       padding-left: 120px; }
       .page-title h2::before {
         display: none; } }
+
+@keyframes indice-right {
+  0% {
+    right: -300px;
+    opacity: 0; }
+  100% {
+    right: 0;
+    opacity: 1; } }
 
 .home-title {
   margin-bottom: 100px; }
@@ -235,6 +247,16 @@ nav.videos-nav {
         width: auto; }
     .videos-manual .legenda {
       padding: 0 15px; } }
+
+#open-indice {
+  float: right;
+  padding-right: 0;
+  z-index: 10; }
+  #open-indice i {
+    font-size: 1.3rem;
+    background: #3d635f8a;
+    line-height: inherit;
+    width: 45px; }
 
 .manual {
   color: white;
