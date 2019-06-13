@@ -16,8 +16,21 @@
     }
 }
 @media only screen and (max-width: 1024px) {
-    .main-content th {
-        padding: 15px 0;
+    .main-content {
+        table {
+            display: flex;
+            thead,
+            tbody {
+              display: flex;
+              flex-direction: row;
+              width: fit-content;
+              tr {
+                display: flex;
+                flex-direction: column;
+                margin-left: 10px;
+              }
+          }
+       }
     }
  }
 

@@ -171,6 +171,10 @@ nav.videos-nav {
       position: relative;
       width: 100%;
       z-index: 5; }
+    @media only screen and (max-width: 1024px) {
+      .home-title .title:before,
+      .home-title .wellcome:before {
+        display: none; } }
 
 @keyframes flicker {
   0%, 19.999%, 22%, 62.999%, 64%, 64.999%, 70%, 100% {
@@ -326,6 +330,17 @@ nav.videos-nav {
       .tutorial-menu .box .icon i {
         color: #fff;
         margin-left: 0; }
+  @media only screen and (max-width: 1024px) {
+    .tutorial-menu .box {
+      margin: 0 4px;
+      width: 100px; }
+      .tutorial-menu .box .text {
+        font-size: .8em;
+        padding: 8px 10px;
+        width: 90px; }
+      .tutorial-menu .box .icon {
+        left: 56px;
+        width: 44px; } }
 
 .introducao {
   color: #fff;
@@ -391,9 +406,18 @@ nav.videos-nav {
     .correcoes tr.academico-verify.error-to-fix .with-gap.uncheck:checked + span:before {
       border: 2px solid #fb667a; }
   @media only screen and (max-width: 1024px) {
-    .correcoes .academico-verify td {
-      font-size: .8em;
-      padding: 15px 0; } }
+    .correcoes table.highlight {
+      display: flex; }
+      .correcoes table.highlight thead,
+      .correcoes table.highlight tbody {
+        display: flex;
+        flex-direction: row;
+        width: fit-content; }
+        .correcoes table.highlight thead tr,
+        .correcoes table.highlight tbody tr {
+          display: flex;
+          flex-direction: column;
+          margin-left: 10px; } }
   @media (max-width: 800px) {
     .correcoes .container td:nth-child(4),
     .correcoes .container th:nth-child(4) {
@@ -413,8 +437,18 @@ nav.videos-nav {
     padding: 0; }
 
 @media only screen and (max-width: 1024px) {
-  .main-content th {
-    padding: 15px 0; } }
+  .main-content table {
+    display: flex; }
+    .main-content table thead,
+    .main-content table tbody {
+      display: flex;
+      flex-direction: row;
+      width: fit-content; }
+      .main-content table thead tr,
+      .main-content table tbody tr {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10px; } }
 
 .reports-obj-block {
   width: 100%; }

@@ -72,12 +72,21 @@
          }
       }
       @media only screen and (max-width: 1024px) {
-        .academico-verify td {
-          font-size: .8em;
-
-          padding: 15px 0;
+        table.highlight {
+          display: flex;
+          thead,
+          tbody {
+            display: flex;
+            flex-direction: row;
+            width: fit-content;
+            tr {
+              display: flex;
+              flex-direction: column;
+              margin-left: 10px;
+            }
         }
      }
+    }
   
   @media (max-width: 800px) {
      .container td:nth-child(4),

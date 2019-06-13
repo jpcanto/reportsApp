@@ -111,7 +111,25 @@
                 margin-left: 0;
             }
         }
+        
     }
+    @media only screen and (max-width: 1024px) {
+        .box {
+            margin: 0 4px;
+            width: 100px;
+            .text {
+                font-size: .8em;
+
+                padding: 8px 10px;
+                width: 90px;
+            }
+            .icon {
+                left: 56px;
+                width: 44px;
+            }
+        }
+    }
+    
 }
 
 .introducao {
