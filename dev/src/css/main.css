@@ -504,8 +504,8 @@ nav.videos-nav.open-indice {
     .filter .nav select {
       display: block; }
 
-#estudos {
-  position: fixed;
+.indice-estudos {
+  position: fixed !important;
   top: 55px; }
 
 section.estudos-menu {

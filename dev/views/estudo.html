@@ -1,5 +1,5 @@
-<a class="waves-effect waves-light btn" id="open-indice estudos" ng-click="vm.ativaMenuEstudos()">
-    <i class="material-icons right" id="open-indice-arrow">arrow_back</i>Abrir índice</a>
+<a class="waves-effect waves-light btn indice-estudos" id="open-indice" ng-click="vm.ativaMenuEstudos()">
+    <i class="material-icons right" id="open-indice-arrow">{{vm.arrow}}</i>{{vm.indiceMsg}}</a>
 
 <section class="estudos-menu" ng-show="vm.activateMenu">
     <div class="conceitos-gerais">
