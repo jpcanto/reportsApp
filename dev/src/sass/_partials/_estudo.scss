@@ -1,0 +1,56 @@
+#estudos {
+    position: fixed;
+    top: 55px;
+}
+
+section.estudos-menu {
+    background: #4d4d4d;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 5px;
+    padding: 15px 0;
+    position: fixed;
+    width: -webkit-fill-available;
+    div {
+        color: #fff;
+        font-family: $fourthFont;
+        letter-spacing: 1.5px;
+
+        border: 6px double #000;
+        border-radius: 15px;
+        margin: 0 auto;
+        margin-top: 5px;
+        padding: 20px;
+        width: 150px;
+    }
+    .conceitos-gerais {
+        background-image: linear-gradient(to bottom, #051937, #12325d, #1e4d86, #266ab2, #2b89e0);
+    }
+    .ecma-06 {
+        background-image: linear-gradient(to bottom, #39430b, #5d6814, #848e1c, #b0b724, #e0e02b);
+    }
+}
+
+section.ecma {
+    background: radial-gradient(circle at 40% 0%,#eee 10%,#999);
+    padding: 0 10px;
+    .bind {
+        .titulo {
+            color: #FFFFFF;
+            font-family: $mainFont;
+            font-size: 2em;
+            text-shadow: 2px 2px 0 #4d4d4d, 2px -2px 0 #4d4d4d, -2px 2px 0 #4d4d4d, -2px -2px 0 #4d4d4d, 2px 0px 0 #4d4d4d, 0px 2px 0 #4d4d4d, -2px 0px 0 #4d4d4d, 0px -2px 0 #4d4d4d;
+        }
+        .text {
+            font-size: 1.1em;
+            font-family: $fourthFont;
+        }
+        .exemplo-pratico {
+            color: #fff;
+
+            background: radial-gradient(circle at 40% 0%,#b7b7b7 10%,#706de2);
+            padding: 10px;
+        }
+    }
+}

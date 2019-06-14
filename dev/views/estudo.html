@@ -1,0 +1,49 @@
+<a class="waves-effect waves-light btn" id="open-indice estudos" ng-click="vm.ativaMenuEstudos()">
+    <i class="material-icons right" id="open-indice-arrow">arrow_back</i>Abrir índice</a>
+
+<section class="estudos-menu" ng-show="vm.activateMenu">
+    <div class="conceitos-gerais">
+        Conceitos Gerais
+    </div>
+    <div class="ecma-06">
+        Ecma Script 06 (ES06)
+    </div>
+</section>
+
+<section class="ecma">
+    <div class="bind">
+        <p class="titulo">Vamos falar sobre bind</p>
+        <div class="text">
+            <p>Digamos que nós queremos encurtar um pouco nosso código. Temos 3 variáveis que buscam um Id como no exemplo:</p>
+        </div>
+        <div class="exemplo-pratico">
+            <p>let var1 = document.querySelector('#id1');</p>
+            <p>let var2 = document.querySelector('#id2');</p>
+            <p>let var3 = document.querySelector('#id3');</p>
+        </div>
+        <div class="text">
+            <p>Agora, nós vamos tentar armazenar o document.querySelector em uma variável para encurtar nosso código e deixar
+                mais elegante</p>
+        </div>
+        <div class="exemplo-pratico">
+            <p>let $ = document.querySelector;</p>
+            <p>let var1 = $('#id1');</p>
+            <p>let var2 = $('#id2');</p>
+            <p>let var3 = $('#id3');</p>
+        </div>
+        <div class="text">
+            <p>(imitando o jquery rs) Muito melhor certo?</p>
+            <p>Claro, mas vai funcionar?</p>
+            <p>Não</p>
+            <p>Mas por que?</p>
+            <p>Vamos lá, o querySelector é um método que pertence a m objeto. Logo quando tentamos armazenar um método em uma
+                variável, ele deixa de ser um método, se tornando uma função, perdendo assim sua associação a um objeto,
+                no caso, o document.
+            </p>
+            <p>Ok, como mantemos essa associação então? utilizando o Bind.</p>
+        </div>
+        <div class="exemplo-pratico">
+            let $ = document.querySelector.bind(document);
+        </div>
+    </div>
+</section>

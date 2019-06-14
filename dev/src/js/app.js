@@ -60,6 +60,12 @@
                     controllerAs: 'vm'
                 })
 
+                .when('/estudo', {
+                    templateUrl: "views/estudo.html",
+                    controller: "estudoController",
+                    controllerAs: 'vm'
+                })
+
                 .otherwise({ redirectTo: '/' });
 
         });
